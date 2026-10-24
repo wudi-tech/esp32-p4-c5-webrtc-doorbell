@@ -1,0 +1,20 @@
+Activating ESP-IDF 5.5
+Setting IDF_PATH to 'E:\Espressif\frameworks\esp-idf-v5.5.5'.
+* Checking python version ... 3.11.2
+* Checking python dependencies ... OK
+* Deactivating the current ESP-IDF environment (if any) ... OK
+* Establishing a new ESP-IDF environment ... OK
+* Identifying shell ... powershell.exe
+* Detecting outdated tools in system ... Found tools that are not used by active ESP-IDF version.
+For removing old versions of idf-driver, idf-python-wheels use command 'python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf_tools.py uninstall'
+To free up even more space, remove installation packages of those tools.
+Use option python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf_tools.py uninstall --remove-archives.
+--- Warning: GDB cannot open serial ports accessed as COMx
+--- Using \\.\COM5 instead...
+--- esp-idf-monitor 1.9.0 on \\.\COM5 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x4ff29ed0: esp_bootloader_get_description at E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_bootloader_format/esp_bootloader_desc.c:39
+--- 0x4ff2cbd0: esp_flash_encryption_enabled at E:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support/src/flash_encrypt.c:89
+--- 0x4ff29eda: call_start_cpu0 at E:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c:27
+--- 0x40200708: wifi_sta_receive at E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi/src/wifi_netif.c:38
+--- 0x40200708: wifi_sta_receive at E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi/src/wifi_netif.c:38

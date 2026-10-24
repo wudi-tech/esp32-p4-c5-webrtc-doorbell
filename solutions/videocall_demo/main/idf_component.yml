@@ -1,0 +1,11 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=4.1.0"
+  espressif/esp_peer:
+    version: "*"
+    override_path: ../../../components/esp_peer
+  apprtc_signal:
+    path: ../../../components/esp_webrtc/impl/apprtc_signal
+    version: "*"

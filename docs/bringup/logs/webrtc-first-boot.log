@@ -1,0 +1,212 @@
+# Host capture started: 2026-08-10T12:22:49.1981694+08:00
+ESP-ROM:esp32p4-eco2-20240710
+Build:Jul 10 2024
+rst:0x1 (POWERON),boot:0x20f (SPI_FAST_FLASH_BOOT)
+SPI mode:DIO, clock div:1
+load:0x4ff33ce0,len:0x173c
+load:0x4ff29ed0,len:0x1028
+load:0x4ff2cbd0,len:0x3624
+entry 0x4ff29eda
+I (25) boot: ESP-IDF v5.5.5-dirty 2nd stage bootloader
+I (26) boot: compile time Aug 10 2026 12:19:20
+I (26) boot: Multicore bootloader
+I (28) boot: chip revision: v1.3
+I (29) boot: efuse block revision: v0.3
+I (33) qio_mode: Enabling default flash chip QIO
+I (37) boot.esp32p4: SPI Speed      : 80MHz
+I (41) boot.esp32p4: SPI Mode       : QIO
+I (45) boot.esp32p4: SPI Flash Size : 16MB
+I (49) boot: Enabling RNG early entropy source...
+I (53) boot: Partition Table:
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+I (62) boot:  0 nvs              WiFi [SSID] [PASSWORD] 02 0000a000 00005000
+I (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (75) boot:  2 factory          factory app      00 00 00010000 00600000
+I (82) boot:  3 pedestrian_det   Unknown data     01 82 00610000 0007d000
+I (89) boot: End of partition table
+I (92) esp_image: segment 0: paddr=00010020 vaddr=40250020 size=c859ch (820636) map
+I (225) esp_image: segment 1: paddr=000d85c4 vaddr=30100000 size=0007ch (   124) load
+I (227) esp_image: segment 2: paddr=000d8648 vaddr=4ff00000 size=079d0h ( 31184) load
+I (236) esp_image: segment 3: paddr=000e0020 vaddr=40000020 size=24e194h (2417044) map
+I (607) esp_image: segment 4: paddr=0032e1bc vaddr=4ff079d0 size=14ec0h ( 85696) load
+I (624) esp_image: segment 5: paddr=00343084 vaddr=4ff1c900 size=05c10h ( 23568) load
+I (636) boot: Loaded app from partition at offset 0x10000
+I (636) boot: Disabling RNG early entropy source...
+I (648) hex_psram: vendor id    : 0x0d (AP)
+I (648) hex_psram: Latency      : 0x01 (Fixed)
+I (648) hex_psram: DriveStr.    : 0x00 (25 Ohm)
+I (649) hex_psram: dev id       : 0x03 (generation 4)
+I (653) hex_psram: density      : 0x07 (256 Mbit)
+I (658) hex_psram: good-die     : 0x06 (Pass)
+I (662) hex_psram: SRF          : 0x02 (Slow Refresh)
+I (667) hex_psram: BurstType    : 0x00 ( Wrap)
+I (671) hex_psram: BurstLen     : 0x03 (2048 Byte)
+I (675) hex_psram: BitMode      : 0x01 (X16 Mode)
+I (680) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)
+I (685) hex_psram: DriveStrength: 0x00 (1/1)
+I (689) MSPI Timing: Enter psram timing tuning
+I (866) esp_psram: Found 32MB PSRAM device
+I (866) esp_psram: Speed: 200MHz
+I (866) hex_psram: psram CS IO is dedicated
+I (867) cpu_start: Multicore app
+I (1818) esp_psram: SPI SRAM memory test OK
+I (1826) cpu_start: GPIO 38 and 37 are used as console UART I/O pins
+I (1827) cpu_start: Pro cpu start user code
+I (1827) cpu_start: cpu freq: 360000000 Hz
+I (1829) app_init: Application information:
+I (1833) app_init: Project name:     doorbell_demo
+I (1837) app_init: App version:      68cdbb1-dirty
+I (1842) app_init: Compile time:     Aug 10 2026 12:18:40
+I (1847) app_init: ELF file SHA256:  59abee4d3...
+I (1851) app_init: ESP-IDF:          v5.5.5-dirty
+I (1856) efuse_init: Min chip rev:     v1.0
+I (1860) efuse_init: Max chip rev:     v1.99 
+I (1864) efuse_init: Chip rev:         v1.3
+I (1868) heap_init: Initializing. RAM available for dynamic allocation:
+I (1874) heap_init: At 4FF276B0 len 00013910 (78 KiB): RETENT_RAM
+I (1880) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM
+I (1885) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM
+I (1891) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM
+I (1896) heap_init: At 3010007C len 00001F84 (7 KiB): SPM
+I (1901) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator
+I (1908) spi_flash: detected chip: generic
+I (1911) spi_flash: flash io: qio
+I (1915) host_init: ESP Hosted : Host chip_ip[18]
+I (1919) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120
+I (1927) H_API: ** add_esp_wifi_remote_channels **
+I (1933) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (1938) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (1945) H_SDIO_DRV: sdio_data_to_rx_buf_task started
+I (1949) main_task: Started on CPU0
+I (1953) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+I (1961) main_task: Calling app_main()
+I (1964) Board: Init board.
+i2c: {sda: 7, scl: 8}
+i2s: {mclk: 13, bclk: 12, ws: 10, dout: 9, din: 11}
+in_out: {codec: ES8311, pa: 53, use_mclk: 1, pa_gain: 6}
+sdcard: {clk: 43, cmd: 44, d0: 39, d1: 40, d2: 41, d3: 42}
+camera: {type: mipi}
+lcd: {bus: mipi, ldo_chan: 3, ldo_voltage: 2500, lane_num: 2, lane_bitrate: 1000, dpi_clk: 80, bit_depth: 16, fb_num: 2, dsi_hsync: 1344, dsi_vsync: 635, dsi_hbp: 160, dsi_hfp: 160, dsi_vbp: 23, dsi_vfp: 12, rst: -1, width: 1024, height: 600}
+E (2007) i2c.master: this port has not been initialized, please initialize it first
+I (2014) CODEC_INIT: Set mater handle 0 0x48016384
+I (2018) CODEC_INIT: in:1 out:1 port: 1
+I (2022) CODEC_INIT: Success to int i2c: 0
+I (2026) CODEC_INIT: Init i2s 0 type: 3 mclk:13 bclk:12 ws:10 din:11 dout:9
+I (2033) CODEC_INIT: tx:0x480167e4 rx:0x480169a0
+I (2037) CODEC_INIT: output init std ret 0
+I (2041) CODEC_INIT: Input init std ret 0
+I (2044) CODEC_INIT: Init i2s 0 ok
+I (2047) CODEC_INIT: Success to init i2s: 0
+I (2051) CODEC_INIT: Success to int i2c: 0
+I (2055) CODEC_INIT: Success to init i2s: 0
+I (2059) CODEC_INIT: Get out handle 0x480167e4 port 0
+I (2069) ES8311: Work in Slave mode
+I (2073) MEDIA_SYS: Use i2c handle 0x48016384
+I (2075) ov5647: Detected Camera sensor PID=0x5647
+I (2138) VENC_EL: Create vid_enc-0x48017f20
+I (2138) OVERLAY_MIXER: Create video overlay, vid_overlay-0x48017ff0
+E (2138) LCD_RENDER: Invalid argument to open
+E (2141) MEDIA_SYS: Fail to create video render
+[5n
+
+Type 'help' to get the list of commands.
+
+Use UP/DOWN arrows to navigate through command history.
+
+Press TAB when typing command name to auto-complete.
+
+
+
+Your terminal application does not support escape sequences.
+
+Line editing and history features are disabled.
+
+On Windows, try using Windows Terminal or Putty instead.
+
+esp> I (2717) transport: Attempt connection with slave: retry[0]
+W (2737) H_SDIO_DRV: Reset slave using GPIO[54]
+I (2737) os_wrapper_esp: GPIO [54] configured
+I (4261) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 4-bit Freq(KHz)[40000 KHz]
+I (4261) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] D2[16] D3[17] Slave_Reset[54]
+I (4265) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1]
+I (4305) sdio_wrapper: Function 0 Blocksize: 512
+I (4306) sdio_wrapper: Function 1 Blocksize: 512
+I (4406) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE
+I (4406) transport: set_transport_state: 1
+I (4406) transport: Waiting for esp_hosted slave to be ready
+I (4445) H_SDIO_DRV: SDIO Host operating in STREAMING MODE
+I (4445) H_SDIO_DRV: Starting SDIO process rx task
+I (4445) H_SDIO_DRV: Open data path at slave
+I (4451) H_SDIO_DRV: Received ESP_PRIV_IF type message
+I (4452) transport: Received INIT event from ESP32 peripheral
+I (4458) transport: EVENT: 12
+I (4461) transport: Identified slave [esp32c5]
+I (4464) transport: EVENT: 11
+I (4467) transport: capabilities: 0xd
+I (4470) transport: Features supported are:
+I (4476) transport: 	 * WLAN
+I (4479) transport: 	   - HCI over SDIO
+I (4482) transport: 	   - BLE only
+I (4485) transport: EVENT: 13
+W (4488) transport: Version mismatch: Host [2.12.0] > Co-proc [0.0.0] ==> Upgrade co-proc to avoid RPC timeouts
+I (4498) transport: ESP board type is : 23 
+
+
+I (4501) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE
+I (4507) H_API: Transport active
+I (4510) transport: Slave chip Id[12]
+I (4513) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80]
+I (4519) transport: transport_delayed_init
+I (4522) esp_cli: Registering command: crash
+I (4528) esp_cli: Registering command: reboot
+I (4532) esp_cli: Registering command: mem-dump
+I (4535) esp_cli: Registering command: task-dump
+I (4541) esp_cli: Registering command: cpu-dump
+I (4544) esp_cli: Registering command: heap-trace
+I (4547) esp_cli: Registering command: sock-dump
+I (4553) esp_cli: Registering command: host-power-save
+I (4559) hci_stub_drv: Host BT Support: Disabled
+I (4562) H_SDIO_DRV: Received INIT event
+I (4565) H_SDIO_DRV: Event type: 0x22
+I (4568) H_SDIO_DRV: Write thread started
+I (4945) rpc_core: <-- RPC_Req  [0x116], uid 1
+I (4945) rpc_evt: EVENT: ESP INIT
+
+I (4946) RPC_WRAP: Coprocessor Boot-up
+I (5055) rpc_rsp:  --> RPC_Resp [0x216], uid 1
+I (5057) NETWORK: Force to use wifi [SSID] [PASSWORD] nvs
+I (5057) rpc_core: <-- RPC_Req  [0x104], uid 2
+I (5065) rpc_rsp:  --> RPC_Resp [0x204], uid 2
+I (5065) rpc_core: <-- RPC_Req  [0x11c], uid 3
+I (5079) rpc_rsp:  --> RPC_Resp [0x21c], uid 3
+I (5079) rpc_core: <-- RPC_Req  [0x10e], uid 4
+I (5092) rpc_rsp:  --> RPC_Resp [0x20e], uid 4
+I (5092) rpc_core: <-- RPC_Req  [0x118], uid 5
+I (5353) rpc_rsp:  --> RPC_Resp [0x218], uid 5
+I (5354) NETWORK: wifi_init_sta finished.
+I (5356) rpc_evt: Event [0x2b] received
+I (5356) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+I (5360) rpc_evt: Event [0x2] received
+I (5363) rpc_evt: EVT rcvd: Wi-Fi Start
+I (5366) RPC_WRAP: ESP Event: wifi [SSID] [PASSWORD]
+I (5372) rpc_core: <-- RPC_Req  [0x101], uid 6
+I (5379) rpc_rsp:  --> RPC_Resp [0x201], uid 6
+I (5380) H_API: esp_wifi_remote_connect
+I (5383) rpc_core: <-- RPC_Req  [0x11a], uid 7
+I (5396) rpc_rsp:  --> RPC_Resp [0x21a], uid 7
+I (12315) rpc_evt: Event [0x2b] received
+I (12315) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+I (12627) RPC_WRAP: ESP Event: Station mode: Connected
+I (12628) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200e44
+I (14159) esp_netif_handlers: sta ip: 192.168.31.207, mask: 255.255.255.0, gw: 192.168.31.1
+I (14159) NETWORK: got ip:192.168.31.207
+I (14161) AV_RENDER: Close done
+I (14165) webrtc: Pending connection until user enable
+Signaling connected, pending for use not enable
+I (14172) WEBRTC_HTTP: Success to init http server
+I (14178) Webrtc_Test: Use browser to enter https://192.168.31.207/webrtc/test for test
+I (14179) AV_RENDER: Adec got msg:Close
+I (14188) AV_RENDER: Thread Adec exited
+I (14191) AV_RENDER: Close done
+
+# Host capture ended: 2026-08-10T12:23:44.3885904+08:00

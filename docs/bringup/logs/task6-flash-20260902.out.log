@@ -1,0 +1,49 @@
+
+Done! You can now compile ESP-IDF projects.
+Go to the project directory and run:
+
+  idf.py build
+
+Executing action: flash
+Running ninja in directory <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build
+Executing "ninja flash"...
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x9000 partition --type app C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/partition_table/partition-table.bin C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/doorbell_demo.bin"
+
+doorbell_demo.bin binary size 0x345160 bytes. Smallest app partition is 0x600000 bytes. 0x2baea0 bytes (46%) free.
+
+
+[2/5] Performing build step for 'bootloader'
+
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x9000 bootloader 0x2000 C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/bootloader/bootloader.bin"
+
+
+Bootloader binary size 0x5de0 bytes. 0x1220 bytes (16%) free.
+
+
+
+[3/5] No install step for 'bootloader'
+
+[4/5] Completed 'bootloader'
+
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\Espressif\frameworks\esp-idf-v5.5.5\components\esptool_py && E:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif/frameworks/esp-idf-v5.5.5 -D SERIAL_TOOL=E:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/esptool/esptool.py;--chip;esp32p4 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build -P E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/run_serial_tool.cmake"
+
+esptool.py --chip esp32p4 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 doorbell_demo.bin 0x9000 partition_table/partition-table.bin
+
+esptool.py v4.12.0
+
+Serial port COM5
+
+
+
+A fatal error occurred: Could not open COM5, the port is busy or doesn't exist.
+
+(could not open port 'COM5': PermissionError(13, '拒绝访问。', None, 5))
+
+
+
+FAILED: CMakeFiles/flash C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/CMakeFiles/flash 
+
+C:\WINDOWS\system32\cmd.exe /C "cd /D E:\Espressif\frameworks\esp-idf-v5.5.5\components\esptool_py && E:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif/frameworks/esp-idf-v5.5.5 -D SERIAL_TOOL=E:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/esptool/esptool.py;--chip;esp32p4 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build -P E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/run_serial_tool.cmake"
+
+ninja: build stopped: subcommand failed.
+

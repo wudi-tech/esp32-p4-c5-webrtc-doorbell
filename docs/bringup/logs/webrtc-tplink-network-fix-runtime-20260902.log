@@ -1,0 +1,3998 @@
+
+Done! You can now compile ESP-IDF projects.
+Go to the project directory and run:
+
+  idf.py build
+
+Executing action: monitor
+Running idf_monitor in directory <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local
+Executing "E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 100 --decode-panic backtrace <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\doorbell_demo.elf <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py' '-p' 'COM5'"...
+ESP-ROM:esp32p4-eco2-20240710
+
+Build:Jul 10 2024
+
+rst:0x1 (POWERON),boot:0x20f (SPI_FAST_FLASH_BOOT)
+
+SPI mode:DIO, clock div:1
+
+load:0x4ff33ce0,len:0x173c
+
+load:0x4ff29ed0,len:0x1028
+
+load:0x4ff2cbd0,len:0x3624
+
+entry 0x4ff29eda
+
+I (25) boot: ESP-IDF v5.5.5-dirty 2nd stage bootloader
+
+I (26) boot: compile time Aug 10 2026 12:19:20
+
+I (26) boot: Multicore bootloader
+
+I (28) boot: chip revision: v1.3
+
+I (29) boot: efuse block revision: v0.3
+
+I (33) qio_mode: Enabling default flash chip QIO
+
+I (37) boot.esp32p4: SPI Speed      : 80MHz
+
+I (41) boot.esp32p4: SPI Mode       : QIO
+
+I (45) boot.esp32p4: SPI Flash Size : 16MB
+
+I (49) boot: Enabling RNG early entropy source...
+
+I (53) boot: Partition Table:
+
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+
+I (62) boot:  0 nvs              WiFi [SSID] [PASSWORD] 02 0000a000 00005000
+
+I (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+
+I (75) boot:  2 factory          factory app      00 00 00010000 00600000
+
+I (82) boot:  3 pedestrian_det   Unknown data     01 82 00610000 0007d000
+
+I (89) boot: End of partition table
+
+I (92) esp_image: segment 0: paddr=00010020 vaddr=40250020 size=c9354h (824148) map
+
+I (226) esp_image: segment 1: paddr=000d937c vaddr=30100000 size=0007ch (   124) load
+
+I (228) esp_image: segment 2: paddr=000d9400 vaddr=4ff00000 size=06c18h ( 27672) load
+
+I (236) esp_image: segment 3: paddr=000e0020 vaddr=40000020 size=24da58h (2415192) map
+
+I (607) esp_image: segment 4: paddr=0032da80 vaddr=4ff06c18 size=15aach ( 88748) load
+
+I (624) esp_image: segment 5: paddr=00343534 vaddr=4ff1c700 size=05c10h ( 23568) load
+
+I (636) boot: Loaded app from partition at offset 0x10000
+
+I (637) boot: Disabling RNG early entropy source...
+
+I (648) hex_psram: vendor id    : 0x0d (AP)
+
+I (648) hex_psram: Latency      : 0x01 (Fixed)
+
+I (648) hex_psram: DriveStr.    : 0x00 (25 Ohm)
+
+I (649) hex_psram: dev id       : 0x03 (generation 4)
+
+I (654) hex_psram: density      : 0x07 (256 Mbit)
+
+I (658) hex_psram: good-die     : 0x06 (Pass)
+
+I (662) hex_psram: SRF          : 0x02 (Slow Refresh)
+
+I (667) hex_psram: BurstType    : 0x00 ( Wrap)
+
+I (671) hex_psram: BurstLen     : 0x03 (2048 Byte)
+
+I (676) hex_psram: BitMode      : 0x01 (X16 Mode)
+
+I (680) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)
+
+I (685) hex_psram: DriveStrength: 0x00 (1/1)
+
+I (689) MSPI Timing: Enter psram timing tuning
+
+I (866) esp_psram: Found 32MB PSRAM device
+
+I (867) esp_psram: Speed: 200MHz
+
+I (867) hex_psram: psram CS IO is dedicated
+
+I (867) cpu_start: Multicore app
+
+I (1818) esp_psram: SPI SRAM memory test OK
+
+I (1827) cpu_start: GPIO 38 and 37 are used as console UART I/O pins
+
+I (1828) cpu_start: Pro cpu start user code
+
+I (1828) cpu_start: cpu freq: 360000000 Hz
+
+I (1830) app_init: Application information:
+
+I (1834) app_init: Project name:     doorbell_demo
+
+I (1838) app_init: App version:      68cdbb1-dirty
+
+I (1843) app_init: Compile time:     Sep  2 2026 08:43:31
+
+I (1848) app_init: ELF file SHA256:  bee603e71...
+
+I (1852) app_init: ESP-IDF:          v5.5.5-dirty
+
+I (1857) efuse_init: Min chip rev:     v1.0
+
+I (1861) efuse_init: Max chip rev:     v1.99 
+
+I (1865) efuse_init: Chip rev:         v1.3
+
+I (1869) heap_init: Initializing. RAM available for dynamic allocation:
+
+I (1875) heap_init: At 4FF274F0 len 00013AD0 (78 KiB): RETENT_RAM
+
+I (1881) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM
+
+I (1886) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM
+
+I (1891) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM
+
+I (1897) heap_init: At 3010007C len 00001F84 (7 KiB): SPM
+
+I (1902) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator
+
+I (1909) spi_flash: detected chip: generic
+
+I (1912) spi_flash: flash io: qio
+
+I (1915) host_init: ESP Hosted : Host chip_ip[18]
+
+I (1920) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120
+
+I (1928) H_API: ** add_esp_wifi_remote_channels **
+
+I (1934) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+
+I (1939) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+
+I (1946) H_SDIO_DRV: sdio_data_to_rx_buf_task started
+
+I (1950) main_task: Started on CPU0
+
+I (1954) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+
+I (1962) main_task: Calling app_main()
+
+I (1965) Board: Init board.
+
+i2c: {sda: 7, scl: 8}
+
+i2s: {mclk: 13, bclk: 12, ws: 10, dout: 9, din: 11}
+
+in_out: {codec: ES8311, pa: 53, use_mclk: 1, pa_gain: 6}
+
+sdcard: {clk: 43, cmd: 44, d0: 39, d1: 40, d2: 41, d3: 42}
+
+camera: {type: mipi}
+
+lcd: {bus: mipi, ldo_chan: 3, ldo_voltage: 2500, lane_num: 2, lane_bitrate: 1000, dpi_clk: 80, bit_depth: 16, fb_num: 2, dsi_hsync: 1344, dsi_vsync: 635, dsi_hbp: 160, dsi_hfp: 160, dsi_vbp: 23, dsi_vfp: 12, rst: -1, width: 1024, height: 600}
+
+E (2008) i2c.master: this port has not been initialized, please initialize it first
+
+I (2015) CODEC_INIT: Set mater handle 0 0x48016384
+
+I (2019) CODEC_INIT: in:1 out:1 port: 1
+
+I (2023) CODEC_INIT: Success to int i2c: 0
+
+I (2027) CODEC_INIT: Init i2s 0 type: 3 mclk:13 bclk:12 ws:10 din:11 dout:9
+
+I (2034) CODEC_INIT: tx:0x480167e4 rx:0x480169a0
+
+I (2038) CODEC_INIT: output init std ret 0
+
+I (2042) CODEC_INIT: Input init std ret 0
+
+I (2045) CODEC_INIT: Init i2s 0 ok
+
+I (2048) CODEC_INIT: Success to init i2s: 0
+
+I (2052) CODEC_INIT: Success to int i2c: 0
+
+I (2056) CODEC_INIT: Success to init i2s: 0
+
+I (2060) CODEC_INIT: Get out handle 0x480167e4 port 0
+
+I (2070) ES8311: Work in Slave mode
+
+I (2074) MEDIA_SYS: Use i2c handle 0x48016384
+
+I (2076) ov5647: Detected Camera sensor PID=0x5647
+
+I (2139) VENC_EL: Create vid_enc-0x48017f28
+
+I (2139) OVERLAY_MIXER: Create video overlay, vid_overlay-0x48017ff8
+
+E (2139) LCD_RENDER: Invalid argument to open
+
+E (2142) MEDIA_SYS: Fail to create video render
+
+[5n
+
+
+Type 'help' to get the list of commands.
+
+
+Use UP/DOWN arrows to navigate through command history.
+
+
+Press TAB when typing command name to auto-complete.
+
+
+
+
+
+Your terminal application does not support escape sequences.
+
+
+
+Line editing and history features are disabled.
+
+
+
+On Windows, try using Windows Terminal or Putty instead.
+
+
+esp> I (2719) transport: Attempt connection with slave: retry[0]
+
+W (2738) H_SDIO_DRV: Reset slave using GPIO[54]
+
+I (2738) os_wrapper_esp: GPIO [54] configured
+
+I (4262) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 4-bit Freq(KHz)[40000 KHz]
+
+I (4262) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] D2[16] D3[17] Slave_Reset[54]
+
+I (4266) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1]
+
+I (4306) sdio_wrapper: Function 0 Blocksize: 512
+
+I (4307) sdio_wrapper: Function 1 Blocksize: 512
+
+I (4407) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE
+
+I (4407) transport: set_transport_state: 1
+
+I (4407) transport: Waiting for esp_hosted slave to be ready
+
+I (4446) H_SDIO_DRV: SDIO Host operating in STREAMING MODE
+
+I (4446) H_SDIO_DRV: Starting SDIO process rx task
+
+I (4446) H_SDIO_DRV: Open data path at slave
+
+I (4451) H_SDIO_DRV: Received ESP_PRIV_IF type message
+
+I (4454) transport: Received INIT event from ESP32 peripheral
+
+I (4460) transport: EVENT: 12
+
+I (4463) transport: Identified slave [esp32c5]
+
+I (4466) transport: EVENT: 11
+
+I (4469) transport: capabilities: 0xd
+
+I (4472) transport: Features supported are:
+
+I (4475) transport: 	 * WLAN
+
+I (4478) transport: 	   - HCI over SDIO
+
+I (4482) transport: 	   - BLE only
+
+I (4485) transport: EVENT: 13
+
+W (4488) transport: Version mismatch: Host [2.12.0] > Co-proc [0.0.0] ==> Upgrade co-proc to avoid RPC timeouts
+
+I (4497) transport: ESP board type is : 23 
+
+
+
+
+I (4503) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE
+
+I (4509) H_API: Transport active
+
+I (4512) transport: Slave chip Id[12]
+
+I (4515) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80]
+
+I (4521) transport: transport_delayed_init
+
+I (4525) esp_cli: Registering command: crash
+
+I (4528) esp_cli: Registering command: reboot
+
+I (4531) esp_cli: Registering command: mem-dump
+
+I (4537) esp_cli: Registering command: task-dump
+
+I (4540) esp_cli: Registering command: cpu-dump
+
+I (4546) esp_cli: Registering command: heap-trace
+
+I (4549) esp_cli: Registering command: sock-dump
+
+I (4552) esp_cli: Registering command: host-power-save
+
+I (4558) hci_stub_drv: Host BT Support: Disabled
+
+I (4562) H_SDIO_DRV: Received INIT event
+
+I (4567) H_SDIO_DRV: Event type: 0x22
+
+I (4571) H_SDIO_DRV: Write thread started
+
+I (4946) rpc_core: <-- RPC_Req  [0x116], uid 1
+
+I (4946) rpc_evt: EVENT: ESP INIT
+
+
+
+I (4947) RPC_WRAP: Coprocessor Boot-up
+
+I (5056) rpc_rsp:  --> RPC_Resp [0x216], uid 1
+
+I (5057) NETWORK: Use Wi-Fi config supplied by application
+
+I (5058) rpc_core: <-- RPC_Req  [0x104], uid 2
+
+I (5065) rpc_rsp:  --> RPC_Resp [0x204], uid 2
+
+I (5066) rpc_core: <-- RPC_Req  [0x11c], uid 3
+
+I (5080) rpc_rsp:  --> RPC_Resp [0x21c], uid 3
+
+I (5081) rpc_core: <-- RPC_Req  [0x10e], uid 4
+
+I (5093) rpc_rsp:  --> RPC_Resp [0x20e], uid 4
+
+I (5093) rpc_core: <-- RPC_Req  [0x118], uid 5
+
+I (5354) rpc_rsp:  --> RPC_Resp [0x218], uid 5
+
+I (5355) NETWORK: wifi_init_sta finished.
+
+I (5357) rpc_evt: Event [0x2b] received
+
+I (5358) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (5361) rpc_evt: Event [0x2] received
+
+I (5364) rpc_evt: EVT rcvd: Wi-Fi Start
+
+I (5367) RPC_WRAP: ESP Event: wifi [SSID] [PASSWORD]
+
+I (5373) rpc_core: <-- RPC_Req  [0x101], uid 6
+
+I (5380) rpc_rsp:  --> RPC_Resp [0x201], uid 6
+
+I (5381) H_API: esp_wifi_remote_connect
+
+I (5384) rpc_core: <-- RPC_Req  [0x11a], uid 7
+
+I (5396) rpc_rsp:  --> RPC_Resp [0x21a], uid 7
+
+I (12346) rpc_evt: Event [0x2b] received
+
+I (12347) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (12659) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (12660) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (13768) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (13768) NETWORK: got ip:192.168.0.103
+
+E (13770) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (13776) AV_RENDER: Close done
+
+I (13780) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (13787) WEBRTC_HTTP: Success to init http server
+
+I (13793) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+I (13794) AV_RENDER: Adec got msg:Close
+
+I (13803) AV_RENDER: Thread Adec exited
+
+I (13806) AV_RENDER: Close done
+
+I (23809) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (23810) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (23811) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (23814) AV_RENDER: Close done
+
+I (23817) WEBRTC_HTTP: Start to stop https server
+
+I (23924) WEBRTC_HTTP: End to stop https server
+
+I (23924) H_API: esp_wifi_remote_connect
+
+I (23925) rpc_core: <-- RPC_Req  [0x11a], uid 8
+
+I (23932) rpc_rsp:  --> RPC_Resp [0x21a], uid 8
+
+I (23932) NETWORK: retry to connect to the AP
+
+I (30791) rpc_evt: Event [0x2b] received
+
+I (30791) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (31111) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (31112) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (32240) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (32240) NETWORK: got ip:192.168.0.103
+
+E (32242) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (32248) AV_RENDER: Close done
+
+I (32252) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (32259) WEBRTC_HTTP: Success to init http server
+
+I (32265) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+I (32266) AV_RENDER: Adec got msg:Close
+
+I (32275) AV_RENDER: Thread Adec exited
+
+I (32278) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+I (171892) DOOR_BELL: Ring button on state 0
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (185446) webrtc: Received customized data
+
+I (185447) DOOR_BELL: Receive command DENY_CALL
+
+E (185450) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (185456) AV_RENDER: Adec got msg:Close
+
+I (185460) AV_RENDER: Thread Adec exited
+
+I (185466) AV_RENDER: Close done
+
+I (185470) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+I (185593) DOOR_BELL: Ring button on state 0
+
+E (194596) WEBRTC_HTTP: Failed to send heartbeat ret 45062
+
+I (194597) WEBRTC_HTTP: Event Stream hdlr Quit
+
+I (202494) DOOR_BELL: Ring button on state 1
+
+E (202494) MEDIA_SYS: Music is playing, stop automatically
+
+I (202496) AV_RENDER: Adec got msg:Close
+
+I (202496) AV_RENDER: Thread Adec exited
+
+I (202499) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+Get post request
+
+Request length 42
+
+Get post {"type":"customized","data":"ACCEPT_CALL"}
+
+I (210835) webrtc: Received customized data
+
+I (210836) DOOR_BELL: Receive command ACCEPT_CALL
+
+I (210843) AV_RENDER: Adec got msg:Close
+
+I (210843) AV_RENDER: Thread Adec exited
+
+I (210849) AV_RENDER: Close done
+
+I (210862) DTLS: Init SRTP OK
+
+I (210887) webrtc: peer_connection_task started
+
+I (210888) webrtc: PeerConnectionState: 2
+
+I (210888) webrtc: PeerConnectionState: 3
+
+I (210889) AGENT: Start agent as Controlling
+
+I (211002) AGENT: Send STUN binding request
+
+I (211080) AGENT: 0 Get candidate success user: psw:
+
+Add audio codec 5 sample_rate 8000
+
+E (211082) AV_RENDER: Video render not set, stream is skipped
+
+E (211082) AV_RENDER: Fail to add video stream 262
+
+I (211088) webrtc: Send client sdp: v=0
+
+
+o=- 7801614086411001801 2 IN IP4 0.0.0.0
+
+
+s=-
+
+
+t=0 0
+
+
+a=msid-semantic: esp-webrtc
+
+
+a=group:BUNDLE 0 1 2
+
+
+m=audio 9 UDP/TLS/RTP/SAVPF 8
+
+
+c=IN IP4 0.0.0.0
+
+
+a=mid:0
+
+
+a=msid:esp_stream a0
+
+
+a=rtcp-mux
+
+
+a=rtpmap:8 PCMA/8000
+
+
+a=ssrc:4 cname:EspSSpbA0
+
+
+a=ssrc:4 msid:esp_stream a0
+
+
+a=sendrecv
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host
+
+
+a=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=video 9 UDP/TLS/RTP/SAVPF 102 106
+
+
+a=rtpmap:102 H264/90000
+
+
+a=rtcp-fb:102 goog-remb
+
+
+a=rtcp-fb:102 transport-cc
+
+
+a=rtcp-fb:102 ccm fir
+
+
+a=rtcp-fb:102 nack
+
+
+a=rtcp-fb:102 nack pli
+
+
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=rtpmap:106 H264/90000
+
+
+a=rtcp-fb:106 goog-remb
+
+
+a=rtcp-fb:106 transport-cc
+
+
+a=rtcp-fb:106 ccm fir
+
+
+a=rtcp-fb:106 nack
+
+
+a=rtcp-fb:106 nack pli
+
+
+a=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=ssrc:1 cname:webrtc-h264
+
+
+a=ssrc:1 msid:esp_stream v0
+
+
+a=sendonly
+
+
+a=mid:1
+
+
+a=msid:esp_stream v0
+
+
+c=IN IP4 0.0.0.0
+
+
+a=rtcp-mux
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host
+
+
+a=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=application 50712 UDP/DTLS/SCTP webrtc-datachannel
+
+
+a=mid:2
+
+
+a=sctp-port:5000
+
+
+c=IN IP4 0.0.0.0
+
+
+a=max-message-size:262144
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host
+
+
+a=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0
+
+
+
+
+
+
+Received {"type":"offer","sdp":"v=0\r\no=- 7801614086411001801 2 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=msid-semantic: esp-webrtc\r\na=group:BUNDLE 0 1 2\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=mid:0\r\na=msid:esp_stream a0\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:4 cname:EspSSpbA0\r\na=ssrc:4 msid:esp_stream a0\r\na=sendrecv\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host\r\na=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0\r\nm=video 9 UDP/TLS/RTP/SAVPF 102 106\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:106 H264/90000\r\na=rtcp-fb:106 goog-remb\r\na=rtcp-fb:106 transport-cc\r\na=rtcp-fb:106 ccm fir\r\na=rtcp-fb:106 nack\r\na=rtcp-fb:106 nack pli\r\na=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=ssrc:1 cname:webrtc-h264\r\na=ssrc:1 msid:esp_stream v0\r\na=sendonly\r\na=mid:1\r\na=msid:esp_stream v0\r\nc=IN IP4 0.0.0.0\r\na=rtcp-mux\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host\r\na=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0\r\nm=application 50712 UDP/DTLS/SCTP webrtc-datachannel\r\na=mid:2\r\na=sctp-port:5000\r\nc=IN IP4 0.0.0.0\r\na=max-message-size:262144\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host\r\na=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0\r\n"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0"}
+
+Get post request
+
+Request length 1611
+
+Get post {"type":"answer","sdp":"v=0\r\no=- 3081269478435891281 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS c6f2bfe1-bb81-4352-89af-30420b3d63f8\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:YxU/\r\na=ice-pwd:EsmUQTeIJagPGuE9ttB0H5AH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:B4:12\r\na=setup:active\r\na=mid:0\r\na=sendrecv\r\na=msid:c6f2bfe1-bb81-4352-89af-30420b3d63f8 42e53846-9e0d-4b87-8663-091bb08ee482\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:318526353 cname:tH7PKEPTG1YR48Sk\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:YxU/\r\na=ice-pwd:EsmUQTeIJagPGuE9ttB0H5AH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:B4:12\r\na=setup:active\r\na=mid:1\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:YxU/\r\na=ice-pwd:EsmUQTeIJagPGuE9ttB0H5AH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:B4:12\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+
+I (211699) PEER_DEF: Get peer role 0
+
+I (211702) PEER_DEF: Get peer role 0
+
+I (211706) PEER_DEF: Get peer role 0
+
+I (211709) PEER_DEF: Extract SDP: stream_count=3, audio_mid=255 (dir=3), video_mid=255 (dir=2), data_mid=255, assrc=318526353, vssrc=0, vrtx_ssrc=0, vfmt=102, vrtx_fmt=0
+
+E (211804) AGENT: 0 Not found for bind remote 192.168.0.102:60839
+
+E (211941) AGENT: 0 Not found for bind remote 198.18.0.1:60836
+
+Get post request
+
+Request length 182
+
+Get post {"type":"candidate","candidate":"candidate:3110732469 1 udp 2122260223 198.18.0.1 60836 typ host generation 0 ufrag YxU/ network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+E (212363) AGENT: 0 Not found for bind remote 192.168.0.102:60839
+
+I (212365) AGENT: 0 Add remote type:1 198.18.0.1:60836
+
+I (212365) webrtc: PeerConnectionState: 4
+
+I (212375) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:198.18.0.1:60836 id:7043bfa4398150e937521657
+
+I (212521) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51674 remote0:198.18.0.1:60836
+
+I (212522) AGENT: 0 0 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:1245378958 1 udp 2122129151 192.168.148.1 60838 typ host generation 0 ufrag YxU/ network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+I (212851) AGENT: 0 Add remote type:1 192.168.148.1:60838
+
+I (212852) webrtc: PeerConnectionState: 4
+
+I (212861) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:4d9a2fdb76c3625e55075020
+
+I (212863) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:329b54fb381fc0385378d5a8
+
+E (212941) AGENT: 0 Not found for bind remote 192.168.0.102:60839
+
+I (213081) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (213082) AGENT: 0 0 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+Get post request
+
+Request length 193
+
+Get post {"type":"candidate","candidate":"candidate:3349536813 1 tcp 1518280447 198.18.0.1 9 typ host tcptype active generation 0 ufrag YxU/ network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+I (213250) AGENT: 0 Add remote type:1 198.18.0.1:9
+
+I (213251) webrtc: PeerConnectionState: 4
+
+I (213422) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:76e5004e797d87a62756c714
+
+I (213424) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:4c598d93643bd7252b449456
+
+E (213518) AGENT: 0 Not found for bind remote 192.168.0.102:60839
+
+Get post request
+
+Request length 179
+
+Get post {"type":"candidate","candidate":"candidate:888478486 1 tcp 1518149375 192.168.148.1 9 typ host tcptype active generation 0 ufrag YxU/ network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+I (213662) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (213663) AGENT: 0 0 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (213670) AGENT: 0 Add remote type:1 192.168.148.1:9
+
+I (213673) webrtc: PeerConnectionState: 4
+
+I (213841) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:671286247899e644088232df
+
+I (213843) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:6db505597d157d8d71dfed43
+
+Get post request
+
+Request length 168
+
+Get post {"type":"candidate","candidate":"candidate:145542935 1 udp 2122194687 192.168.159.1 60837 typ host generation 0 ufrag YxU/ network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+E (214081) AGENT: 0 Not found for bind remote 192.168.0.102:60839
+
+I (214083) AGENT: 0 Add remote type:1 192.168.159.1:60837
+
+I (214083) webrtc: PeerConnectionState: 4
+
+I (214092) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:45cb977b6ea3bbbe3a984b90
+
+I (214223) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (214224) AGENT: 0 0 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (214402) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:666d97166fd595896931589d
+
+I (214404) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:17c5e07e0b0abb7751af16c6
+
+Get post request
+
+Request length 180
+
+Get post {"type":"candidate","candidate":"candidate:1986211215 1 tcp 1518214911 192.168.159.1 9 typ host tcptype active generation 0 ufrag YxU/ network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+I (214568) AGENT: 0 Add remote type:1 192.168.159.1:9
+
+I (214569) webrtc: PeerConnectionState: 4
+
+I (214579) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:1dee132f3b3a772600f32298
+
+E (214660) AGENT: 0 Not found for bind remote 192.168.0.102:60839
+
+I (214785) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (214786) AGENT: 0 0 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:60836
+
+I (214803) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:5148068835eb8df57a1179b4
+
+I (214805) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:1ae53a307c418dd42170b934
+
+I (214980) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:6db4489d4a691c3a5a89680d
+
+I (215305) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:249ad60f28bae6bd526d022f
+
+I (215307) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:6de3eda1559e2ff738b9210f
+
+I (215481) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:072790d9638391684c1ee2f4
+
+I (215806) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:0d1102d92657c93c79b12ba8
+
+I (215808) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:55365135794f06e57091758f
+
+I (215983) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:59b5fe2a302059cd4e8694c2
+
+I (216307) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:6e7b6440116e0fc138479acf
+
+I (216309) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:23252c5217e9617140c9fe6a
+
+I (216483) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:49067a72561f3b294fd30023
+
+I (216808) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:07d89db046755a5b482fa51b
+
+I (216810) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:44aeb1a30d57872a4cbd7e82
+
+I (216984) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:235e94882bd25b445ec1cc19
+
+I (217028) WEBRTC_HTTP: Event Stream hdlr Quit
+
+I (217309) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:7b5f2b0e27de5630302d71f2
+
+I (217311) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:47a3556b3c7f6aa37c55d8ae
+
+I (217485) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:512b300f2d5e8a842fbe7dcd
+
+I (217809) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:2b847f490057b6d65df6e283
+
+I (217811) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:4b941d424cc54c177044ffe7
+
+Received {"type":"customized","data":"RING"}
+
+I (217965) DOOR_BELL: Ring button on state 2
+
+I (217984) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:274a1fa301b180397fdf0c93
+
+I (218308) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:446d80736a50abc676e04ee6
+
+I (218310) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:00611ef139b7048a5cfaa8fe
+
+I (218483) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:26faac2177e1241b0e63c119
+
+I (218807) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:29ae8b7e0f90f8e4755b6b75
+
+I (218809) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:70c23c8e72f7fcc6205c9587
+
+I (218982) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:43af20857abebc581f1b54dd
+
+I (219306) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:340c30247b7620e675214e9d
+
+I (219308) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:5aec5e5d0cad3244587f6040
+
+I (219481) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:6e6aa68b1fd3905a22c4f223
+
+I (219805) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:7c06ba5e0cf05da936745def
+
+I (219807) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:7325d2ec775cfe3f0e223791
+
+I (219980) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:7502199c312fab7a6559aa41
+
+I (220304) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:0bbadf172a16db1800985972
+
+I (220306) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:75c9aeeb4ea0c6061a637bf2
+
+I (220479) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:0dd45f91227b64ee121412b8
+
+I (220803) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:42967a6c4bb1e6be1c2099d9
+
+I (220805) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:500f7b347e0d3df744ac5234
+
+I (220978) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:142fef23690ae3066849ed7a
+
+Get post request
+
+Request length 42
+
+Get post {"type":"customized","data":"ACCEPT_CALL"}
+
+I (221181) webrtc: Received customized data
+
+I (221181) DOOR_BELL: Receive command ACCEPT_CALL
+
+I (221187) webrtc: PeerConnectionState: 2
+
+I (221228) webrtc: PeerConnectionState: 3
+
+I (221229) AGENT: Start agent as Controlling
+
+I (221229) AGENT: Send STUN binding request
+
+I (221304) AGENT: 0 Get candidate success user: psw:
+
+I (221305) PEER_DEF: Audio direction: offer=3, local=3, answer=3
+
+Add audio codec 5 sample_rate 8000
+
+I (221309) AV_RENDER: Adec got msg:Close
+
+I (221312) AV_RENDER: Thread Adec exited
+
+I (221316) PEER_DEF: Video direction: offer=2, local=1, answer=1
+
+E (221322) AV_RENDER: Video render not set, stream is skipped
+
+E (221328) AV_RENDER: Fail to add video stream 262
+
+I (221331) webrtc: Send client sdp: v=0
+
+
+o=- 7801614086411001801 2 IN IP4 0.0.0.0
+
+
+s=-
+
+
+t=0 0
+
+
+a=msid-semantic: esp-webrtc
+
+
+a=group:BUNDLE 0 1 2
+
+
+m=audio 9 UDP/TLS/RTP/SAVPF 8
+
+
+c=IN IP4 0.0.0.0
+
+
+a=mid:0
+
+
+a=msid:esp_stream a0
+
+
+a=rtcp-mux
+
+
+a=rtpmap:8 PCMA/8000
+
+
+a=ssrc:4 cname:EspSSpbA0
+
+
+a=ssrc:4 msid:esp_stream a0
+
+
+a=sendrecv
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:passive
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host
+
+
+a=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=video 9 UDP/TLS/RTP/SAVPF 102
+
+
+a=rtpmap:102 H264/90000
+
+
+a=rtcp-fb:102 goog-remb
+
+
+a=rtcp-fb:102 transport-cc
+
+
+a=rtcp-fb:102 ccm fir
+
+
+a=rtcp-fb:102 nack
+
+
+a=rtcp-fb:102 nack pli
+
+
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=ssrc:1 cname:webrtc-h264
+
+
+a=ssrc:1 msid:esp_stream v0
+
+
+a=sendonly
+
+
+a=mid:1
+
+
+a=msid:esp_stream v0
+
+
+c=IN IP4 0.0.0.0
+
+
+a=rtcp-mux
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:passive
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host
+
+
+a=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=application 50712 UDP/DTLS/SCTP webrtc-datachannel
+
+
+a=mid:2
+
+
+a=sctp-port:5000
+
+
+c=IN IP4 0.0.0.0
+
+
+a=max-message-size:262144
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:passive
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host
+
+
+a=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0
+
+
+
+
+
+
+Received {"type":"offer","sdp":"v=0\r\no=- 7801614086411001801 2 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=msid-semantic: esp-webrtc\r\na=group:BUNDLE 0 1 2\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=mid:0\r\na=msid:esp_stream a0\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:4 cname:EspSSpbA0\r\na=ssrc:4 msid:esp_stream a0\r\na=sendrecv\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:passive\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host\r\na=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=ssrc:1 cname:webrtc-h264\r\na=ssrc:1 msid:esp_stream v0\r\na=sendonly\r\na=mid:1\r\na=msid:esp_stream v0\r\nc=IN IP4 0.0.0.0\r\na=rtcp-mux\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:passive\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host\r\na=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0\r\nm=application 50712 UDP/DTLS/SCTP webrtc-datachannel\r\na=mid:2\r\na=sctp-port:5000\r\nc=IN IP4 0.0.0.0\r\na=max-message-size:262144\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:passive\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host\r\na=candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0\r\n"}
+
+I (221499) webrtc: PeerConnectionState: 4
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0"}
+
+I (221682) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:25d23d33426b1e70040e4297
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host"}
+
+I (221702) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:2e03d8d7274ee4520346c612
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0"}
+
+I (221723) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:5e36b2f574a7347e742072d2
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158015 192.168.0.103 51674 typ host"}
+
+E (221752) AGENT: 0 Not found for bind remote 198.18.0.1:58346
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1678924287 117.172.228.230 4697 typ srflx raddr 0.0.0.0 rport 0"}
+
+Get post request
+
+Request length 1611
+
+Get post {"type":"answer","sdp":"v=0\r\no=- 745029315572283535 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS 486cb5f8-96f1-470c-b99c-f21d17e1fca5\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:d+fq\r\na=ice-pwd:yFp9EqZl2AEr1KGMOvEEzxmZ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:59:5A\r\na=setup:active\r\na=mid:0\r\na=sendrecv\r\na=msid:486cb5f8-96f1-470c-b99c-f21d17e1fca5 025514f6-6b8c-479c-af9b-5c9ea4e76d4a\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:2202082036 cname:tTdcEw6FcTT4OfBQ\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:d+fq\r\na=ice-pwd:yFp9EqZl2AEr1KGMOvEEzxmZ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:59:5A\r\na=setup:active\r\na=mid:1\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:d+fq\r\na=ice-pwd:yFp9EqZl2AEr1KGMOvEEzxmZ\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:59:5A\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+
+I (221916) PEER_DEF: Get peer role 0
+
+I (221919) PEER_DEF: Get peer role 0
+
+I (221923) PEER_DEF: Get peer role 0
+
+I (221926) PEER_DEF: Extract SDP: stream_count=3, audio_mid=255 (dir=3), video_mid=255 (dir=2), data_mid=255, assrc=2202082036, vssrc=0, vrtx_ssrc=0, vfmt=102, vrtx_fmt=0
+
+E (222084) AGENT: 0 Not found for bind remote 192.168.0.102:58349
+
+I (222086) webrtc: PeerConnectionState: 4
+
+Get post request
+
+Request length 182
+
+Get post {"type":"candidate","candidate":"candidate:1935571545 1 udp 2122260223 198.18.0.1 58346 typ host generation 0 ufrag d+fq network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+I (222095) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:20f8ff943d0442950c75db66
+
+I (222116) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:22fefe0663d6e1236c52f559
+
+I (222128) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:13de80f246ac426f6a4677fa
+
+I (222292) AGENT: 0 Add remote type:1 198.18.0.1:58346
+
+I (222293) webrtc: PeerConnectionState: 4
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:3264788475 1 udp 2122194687 192.168.159.1 58347 typ host generation 0 ufrag d+fq network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+I (222302) AGENT: 0 3 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:198.18.0.1:58346 id:1203eee7767bb4ec22e2e0a9
+
+I (222323) AGENT: 0 3 PeerBinding recv local0:192.168.0.103:51674 remote0:198.18.0.1:58346
+
+I (222329) AGENT: 0 3 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:58346
+
+I (222339) AGENT: 0 Add remote type:1 192.168.159.1:58347
+
+I (222342) webrtc: PeerConnectionState: 4
+
+I (222349) AGENT: 0 4 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:58347 id:467c6ee63e0e58ab665297aa
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:2148434274 1 udp 2122129151 192.168.148.1 58348 typ host generation 0 ufrag d+fq network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+I (222511) AGENT: 0 Add remote type:1 192.168.148.1:58348
+
+I (222512) webrtc: PeerConnectionState: 4
+
+I (222521) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:003a5839773336bf05df1fba
+
+I (222523) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:0d20d75f5f6694a52c86c8b1
+
+I (222536) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:5de2d8ae7fdd81242ad45a81
+
+I (222546) AGENT: 0 5 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:58348 id:14cc39617dc30b8a521b4c78
+
+E (222660) AGENT: 0 Not found for bind remote 192.168.0.102:58349
+
+I (222833) AGENT: 0 3 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:58346 id:113057454817e9e417e9263c
+
+I (222835) AGENT: 0 4 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:58347 id:09effe474cbe2c787756e639
+
+I (222862) AGENT: 0 3 PeerBinding recv local0:192.168.0.103:51674 remote1:198.18.0.1:58346
+
+I (222863) AGENT: 0 3 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:58346
+
+Get post request
+
+Request length 185
+
+Get post {"type":"candidate","candidate":"candidate:3868036319 1 udp 2122063615 192.168.0.102 58349 typ host generation 0 ufrag d+fq network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+I (223032) AGENT: 0 Add remote type:1 192.168.0.102:58349
+
+I (223033) webrtc: PeerConnectionState: 4
+
+Get post request
+
+Request length 192
+
+Get post {"type":"candidate","candidate":"candidate:227645633 1 tcp 1518280447 198.18.0.1 9 typ host tcptype active generation 0 ufrag d+fq network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+I (223042) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51674 remote1:198.18.0.1:60836 id:35f58c4714b17cc737b9759d
+
+I (223065) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.159.1:60837 id:455e81d9476e8c4a7b6797af
+
+I (223075) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:60838 id:3bcbfd610c2cb017268fbb3b
+
+I (223088) AGENT: 0 5 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.148.1:58348 id:4681c3bd0c7fe26a080778f5
+
+I (223101) AGENT: 0 6 Send binding request (cand:0) local0:192.168.0.103:51674 remote0:192.168.0.102:58349 id:2fcbc7d0000135441e63235b
+
+I (223117) AGENT: 0 6 LocalBinding resp 2fcbc7d0000135441e63235b local1
+
+I (223118) AGENT: 0 Select pair192.168.0.102:58349
+
+I (223121) AGENT: 0 6 Send binding request (cand:1) local0:192.168.0.103:51674 remote0:192.168.0.102:58349 id:4272e9912930a9cd78ab7f5f
+
+E (223134) AGENT: 0 Remote candidate over limited 10
+
+I (223137) webrtc: PeerConnectionState: 4
+
+I (223145) AGENT: 0 6 LocalBinding resp 4272e9912930a9cd78ab7f5f local1
+
+I (223148) AGENT: 0 Candidate responded
+
+Get post request
+
+I (223152) AGENT: 0 Connection OK 192.168.0.102:58349
+
+Request length 180
+
+I (223158) webrtc: PeerConnectionState: 5
+
+Get post {"type":"candidate","candidate":"candidate:3159840099 1 tcp 1518214911 192.168.159.1 9 typ host tcptype active generation 0 ufrag d+fq network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+I (223164) DOOR_BELL: RTP sender transformer set up successfully
+
+E (223180) AGENT: 0 Remote candidate over limited 10
+
+I (223186) DOOR_BELL: RTP receiver transformer set up successfully
+
+I (223192) webrtc: PeerConnectionState: 4
+
+I (223198) DOOR_BELL: Paired with 0.0.0.0:0
+
+I (223204) PEER_DEF: Start DTLS role as 1
+
+Get post request
+
+I (223208) webrtc: PeerConnectionState: 6
+
+Request length 180
+
+Get post {"type":"candidate","candidate":"candidate:4274086906 1 tcp 1518149375 192.168.148.1 9 typ host tcptype active generation 0 ufrag d+fq network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+I (223223) DTLS: Start to do server handshake
+
+E (223232) AGENT: 0 Remote candidate over limited 10
+
+I (223461) DTLS: SRTP connected OK
+
+I (223464) DTLS: Server handshake success
+
+I (223464) PEER_DEF: DTLS handshake success
+
+I (223465) PEER_DEF: Sctp role as 0
+
+I (223465) webrtc: PeerConnectionState: 7
+
+I (223469) GMF_VID_PIPE: Build pipe nego for format h264 640x480 15 fps
+
+I (223476) V4L2_SRC: Success to open camera
+
+I (223479) V4L2_SRC: Best match 1280x960
+
+I (223482) OVERLAY_MIXER: Create video overlay, vid_overlay-0x4801979c
+
+I (223489) VENC_EL: Create vid_enc-0x48029b1c
+
+I (223492) VID_PIPE_NEGO: Start to nego for input format h264 640x480 15fps
+
+I (223501) V4L2_SRC: Best match 1280x960
+
+I (223505) VID_PIPE_NEGO: Set sel_path 0 in o_uyy_e_vyy out h264 fps:15
+
+I (223511) VID_SRC: Info 1280x960 15fps
+
+I (223514) VID_PIPE_NEGO: Success to negotiate 0 format:o_uyy_e_vyy 640x480 15fps
+
+I (223521) AUD_PIPE_NEGO: Negotiate return 0 src_format:541934416 sample_rate:8000
+
+
+
+I (223527) AUD_PIPE_NEGO: Path mask 1 select sink:0 format 1463897153
+
+I (223533) AUD_SRC: Get rate:8000, ch:1, bits:16
+
+I (223512) webrtc: Send A:0 [0:0] Recv A:0 [0:0]
+
+I (223540) ESP_GMF_TASK: Waiting to run... [tsk:aenc_0-0x4ff56b20, wk:0x0, run:0]
+
+I (223549) I2S_IF: Paired data: 0x4ff3f9c4, current mode: record, paired in_enable: 0, paired out_enable: 0
+
+W (223558) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (223568) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (223577) I2S_IF: STD: RX, sample_rate_hz: 8000, mclk_multiple: 256, clk_src: 0
+
+W (223583) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (223593) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (223602) I2S_IF: STD: TX, sample_rate_hz: 8000, mclk_multiple: 256, clk_src: 0
+
+I (223549) ESP_GMF_TASK: Waiting to run... [tsk:venc_0-0x4ff59d58, wk:0x480c8434, run:0]
+
+I (223543) PEER_DEF: Send 3:748 d_out:0 receive 0:0 din:0
+
+I (223623) SCTP: Send: 1234 Ack: 1233 Fwd: 0:0 Cached: 0 Receive:0
+
+I (223628) Adev_Codec: Open codec device OK
+
+I (223631) SCTP: 0 Receive chunk 1 SCTP_INIT
+
+I (223633) AUD_SRC: Start to fetch audio src data now
+
+I (223636) SCTP: 0 state 2
+
+I (223642) SCTP: Support ext 82
+
+I (223633) ESP_GMF_TASK: One times job is complete, del[wk:0x480ac9c0, ctx:0x48041594, label:aud_src_open]
+
+I (223646) SCTP: Support ext c0
+
+I (223629) VIDEO_COMM: Video info for vid_overlay-0x4801979c format:o_uyy_e_vyy 1280x960 15fps
+
+I (223658) SCTP: Send INIT_ACK chunk
+
+I (223655) ESP_GMF_PORT: ACQ IN, new self payload:0x480c0198, port:0x4801a6b0, el:0x48041594-aud_src
+
+I (223678) SCTP: 0 Receive chunk 10 SCTP_COOKIE_ECHO
+
+I (223667) ESP_GMF_TASK: One times job is complete, del[wk:0x480c8434, ctx:0x48029100, label:vid_src_open]
+
+I (223683) SCTP: Send ECHO_ACK chunk
+
+Get samplerate 8000 chanel 1
+
+I (223697) SCTP: 0 state 5
+
+I (223680) ESP_GMF_AENC: Open, type:G711-Alaw, acquire in frame: 320, out frame: 160
+
+I (223702) webrtc: PeerConnectionState: 9
+
+I (223692) ESP_GMF_PORT: ACQ IN, new self payload:0x48030f54, port:0x4801aad0, el:0x48029100-vid_src
+
+I (223715) BUF_MNGR: L: 29193
+
+I (223699) AV_RENDER: Get need resample 0 in:8000 out:0
+
+I (223723) BUF_MNGR: L: 29194
+
+I (223708) ESP_GMF_TASK: One times job is complete, del[wk:0x4801b2d4, ctx:0x480bf99c, label:aud_enc_open]
+
+I (223735) SCTP: Get DCEP channel1 event:3 type:0 si:0 param:0
+
+I (223723) VIDEO_COMM: Video info for vid_ppa-0x480adac0 format:o_uyy_e_vyy 1280x960 15fps
+
+I (223747) DOOR_BELL: Channel channel1 opened stream id 0
+
+I (223761) webrtc: PeerConnectionState: 10
+
+I (223755) ESP_GMF_TASK: One times job is complete, del[wk:0x4803898c, ctx:0x4801979c, label:vid_overlay_open]
+
+I (223768) SCTP: Get DCEP channel2 event:3 type:0 si:2 param:0
+
+I (223730) I2S_RENDER: open channel:1 sample_rate:8000 bits:16
+
+I (223782) DOOR_BELL: Channel channel2 opened stream id 2
+
+I (223775) PPA_EL: Convert in o_uyy_e_vyy 1280x960 to o_uyy_e_vyy 640x480 ppa:1 soft_in:0 soft_out:0 reuse_out:0 hw_native:1 imgfx_only:0 geom:1 bridge o_uyy_e_vyy->o_uyy_e_vyy
+
+I (223790) webrtc: PeerConnectionState: 10
+
+I (223784) I2S_IF: Current mode(playback) and peer mode have same sample_rate 8000, channel 2, bits_per_sample 16
+
+W (223820) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (223829) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (223834) BUF_MNGR: L: 29195
+
+I (223838) I2S_IF: STD: TX, sample_rate_hz: 8000, mclk_multiple: 256, clk_src: 0
+
+I (223838) BUF_MNGR: L: 29196
+
+I (223806) VIDEO_COMM: Video info for vid_enc-0x48029b1c format:o_uyy_e_vyy 640x480 15fps
+
+I (223851) BUF_MNGR: L: 29197
+
+Send string Send to channel1 count 0
+
+I (223861) BUF_MNGR: L: 29195
+
+I (223866) BUF_MNGR: L: 29196
+
+I (223870) BUF_MNGR: L: 29197
+
+I (223857) ESP_GMF_TASK: One times job is complete, del[wk:0x480c84dc, ctx:0x480adac0, label:vid_ppa_open]
+
+I (223859) Adev_Codec: Open codec device OK
+
+Send string Send to channel2 count 0
+
+I (223888) AV_RENDER: ARender Auto pause audio first frame at 438634373
+
+I (223890) BUF_MNGR: L: 29195
+
+Get post request
+
+I (223897) BUF_MNGR: L: 29196
+
+Request length 196
+
+I (223901) BUF_MNGR: L: 29197
+
+Get post {"type":"candidate","candidate":"candidate:2554490439 1 tcp 1518083839 192.168.0.102 9 typ host tcptype active generation 0 ufrag d+fq network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+E (223924) AGENT: 0 Remote candidate over limited 10
+
+I (223636) SCTP: Recv: 0 ACK:0 Cached: 0 SackCount:0
+
+
+
+I (223942) ESP_GMF_TASK: One times job is complete, del[wk:0x480c8434, ctx:0x48029b1c, label:vid_enc_open]
+
+I (223944) AGENT: 0 3 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:58346
+
+Send string Send to channel1 count 1
+
+Send string Send to channel2 count 1
+
+Send string Send to channel1 count 2
+
+Send string Send to channel2 count 2
+
+I (225933) webrtc: Send A:2322 [101:16160] V:2200 [30:120449] Recv A:438636793 [100:16000] Recv V:[0:0]
+
+I (225934) PEER_DEF: Send 284:197898 d_out:49152 receive 260:36830 din:12544
+
+I (225943) SCTP: Send: 1278 Ack: 1273 Fwd: 0:0 Cached: 4800 Receive:4
+
+I (225947) SCTP: Recv: 753065496 ACK:753065496 Cached: 11600 SackCount:0
+
+
+
+I (226349) DOOR_BELL: Get data label channel1 verify:1 data: This is the 1 on channel1
+
+I (226353) DOOR_BELL: Get data label channel2 verify:1 data: This is the 1 on channel2
+
+Send string Send to channel1 count 3
+
+Send string Send to channel2 count 3
+
+I (227956) webrtc: Send A:4322 [100:16000] V:4200 [30:103348] Recv A:438638833 [101:16160] Recv V:[0:0]
+
+I (227957) PEER_DEF: Send 227:142755 d_out:16384 receive 232:31180 din:11372
+
+I (227967) SCTP: Send: 1293 Ack: 1291 Fwd: 0:0 Cached: 2400 Receive:0
+
+I (227968) SCTP: Recv: 753065513 ACK:753065513 Cached: 8120 SackCount:1
+
+
+
+I (227978) DOOR_BELL: Get data label channel1 verify:1 data: This is the 2 on channel1
+
+Send string Send to channel1 count 4
+
+Send string Send to channel2 count 4
+
+I (228646) DOOR_BELL: Get data label channel2 verify:1 data: This is the 2 on channel2
+
+Send string Send to channel1 count 5
+
+Send string Send to channel2 count 5
+
+I (229444) AGENT: 0 3 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:58346
+
+I (229963) DOOR_BELL: Get data label channel1 verify:1 data: This is the 3 on channel1
+
+I (229976) webrtc: Send A:6342 [101:16160] V:6266 [30:99143] Recv A:438640833 [99:15840] Recv V:[0:0]
+
+I (229977) PEER_DEF: Send 237:154997 d_out:32768 receive 243:42265 din:21824
+
+I (229983) SCTP: Send: 1320 Ack: 1319 Fwd: 0:0 Cached: 0 Receive:3
+
+I (229987) SCTP: Recv: 753065533 ACK:753065537 Cached: 4640 SackCount:0
+
+
+
+Send string Send to channel1 count 6
+
+Send string Send to channel2 count 6
+
+I (230160) DOOR_BELL: Get data label channel2 verify:1 data: This is the 3 on channel2
+
+Send string Send to channel1 count 7
+
+Send string Send to channel2 count 7
+
+I (231796) DOOR_BELL: Get data label channel1 verify:1 data: This is the 4 on channel1
+
+I (231969) DOOR_BELL: Get data label channel2 verify:1 data: This is the 4 on channel2
+
+I (231993) webrtc: Send A:8362 [101:16160] V:8266 [30:97148] Recv A:438642873 [102:16320] Recv V:[0:0]
+
+I (231994) PEER_DEF: Send 235:154191 d_out:32768 receive 250:42401 din:22196
+
+I (232000) SCTP: Send: 1348 Ack: 1347 Fwd: 0:0 Cached: 0 Receive:0
+
+I (232003) SCTP: Recv: 753065559 ACK:753065559 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 8
+
+Send string Send to channel2 count 8
+
+Send string Send to channel1 count 9
+
+Send string Send to channel2 count 9
+
+I (233832) AGENT: 0 3 Send binding response local0:192.168.0.103:51674 remote1:198.18.0.1:58346
+
+I (234012) webrtc: Send A:10382 [99:15840] V:10266 [30:99083] Recv A:438644873 [99:15840] Recv V:[0:0]
+
+I (234013) PEER_DEF: Send 233:155555 d_out:32768 receive 244:36615 din:13432
+
+I (234017) SCTP: Send: 1376 Ack: 1375 Fwd: 0:0 Cached: 0 Receive:4
+
+I (234022) SCTP: Recv: 753065570 ACK:753065559 Cached: 12760 SackCount:0
+
+
+
+Send string Send to channel1 count 10
+
+Send string Send to channel2 count 10
+
+I (234229) DOOR_BELL: Get data label channel1 verify:1 data: This is the 5 on channel1
+
+I (234248) DOOR_BELL: Get data label channel2 verify:1 data: This is the 5 on channel2
+
+Send string Send to channel1 count 11
+
+Send string Send to channel2 count 11
+
+I (235887) DOOR_BELL: Get data label channel1 verify:1 data: This is the 6 on channel1
+
+I (236029) webrtc: Send A:12402 [100:16000] V:12333 [30:98501] Recv A:438646893 [100:16000] Recv V:[0:0]
+
+I (236030) PEER_DEF: Send 240:159302 d_out:32768 receive 247:39262 din:18500
+
+I (236036) SCTP: Send: 1404 Ack: 1403 Fwd: 0:0 Cached: 0 Receive:5
+
+I (236042) SCTP: Recv: 753065585 ACK:753065590 Cached: 5800 SackCount:0
+
+
+
+I (236071) DOOR_BELL: Get data label channel2 verify:1 data: This is the 6 on channel2
+
+Send string Send to channel1 count 12
+
+Send string Send to channel2 count 12
+
+Send string Send to channel1 count 13
+
+Send string Send to channel2 count 13
+
+I (237849) DOOR_BELL: Get data label channel1 verify:1 data: This is the 7 on channel1
+
+I (238050) webrtc: Send A:14442 [101:16160] V:14333 [30:100085] Recv A:438648913 [100:16000] Recv V:[0:0]
+
+I (238052) PEER_DEF: Send 239:157382 d_out:32768 receive 251:39694 din:18528
+
+I (238055) SCTP: Send: 1432 Ack: 1431 Fwd: 0:0 Cached: 0 Receive:1
+
+I (238062) SCTP: Recv: 753065607 ACK:753065607 Cached: 8120 SackCount:0
+
+
+
+Send string Send to channel1 count 14
+
+Send string Send to channel2 count 14
+
+I (238452) DOOR_BELL: Get data label channel2 verify:1 data: This is the 7 on channel2
+
+Send string Send to channel1 count 15
+
+Send string Send to channel2 count 15
+
+I (239922) DOOR_BELL: Get data label channel1 verify:1 data: This is the 8 on channel1
+
+I (240068) webrtc: Send A:16422 [99:15840] V:16333 [30:155140] Recv A:438650933 [100:16000] Recv V:[0:0]
+
+I (240069) PEER_DEF: Send 279:212785 d_out:32768 receive 244:36778 din:16052
+
+I (240075) SCTP: Send: 1460 Ack: 1459 Fwd: 0:0 Cached: 0 Receive:6
+
+I (240079) SCTP: Recv: 753065618 ACK:753065624 Cached: 6960 SackCount:0
+
+
+
+I (240118) DOOR_BELL: Get data label channel2 verify:1 data: This is the 8 on channel2
+
+Send string Send to channel1 count 16
+
+Send string Send to channel2 count 16
+
+Send string Send to channel1 count 17
+
+Send string Send to channel2 count 17
+
+I (242085) webrtc: Send A:18442 [99:15840] V:18333 [30:253570] Recv A:438652953 [100:16000] Recv V:[0:0]
+
+I (242097) PEER_DEF: Send 369:323903 d_out:32768 receive 251:40634 din:19588
+
+I (242098) SCTP: Send: 1488 Ack: 1487 Fwd: 0:0 Cached: 0 Receive:4
+
+I (242101) SCTP: Recv: 753065640 ACK:753065633 Cached: 17504 SackCount:0
+
+
+
+I (242208) DOOR_BELL: Get data label channel1 verify:1 data: This is the 9 on channel1
+
+I (242210) DOOR_BELL: Get data label channel2 verify:1 data: This is the 9 on channel2
+
+Send string Send to channel1 count 18
+
+Send string Send to channel2 count 18
+
+Send string Send to channel1 count 19
+
+Send string Send to channel2 count 19
+
+I (243849) DOOR_BELL: Get data label channel1 verify:1 data: This is the 10 on channel1
+
+I (244041) DOOR_BELL: Get data label channel2 verify:1 data: This is the 10 on channel2
+
+I (244107) webrtc: Send A:20482 [100:16000] V:20400 [30:414675] Recv A:438654973 [100:16000] Recv V:[0:0]
+
+I (244108) PEER_DEF: Send 482:477488 d_out:32768 receive 247:38173 din:17296
+
+I (244114) SCTP: Send: 1516 Ack: 1515 Fwd: 0:0 Cached: 0 Receive:0
+
+I (244118) SCTP: Recv: 753065661 ACK:753065661 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 20
+
+Send string Send to channel2 count 20
+
+Send string Send to channel1 count 21
+
+Send string Send to channel2 count 21
+
+I (245852) DOOR_BELL: Get data label channel1 verify:1 data: This is the 11 on channel1
+
+I (246124) webrtc: Send A:22502 [101:16160] V:22400 [30:378539] Recv A:438656993 [99:15840] Recv V:[0:0]
+
+I (246125) PEER_DEF: Send 452:443110 d_out:32768 receive 248:36682 din:16072
+
+I (246131) SCTP: Send: 1544 Ack: 1543 Fwd: 0:0 Cached: 0 Receive:1
+
+I (246135) SCTP: Recv: 753065675 ACK:753065675 Cached: 8120 SackCount:0
+
+
+
+Send string Send to channel1 count 22
+
+Send string Send to channel2 count 22
+
+I (246439) DOOR_BELL: Get data label channel2 verify:1 data: This is the 11 on channel2
+
+Send string Send to channel1 count 23
+
+Send string Send to channel2 count 23
+
+I (247929) DOOR_BELL: Get data label channel1 verify:1 data: This is the 12 on channel1
+
+I (248121) DOOR_BELL: Get data label channel2 verify:1 data: This is the 12 on channel2
+
+I (248144) webrtc: Send A:24522 [99:15840] V:24400 [30:366433] Recv A:438659013 [100:16000] Recv V:[0:0]
+
+I (248145) PEER_DEF: Send 445:428516 d_out:32768 receive 245:39312 din:18372
+
+I (248151) SCTP: Send: 1572 Ack: 1571 Fwd: 0:0 Cached: 0 Receive:0
+
+I (248155) SCTP: Recv: 753065693 ACK:753065693 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 24
+
+Send string Send to channel2 count 24
+
+Send string Send to channel1 count 25
+
+Send string Send to channel2 count 25
+
+I (249754) DOOR_BELL: Get data label channel1 verify:1 data: This is the 13 on channel1
+
+I (250166) webrtc: Send A:26542 [101:16160] V:26466 [31:326437] Recv A:438661033 [100:16000] Recv V:[0:0]
+
+I (250168) PEER_DEF: Send 412:387585 d_out:32768 receive 248:36945 din:16052
+
+I (250174) SCTP: Send: 1600 Ack: 1599 Fwd: 0:0 Cached: 0 Receive:0
+
+I (250180) SCTP: Recv: 753065710 ACK:753065703 Cached: 8120 SackCount:1
+
+
+
+I (250389) DOOR_BELL: Get data label channel2 verify:1 data: This is the 13 on channel2
+
+Send string Send to channel1 count 26
+
+Send string Send to channel2 count 26
+
+Send string Send to channel1 count 27
+
+Send string Send to channel2 count 27
+
+I (252021) DOOR_BELL: Get data label channel1 verify:1 data: This is the 14 on channel1
+
+I (252186) webrtc: Send A:28562 [100:16000] V:28466 [30:162318] Recv A:438663053 [100:16000] Recv V:[0:0]
+
+I (252187) PEER_DEF: Send 287:220471 d_out:32768 receive 246:36755 din:15996
+
+I (252191) SCTP: Send: 1628 Ack: 1627 Fwd: 0:0 Cached: 0 Receive:6
+
+I (252197) SCTP: Recv: 753065725 ACK:753065725 Cached: 6960 SackCount:1
+
+
+
+I (252218) DOOR_BELL: Get data label channel2 verify:1 data: This is the 14 on channel2
+
+Send string Send to channel1 count 28
+
+Send string Send to channel2 count 28
+
+Send string Send to channel1 count 29
+
+Send string Send to channel2 count 29
+
+I (253839) DOOR_BELL: Get data label channel1 verify:1 data: This is the 15 on channel1
+
+I (254028) DOOR_BELL: Get data label channel2 verify:1 data: This is the 15 on channel2
+
+I (254206) webrtc: Send A:30562 [99:15840] V:30466 [30:206754] Recv A:438665073 [99:15840] Recv V:[0:0]
+
+I (254208) PEER_DEF: Send 324:266002 d_out:32768 receive 249:40561 din:19672
+
+I (254212) SCTP: Send: 1656 Ack: 1655 Fwd: 0:0 Cached: 0 Receive:0
+
+I (254219) SCTP: Recv: 753065745 ACK:753065745 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 30
+
+Send string Send to channel2 count 30
+
+Send string Send to channel1 count 31
+
+Send string Send to channel2 count 31
+
+I (256225) webrtc: Send A:32582 [99:15840] V:32466 [30:211698] Recv A:438667093 [99:15840] Recv V:[0:0]
+
+I (256226) PEER_DEF: Send 320:270258 d_out:32768 receive 249:36679 din:15984
+
+I (256232) SCTP: Send: 1684 Ack: 1683 Fwd: 0:0 Cached: 0 Receive:0
+
+I (256236) SCTP: Recv: 753065761 ACK:753065752 Cached: 16240 SackCount:1
+
+
+
+I (256250) DOOR_BELL: Get data label channel1 verify:1 data: This is the 16 on channel1
+
+I (256253) DOOR_BELL: Get data label channel2 verify:1 data: This is the 16 on channel2
+
+Send string Send to channel1 count 32
+
+Send string Send to channel2 count 32
+
+Send string Send to channel1 count 33
+
+Send string Send to channel2 count 33
+
+I (258044) DOOR_BELL: Get data label channel1 verify:1 data: This is the 17 on channel1
+
+I (258238) DOOR_BELL: Get data label channel2 verify:1 data: This is the 17 on channel2
+
+I (258242) webrtc: Send A:34602 [99:15840] V:34533 [30:93274] Recv A:438669093 [99:15840] Recv V:[0:0]
+
+I (258246) PEER_DEF: Send 237:150434 d_out:32768 receive 249:39466 din:18428
+
+I (258252) SCTP: Send: 1712 Ack: 1711 Fwd: 0:0 Cached: 0 Receive:0
+
+I (258258) SCTP: Recv: 753065779 ACK:753065779 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 34
+
+Send string Send to channel2 count 34
+
+Send string Send to channel1 count 35
+
+Send string Send to channel2 count 35
+
+I (259856) DOOR_BELL: Get data label channel1 verify:1 data: This is the 18 on channel1
+
+I (260264) webrtc: Send A:36642 [100:16000] V:36533 [30:97365] Recv A:438671133 [100:16000] Recv V:[0:0]
+
+I (260265) PEER_DEF: Send 237:156618 d_out:32768 receive 247:37062 din:16088
+
+I (260271) SCTP: Send: 1740 Ack: 1739 Fwd: 0:0 Cached: 0 Receive:0
+
+I (260277) SCTP: Recv: 753065796 ACK:753065794 Cached: 8120 SackCount:1
+
+
+
+I (260432) DOOR_BELL: Get data label channel2 verify:1 data: This is the 18 on channel2
+
+Send string Send to channel1 count 36
+
+Send string Send to channel2 count 36
+
+Send string Send to channel1 count 37
+
+Send string Send to channel2 count 37
+
+I (261908) DOOR_BELL: Get data label channel1 verify:1 data: This is the 19 on channel1
+
+I (262101) DOOR_BELL: Get data label channel2 verify:1 data: This is the 19 on channel2
+
+I (262285) webrtc: Send A:38662 [101:16160] V:38600 [31:99094] Recv A:438673153 [100:16000] Recv V:[0:0]
+
+I (262286) PEER_DEF: Send 236:156156 d_out:32768 receive 249:39358 din:18400
+
+I (262292) SCTP: Send: 1768 Ack: 1767 Fwd: 0:0 Cached: 0 Receive:0
+
+I (262297) SCTP: Recv: 753065812 ACK:753065812 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 38
+
+Send string Send to channel2 count 38
+
+Send string Send to channel1 count 39
+
+Send string Send to channel2 count 39
+
+I (263887) DOOR_BELL: Get data label channel1 verify:1 data: This is the 20 on channel1
+
+I (264303) webrtc: Send A:40682 [101:16160] V:40600 [30:95242] Recv A:438675173 [99:15840] Recv V:[0:0]
+
+I (264304) PEER_DEF: Send 233:152099 d_out:32768 receive 243:37780 din:17124
+
+I (264310) SCTP: Send: 1796 Ack: 1795 Fwd: 0:0 Cached: 0 Receive:0
+
+I (264316) SCTP: Recv: 753065830 ACK:753065828 Cached: 9280 SackCount:1
+
+
+
+I (264529) DOOR_BELL: Get data label channel2 verify:1 data: This is the 20 on channel2
+
+Send string Send to channel1 count 40
+
+Send string Send to channel2 count 40
+
+Send string Send to channel1 count 41
+
+Send string Send to channel2 count 41
+
+I (266150) DOOR_BELL: Get data label channel1 verify:1 data: This is the 21 on channel1
+
+I (266322) webrtc: Send A:42702 [101:16160] V:42600 [30:102614] Recv A:438677193 [100:16000] Recv V:[0:0]
+
+I (266323) PEER_DEF: Send 241:159732 d_out:32768 receive 248:34905 din:13952
+
+I (266329) SCTP: Send: 1824 Ack: 1823 Fwd: 0:0 Cached: 0 Receive:0
+
+I (266335) SCTP: Recv: 753065845 ACK:753065846 Cached: 6960 SackCount:0
+
+
+
+I (266341) DOOR_BELL: Get data label channel2 verify:1 data: This is the 21 on channel2
+
+Send string Send to channel1 count 42
+
+Send string Send to channel2 count 42
+
+I (267816) DOOR_BELL: Get data label channel1 verify:1 data: This is the 22 on channel1
+
+Send string Send to channel1 count 43
+
+Send string Send to channel2 count 43
+
+I (268341) webrtc: Send A:44722 [101:16160] V:44600 [30:97639] Recv A:438679213 [101:16160] Recv V:[0:0]
+
+I (268342) PEER_DEF: Send 235:154613 d_out:32768 receive 254:39246 din:19484
+
+I (268348) SCTP: Send: 1852 Ack: 1851 Fwd: 0:0 Cached: 0 Receive:0
+
+I (268352) SCTP: Recv: 753065864 ACK:753065862 Cached: 8120 SackCount:2
+
+
+
+I (268398) DOOR_BELL: Get data label channel2 verify:1 data: This is the 22 on channel2
+
+Send string Send to channel1 count 44
+
+Send string Send to channel2 count 44
+
+Send string Send to channel1 count 45
+
+Send string Send to channel2 count 45
+
+I (270025) DOOR_BELL: Get data label channel1 verify:1 data: This is the 23 on channel1
+
+I (270218) DOOR_BELL: Get data label channel2 verify:1 data: This is the 23 on channel2
+
+I (270364) webrtc: Send A:46722 [99:15840] V:46666 [30:95839] Recv A:438681233 [100:16000] Recv V:[0:0]
+
+I (270365) PEER_DEF: Send 239:156545 d_out:32768 receive 249:39536 din:18456
+
+I (270371) SCTP: Send: 1880 Ack: 1879 Fwd: 0:0 Cached: 0 Receive:0
+
+I (270375) SCTP: Recv: 753065882 ACK:753065882 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 46
+
+Send string Send to channel2 count 46
+
+Send string Send to channel1 count 47
+
+Send string Send to channel2 count 47
+
+I (272259) DOOR_BELL: Get data label channel1 verify:1 data: This is the 24 on channel1
+
+I (272260) DOOR_BELL: Get data label channel2 verify:1 data: This is the 24 on channel2
+
+I (272382) webrtc: Send A:48742 [99:15840] V:48666 [30:207679] Recv A:438683253 [100:16000] Recv V:[0:0]
+
+I (272383) PEER_DEF: Send 321:266648 d_out:32768 receive 251:38272 din:17360
+
+I (272390) SCTP: Send: 1908 Ack: 1907 Fwd: 0:0 Cached: 0 Receive:1
+
+I (272393) SCTP: Recv: 753065899 ACK:753065899 Cached: 0 SackCount:0
+
+
+
+Send string Send to channel1 count 48
+
+Send string Send to channel2 count 48
+
+I (274052) DOOR_BELL: Get data label channel1 verify:1 data: This is the 25 on channel1
+
+Send string Send to channel1 count 49
+
+Send string Send to channel2 count 49
+
+I (274242) DOOR_BELL: Get data label channel2 verify:1 data: This is the 25 on channel2
+
+I (274399) webrtc: Send A:50762 [99:15840] V:50666 [30:202921] Recv A:438685273 [100:16000] Recv V:[0:0]
+
+I (274400) PEER_DEF: Send 316:261523 d_out:32768 receive 251:38260 din:17240
+
+I (274406) SCTP: Send: 1936 Ack: 1935 Fwd: 0:0 Cached: 0 Receive:0
+
+I (274410) SCTP: Recv: 753065916 ACK:753065916 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 50
+
+Send string Send to channel2 count 50
+
+I (275876) DOOR_BELL: Get data label channel1 verify:1 data: This is the 26 on channel1
+
+I (276050) DOOR_BELL: Get data label channel2 verify:1 data: This is the 26 on channel2
+
+Send string Send to channel1 count 51
+
+Send string Send to channel2 count 51
+
+I (276416) webrtc: Send A:52802 [100:16000] V:52666 [30:217117] Recv A:438687273 [99:15840] Recv V:[0:0]
+
+I (276417) PEER_DEF: Send 327:276210 d_out:32768 receive 245:37869 din:17212
+
+I (276423) SCTP: Send: 1964 Ack: 1963 Fwd: 0:0 Cached: 0 Receive:0
+
+I (276426) SCTP: Recv: 753065932 ACK:753065932 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 52
+
+Send string Send to channel2 count 52
+
+Send string Send to channel1 count 53
+
+Send string Send to channel2 count 53
+
+I (278249) DOOR_BELL: Get data label channel1 verify:1 data: This is the 27 on channel1
+
+I (278253) DOOR_BELL: Get data label channel2 verify:1 data: This is the 27 on channel2
+
+I (278437) webrtc: Send A:54822 [101:16160] V:54733 [30:172835] Recv A:438689313 [99:15840] Recv V:[0:0]
+
+I (278438) PEER_DEF: Send 298:237004 d_out:32768 receive 245:37908 din:17240
+
+I (278444) SCTP: Send: 1992 Ack: 1991 Fwd: 0:0 Cached: 0 Receive:0
+
+I (278450) SCTP: Recv: 753065948 ACK:753065948 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 54
+
+Send string Send to channel2 count 54
+
+I (280190) DOOR_BELL: Get data label channel1 verify:1 data: This is the 28 on channel1
+
+Send string Send to channel1 count 55
+
+Send string Send to channel2 count 55
+
+I (280381) DOOR_BELL: Get data label channel2 verify:1 data: This is the 28 on channel2
+
+I (280454) webrtc: Send A:56802 [99:15840] V:56733 [30:129205] Recv A:438691333 [101:16160] Recv V:[0:0]
+
+I (280455) PEER_DEF: Send 259:186439 d_out:32768 receive 252:38446 din:17296
+
+I (280461) SCTP: Send: 2020 Ack: 2019 Fwd: 0:0 Cached: 0 Receive:0
+
+I (280464) SCTP: Recv: 753065966 ACK:753065966 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 56
+
+Send string Send to channel2 count 56
+
+I (281856) DOOR_BELL: Get data label channel1 verify:1 data: This is the 29 on channel1
+
+I (282030) DOOR_BELL: Get data label channel2 verify:1 data: This is the 29 on channel2
+
+Send string Send to channel1 count 57
+
+Send string Send to channel2 count 57
+
+I (282473) webrtc: Send A:58862 [101:16160] V:58733 [30:95816] Recv A:438693333 [99:15840] Recv V:[0:0]
+
+I (282474) PEER_DEF: Send 232:152718 d_out:32768 receive 245:38067 din:17212
+
+I (282478) SCTP: Send: 2048 Ack: 2047 Fwd: 0:0 Cached: 0 Receive:0
+
+I (282484) SCTP: Recv: 753065982 ACK:753065982 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 58
+
+Send string Send to channel2 count 58
+
+I (284258) DOOR_BELL: Get data label channel1 verify:1 data: This is the 30 on channel1
+
+I (284261) DOOR_BELL: Get data label channel2 verify:1 data: This is the 30 on channel2
+
+Send string Send to channel1 count 59
+
+Send string Send to channel2 count 59
+
+I (284490) webrtc: Send A:60882 [101:16160] V:60733 [30:95921] Recv A:438695353 [98:15680] Recv V:[0:0]
+
+I (284491) PEER_DEF: Send 237:155401 d_out:32768 receive 244:37521 din:17200
+
+I (284495) SCTP: Send: 2076 Ack: 2075 Fwd: 0:0 Cached: 0 Receive:0
+
+I (284501) SCTP: Recv: 753065998 ACK:753065998 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 60
+
+Send string Send to channel2 count 60
+
+I (286053) DOOR_BELL: Get data label channel1 verify:1 data: This is the 31 on channel1
+
+I (286243) DOOR_BELL: Get data label channel2 verify:1 data: This is the 31 on channel2
+
+Send string Send to channel1 count 61
+
+Send string Send to channel2 count 61
+
+I (286508) webrtc: Send A:62882 [100:16000] V:62800 [30:96456] Recv A:438697373 [100:16000] Recv V:[0:0]
+
+I (286509) PEER_DEF: Send 237:157108 d_out:32768 receive 247:38032 din:17212
+
+I (286515) SCTP: Send: 2104 Ack: 2103 Fwd: 0:0 Cached: 0 Receive:0
+
+I (286519) SCTP: Recv: 753066015 ACK:753066015 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 62
+
+Send string Send to channel2 count 62
+
+I (288134) DOOR_BELL: Get data label channel1 verify:1 data: This is the 32 on channel1
+
+I (288157) DOOR_BELL: Get data label channel2 verify:1 data: This is the 32 on channel2
+
+Send string Send to channel1 count 63
+
+Send string Send to channel2 count 63
+
+I (288525) webrtc: Send A:64902 [99:15840] V:64800 [30:100609] Recv A:438699393 [100:16000] Recv V:[0:0]
+
+I (288526) PEER_DEF: Send 239:157679 d_out:32768 receive 244:39114 din:17184
+
+I (288532) SCTP: Send: 2132 Ack: 2131 Fwd: 0:0 Cached: 0 Receive:0
+
+I (288538) SCTP: Recv: 753066031 ACK:753066031 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 64
+
+Send string Send to channel2 count 64
+
+I (289941) DOOR_BELL: Get data label channel1 verify:1 data: This is the 33 on channel1
+
+I (290141) DOOR_BELL: Get data label channel2 verify:1 data: This is the 33 on channel2
+
+Send string Send to channel1 count 65
+
+Send string Send to channel2 count 65
+
+I (290542) webrtc: Send A:66922 [101:16160] V:66800 [30:101526] Recv A:438701413 [100:16000] Recv V:[0:0]
+
+I (290543) PEER_DEF: Send 236:158524 d_out:32768 receive 252:38248 din:17268
+
+I (290549) SCTP: Send: 2160 Ack: 2159 Fwd: 0:0 Cached: 0 Receive:0
+
+I (290555) SCTP: Recv: 753066050 ACK:753066050 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 66
+
+Send string Send to channel2 count 66
+
+I (292338) DOOR_BELL: Get data label channel1 verify:1 data: This is the 34 on channel1
+
+I (292513) DOOR_BELL: Get data label channel2 verify:1 data: This is the 34 on channel2
+
+Send string Send to channel1 count 67
+
+Send string Send to channel2 count 67
+
+I (292562) webrtc: Send A:68942 [101:16160] V:68800 [30:99222] Recv A:438703433 [100:16000] Recv V:[0:0]
+
+I (292563) PEER_DEF: Send 237:156244 d_out:32768 receive 245:38097 din:17184
+
+I (292569) SCTP: Send: 2188 Ack: 2184 Fwd: 0:0 Cached: 3600 Receive:0
+
+I (292575) SCTP: Recv: 753066067 ACK:753066067 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 68
+
+Send string Send to channel2 count 68
+
+I (293971) DOOR_BELL: Get data label channel1 verify:1 data: This is the 35 on channel1
+
+I (294158) DOOR_BELL: Get data label channel2 verify:1 data: This is the 35 on channel2
+
+Send string Send to channel1 count 69
+
+Send string Send to channel2 count 69
+
+I (294581) webrtc: Send A:70962 [101:16160] V:70866 [30:96564] Recv A:438705433 [99:15840] Recv V:[0:0]
+
+I (294582) PEER_DEF: Send 238:156757 d_out:32768 receive 245:37683 din:17156
+
+I (294588) SCTP: Send: 2216 Ack: 2211 Fwd: 0:0 Cached: 4800 Receive:0
+
+I (294592) SCTP: Recv: 753066084 ACK:753066084 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 70
+
+Send string Send to channel2 count 70
+
+I (296228) DOOR_BELL: Get data label channel1 verify:1 data: This is the 36 on channel1
+
+I (296229) DOOR_BELL: Get data label channel2 verify:1 data: This is the 36 on channel2
+
+I (296598) webrtc: Send A:72962 [99:15840] V:72866 [30:103029] Recv A:438707473 [101:16160] Recv V:[0:0]
+
+I (296599) PEER_DEF: Send 227:142298 d_out:16384 receive 245:37826 din:17204
+
+Send string Send to channel1 count 71
+
+I (296622) SCTP: Send: 2242 Ack: 2229 Fwd: 0:0 Cached: 15600 Receive:0
+
+Send string Send to channel2 count 71
+
+I (296630) SCTP: Recv: 753066101 ACK:753066101 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 72
+
+Send string Send to channel2 count 72
+
+I (298172) DOOR_BELL: Get data label channel1 verify:1 data: This is the 37 on channel1
+
+I (298362) DOOR_BELL: Get data label channel2 verify:1 data: This is the 37 on channel2
+
+I (298633) webrtc: Send A:75022 [101:16160] V:74933 [30:101680] Recv A:438709513 [101:16160] Recv V:[0:0]
+
+I (298634) PEER_DEF: Send 238:149920 d_out:24576 receive 253:38307 din:17292
+
+I (298640) SCTP: Send: 2258 Ack: 2257 Fwd: 0:0 Cached: 0 Receive:0
+
+I (298646) SCTP: Recv: 753066119 ACK:753066119 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 73
+
+Send string Send to channel2 count 73
+
+Send string Send to channel1 count 74
+
+Send string Send to channel2 count 74
+
+I (300229) DOOR_BELL: Get data label channel1 verify:1 data: This is the 38 on channel1
+
+I (300231) DOOR_BELL: Get data label channel2 verify:1 data: This is the 38 on channel2
+
+I (300650) webrtc: Send A:77042 [101:16160] V:76933 [30:111509] Recv A:438711513 [100:16000] Recv V:[0:0]
+
+I (300652) PEER_DEF: Send 246:168678 d_out:32768 receive 246:38113 din:17184
+
+I (300658) SCTP: Send: 2286 Ack: 2285 Fwd: 0:0 Cached: 0 Receive:0
+
+I (300664) SCTP: Recv: 753066135 ACK:753066135 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 75
+
+Send string Send to channel2 count 75
+
+Send string Send to channel1 count 76
+
+Send string Send to channel2 count 76
+
+I (302023) DOOR_BELL: Get data label channel1 verify:1 data: This is the 39 on channel1
+
+I (302218) DOOR_BELL: Get data label channel2 verify:1 data: This is the 39 on channel2
+
+I (302670) webrtc: Send A:79042 [100:16000] V:78933 [30:107354] Recv A:438713533 [100:16000] Recv V:[0:0]
+
+I (302671) PEER_DEF: Send 245:164410 d_out:32768 receive 253:38439 din:17324
+
+I (302675) SCTP: Send: 2314 Ack: 2313 Fwd: 0:0 Cached: 0 Receive:0
+
+I (302681) SCTP: Recv: 753066154 ACK:753066154 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 77
+
+Send string Send to channel2 count 77
+
+Send string Send to channel1 count 78
+
+Send string Send to channel2 count 78
+
+I (304135) DOOR_BELL: Get data label channel1 verify:1 data: This is the 40 on channel1
+
+I (304159) DOOR_BELL: Get data label channel2 verify:1 data: This is the 40 on channel2
+
+I (304688) webrtc: Send A:81062 [101:16160] V:80933 [30:105349] Recv A:438715553 [100:16000] Recv V:[0:0]
+
+I (304689) PEER_DEF: Send 242:162491 d_out:32768 receive 246:39323 din:17240
+
+I (304697) SCTP: Send: 2342 Ack: 2341 Fwd: 0:0 Cached: 0 Receive:0
+
+I (304699) SCTP: Recv: 753066171 ACK:753066171 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 79
+
+Send string Send to channel2 count 79
+
+Send string Send to channel1 count 80
+
+Send string Send to channel2 count 80
+
+I (305932) DOOR_BELL: Get data label channel1 verify:1 data: This is the 41 on channel1
+
+I (306119) DOOR_BELL: Get data label channel2 verify:1 data: This is the 41 on channel2
+
+I (306706) webrtc: Send A:83082 [101:16160] V:83000 [30:105027] Recv A:438717573 [100:16000] Recv V:[0:0]
+
+I (306707) PEER_DEF: Send 242:162169 d_out:32768 receive 249:38218 din:17296
+
+I (306713) SCTP: Send: 2370 Ack: 2369 Fwd: 0:0 Cached: 0 Receive:0
+
+I (306719) SCTP: Recv: 753066189 ACK:753066189 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 81
+
+Send string Send to channel2 count 81
+
+Send string Send to channel1 count 82
+
+Send string Send to channel2 count 82
+
+I (308234) DOOR_BELL: Get data label channel1 verify:1 data: This is the 42 on channel1
+
+I (308236) DOOR_BELL: Get data label channel2 verify:1 data: This is the 42 on channel2
+
+I (308725) webrtc: Send A:85102 [99:15840] V:85000 [30:101196] Recv A:438719593 [100:16000] Recv V:[0:0]
+
+I (308726) PEER_DEF: Send 239:158266 d_out:32768 receive 245:37946 din:17224
+
+I (308732) SCTP: Send: 2398 Ack: 2397 Fwd: 0:0 Cached: 0 Receive:0
+
+I (308736) SCTP: Recv: 753066205 ACK:753066205 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 83
+
+Send string Send to channel2 count 83
+
+I (309868) DOOR_BELL: Get data label channel1 verify:1 data: This is the 43 on channel1
+
+Send string Send to channel1 count 84
+
+Send string Send to channel2 count 84
+
+I (310059) DOOR_BELL: Get data label channel2 verify:1 data: This is the 43 on channel2
+
+I (310744) webrtc: Send A:87122 [100:16000] V:87000 [30:106279] Recv A:438721613 [100:16000] Recv V:[0:0]
+
+I (310745) PEER_DEF: Send 243:163445 d_out:32768 receive 248:38190 din:17240
+
+I (310749) SCTP: Send: 2426 Ack: 2425 Fwd: 0:0 Cached: 0 Receive:0
+
+I (310755) SCTP: Recv: 753066222 ACK:753066222 Cached: 0 SackCount:5
+
+
+
+Send string Send to channel1 count 85
+
+Send string Send to channel2 count 85
+
+I (311831) DOOR_BELL: Get data label channel1 verify:1 data: This is the 44 on channel1
+
+Send string Send to channel1 count 86
+
+Send string Send to channel2 count 86
+
+I (312003) DOOR_BELL: Get data label channel2 verify:1 data: This is the 44 on channel2
+
+I (312761) webrtc: Send A:89122 [100:16000] V:89000 [30:106346] Recv A:438723633 [99:15840] Recv V:[0:0]
+
+I (312762) PEER_DEF: Send 242:163330 d_out:32768 receive 245:37946 din:17224
+
+I (312770) SCTP: Send: 2454 Ack: 2453 Fwd: 0:0 Cached: 0 Receive:0
+
+I (312774) SCTP: Recv: 753066238 ACK:753066238 Cached: 0 SackCount:5
+
+
+
+Send string Send to channel1 count 87
+
+Send string Send to channel2 count 87
+
+Send string Send to channel1 count 88
+
+Send string Send to channel2 count 88
+
+I (314198) DOOR_BELL: Get data label channel1 verify:1 data: This is the 45 on channel1
+
+I (314200) DOOR_BELL: Get data label channel2 verify:1 data: This is the 45 on channel2
+
+I (314780) webrtc: Send A:91182 [101:16160] V:91066 [30:121945] Recv A:438725653 [100:16000] Recv V:[0:0]
+
+I (314781) PEER_DEF: Send 255:179399 d_out:32768 receive 247:38043 din:17212
+
+I (314788) SCTP: Send: 2482 Ack: 2481 Fwd: 0:0 Cached: 0 Receive:0
+
+I (314792) SCTP: Recv: 753066254 ACK:753066254 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 89
+
+Send string Send to channel2 count 89
+
+I (316001) DOOR_BELL: Get data label channel1 verify:1 data: This is the 46 on channel1
+
+Send string Send to channel1 count 90
+
+Send string Send to channel2 count 90
+
+I (316198) DOOR_BELL: Get data label channel2 verify:1 data: This is the 46 on channel2
+
+I (316798) webrtc: Send A:93162 [99:15840] V:93066 [30:129248] Recv A:438727673 [100:16000] Recv V:[0:0]
+
+I (316799) PEER_DEF: Send 259:186482 d_out:32768 receive 251:38291 din:17268
+
+I (316805) SCTP: Send: 2510 Ack: 2509 Fwd: 0:0 Cached: 0 Receive:0
+
+I (316813) SCTP: Recv: 753066272 ACK:753066272 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 91
+
+Send string Send to channel2 count 91
+
+I (317815) DOOR_BELL: Get data label channel1 verify:1 data: This is the 47 on channel1
+
+I (317988) DOOR_BELL: Get data label channel2 verify:1 data: This is the 47 on channel2
+
+Send string Send to channel1 count 92
+
+Send string Send to channel2 count 92
+
+I (318817) webrtc: Send A:95182 [99:15840] V:95066 [30:107864] Recv A:438729693 [99:15840] Recv V:[0:0]
+
+I (318818) PEER_DEF: Send 241:165051 d_out:32768 receive 249:38008 din:17240
+
+I (318825) SCTP: Send: 2538 Ack: 2537 Fwd: 0:0 Cached: 0 Receive:0
+
+I (318829) SCTP: Recv: 753066289 ACK:753066289 Cached: 0 SackCount:6
+
+
+
+Send string Send to channel1 count 93
+
+Send string Send to channel2 count 93
+
+Send string Send to channel1 count 94
+
+Send string Send to channel2 count 94
+
+I (320251) DOOR_BELL: Get data label channel1 verify:1 data: This is the 48 on channel1
+
+I (320254) DOOR_BELL: Get data label channel2 verify:1 data: This is the 48 on channel2
+
+I (320835) webrtc: Send A:97222 [101:16160] V:97133 [30:106324] Recv A:438731713 [100:16000] Recv V:[0:0]
+
+I (320837) PEER_DEF: Send 238:163370 d_out:32768 receive 250:38113 din:17212
+
+I (320843) SCTP: Send: 2566 Ack: 2565 Fwd: 0:0 Cached: 0 Receive:0
+
+I (320849) SCTP: Recv: 753066305 ACK:753066305 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 95
+
+Send string Send to channel2 count 95
+
+I (322038) DOOR_BELL: Get data label channel1 verify:1 data: This is the 49 on channel1
+
+I (322219) DOOR_BELL: Get data label channel2 verify:1 data: This is the 49 on channel2
+
+Send string Send to channel1 count 96
+
+Send string Send to channel2 count 96
+
+I (322855) webrtc: Send A:99202 [99:15840] V:99133 [30:110529] Recv A:438733733 [100:16000] Recv V:[0:0]
+
+I (322857) PEER_DEF: Send 248:167815 d_out:32768 receive 250:38400 din:17296
+
+I (322861) SCTP: Send: 2594 Ack: 2593 Fwd: 0:0 Cached: 0 Receive:0
+
+I (322867) SCTP: Recv: 753066323 ACK:753066323 Cached: 0 SackCount:4
+
+
+
+Send string Send to channel1 count 97
+
+Send string Send to channel2 count 97
+
+I (323851) DOOR_BELL: Get data label channel1 verify:1 data: This is the 50 on channel1
+
+Send string Send to channel1 count 98
+
+Send string Send to channel2 count 98
+
+I (324449) DOOR_BELL: Get data label channel2 verify:1 data: This is the 50 on channel2
+
+I (324873) webrtc: Send A:101262 [101:16160] V:101133 [30:111605] Recv A:438735733 [99:15840] Recv V:[0:0]
+
+I (324874) PEER_DEF: Send 246:168843 d_out:32768 receive 245:37978 din:17240
+
+I (324880) SCTP: Send: 2622 Ack: 2621 Fwd: 0:0 Cached: 0 Receive:0
+
+I (324886) SCTP: Recv: 753066340 ACK:753066340 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 99
+
+Send string Send to channel2 count 99
+
+I (325914) DOOR_BELL: Get data label channel1 verify:1 data: This is the 51 on channel1
+
+I (326097) DOOR_BELL: Get data label channel2 verify:1 data: This is the 51 on channel2
+
+Send string Send to channel1 count 100
+
+Send string Send to channel2 count 100
+
+I (326892) webrtc: Send A:103282 [101:16160] V:103200 [31:116077] Recv A:438737753 [99:15840] Recv V:[0:0]
+
+I (326893) PEER_DEF: Send 248:173358 d_out:32768 receive 249:38221 din:17268
+
+I (326897) SCTP: Send: 2650 Ack: 2649 Fwd: 0:0 Cached: 0 Receive:0
+
+I (326903) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:6
+
+
+
+Send string Send to channel1 count 101
+
+Send string Send to channel2 count 101
+
+Send string Send to channel1 count 102
+
+Send string Send to channel2 count 102
+
+I (328911) webrtc: Send A:105282 [99:15840] V:105200 [30:109931] Recv A:438737933 [7:1120] Recv V:[0:0]
+
+I (328912) PEER_DEF: Send 237:169800 d_out:32768 receive 20:1526 din:0
+
+I (328915) SCTP: Send: 2678 Ack: 2649 Fwd: 0:0 Cached: 33576 Receive:0
+
+I (328922) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:10
+
+
+
+Send string Send to channel1 count 103
+
+Send string Send to channel2 count 103
+
+Send string Send to channel1 count 104
+
+Send string Send to channel2 count 104
+
+I (330928) webrtc: Send A:107302 [99:15840] V:107200 [30:107914] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (330929) PEER_DEF: Send 241:171732 d_out:32768 receive 4:0 din:0
+
+I (330932) SCTP: Send: 2706 Ack: 2649 Fwd: 0:0 Cached: 67128 Receive:0
+
+I (330938) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:14
+
+
+
+Send string Send to channel1 count 105
+
+Send string Send to channel2 count 105
+
+E (332024) WEBRTC_HTTP: Failed to send heartbeat ret 45062
+
+I (332026) WEBRTC_HTTP: Event Stream hdlr Quit
+
+Send string Send to channel1 count 106
+
+Send string Send to channel2 count 106
+
+I (332945) webrtc: Send A:109322 [101:16160] V:109200 [30:108170] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (332946) PEER_DEF: Send 241:173209 d_out:32768 receive 4:0 din:0
+
+I (332949) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (332956) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:18
+
+
+
+Send string Send to channel1 count 107
+
+Send string Send to channel2 count 107
+
+Send string Send to channel1 count 108
+
+Send string Send to channel2 count 108
+
+I (334965) webrtc: Send A:111342 [99:15840] V:111266 [30:110390] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (334966) PEER_DEF: Send 219:145152 d_out:32768 receive 4:0 din:0
+
+I (334970) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (334976) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 109
+
+Send string Send to channel2 count 109
+
+Send string Send to channel1 count 110
+
+Send string Send to channel2 count 110
+
+I (336982) webrtc: Send A:113362 [100:16000] V:113266 [30:109721] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (336983) PEER_DEF: Send 212:140437 d_out:32768 receive 4:0 din:0
+
+I (336986) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (336992) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 111
+
+Send string Send to channel2 count 111
+
+Send string Send to channel1 count 112
+
+Send string Send to channel2 count 112
+
+W (338990) AGENT: 0 Peer keepalive check fail count 2
+
+I (338999) webrtc: Send A:115362 [99:15840] V:115266 [30:106999] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (338999) PEER_DEF: Send 209:137485 d_out:32768 receive 4:0 din:0
+
+I (339003) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (339009) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 113
+
+Send string Send to channel2 count 113
+
+Send string Send to channel1 count 114
+
+Send string Send to channel2 count 114
+
+I (341017) webrtc: Send A:117382 [99:15840] V:117266 [30:108071] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (341018) PEER_DEF: Send 207:136209 d_out:32768 receive 3:0 din:0
+
+I (341021) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (341027) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 115
+
+Send string Send to channel2 count 115
+
+Send string Send to channel1 count 116
+
+Send string Send to channel2 count 116
+
+I (343038) webrtc: Send A:119402 [99:15840] V:119333 [30:108408] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (343039) PEER_DEF: Send 214:142570 d_out:32768 receive 4:0 din:0
+
+I (343042) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (343049) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 117
+
+Send string Send to channel2 count 117
+
+Send string Send to channel1 count 118
+
+Send string Send to channel2 count 118
+
+I (345055) webrtc: Send A:121422 [99:15840] V:121333 [30:109807] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (345056) PEER_DEF: Send 211:140499 d_out:32768 receive 4:0 din:0
+
+I (345059) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (345066) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+W (345246) AGENT: 0 Peer keepalive check fail count 3
+
+Send string Send to channel1 count 119
+
+Send string Send to channel2 count 119
+
+Send string Send to channel1 count 120
+
+Send string Send to channel2 count 120
+
+I (347072) webrtc: Send A:123442 [100:16000] V:123333 [30:111135] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (347073) PEER_DEF: Send 212:141851 d_out:32768 receive 4:0 din:0
+
+I (347076) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (347082) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 121
+
+Send string Send to channel2 count 121
+
+Send string Send to channel1 count 122
+
+Send string Send to channel2 count 122
+
+I (349089) webrtc: Send A:125482 [101:16160] V:125400 [30:109641] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (349090) PEER_DEF: Send 215:144500 d_out:32768 receive 4:0 din:0
+
+I (349093) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (349099) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 123
+
+Send string Send to channel2 count 123
+
+Send string Send to channel1 count 124
+
+Send string Send to channel2 count 124
+
+I (351107) webrtc: Send A:127502 [101:16160] V:127400 [30:113317] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (351109) PEER_DEF: Send 214:144081 d_out:32768 receive 4:0 din:0
+
+I (351112) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (351118) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+W (351426) AGENT: 0 Peer keepalive check fail count 4
+
+Send string Send to channel1 count 125
+
+Send string Send to channel2 count 125
+
+Send string Send to channel1 count 126
+
+Send string Send to channel2 count 126
+
+I (353124) webrtc: Send A:129482 [99:15840] V:129400 [30:110576] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (353125) PEER_DEF: Send 211:140952 d_out:32768 receive 4:0 din:0
+
+I (353129) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (353135) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 127
+
+Send string Send to channel2 count 127
+
+Send string Send to channel1 count 128
+
+Send string Send to channel2 count 128
+
+I (355141) webrtc: Send A:131502 [99:15840] V:131400 [30:113770] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (355142) PEER_DEF: Send 210:144122 d_out:32768 receive 4:0 din:0
+
+I (355145) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (355151) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 129
+
+Send string Send to channel2 count 129
+
+Send string Send to channel1 count 130
+
+Send string Send to channel2 count 130
+
+I (357157) webrtc: Send A:133522 [100:16000] V:133400 [30:110404] Recv A:438737933 [0:0] Recv V:[0:0]
+
+I (357158) PEER_DEF: Send 212:141120 d_out:32768 receive 4:0 din:0
+
+I (357161) SCTP: Send: 2734 Ack: 2649 Fwd: 0:0 Cached: 100680 Receive:0
+
+I (357170) SCTP: Recv: 753066358 ACK:753066358 Cached: 0 SackCount:21
+
+
+
+Send string Send to channel1 count 131
+
+Send string Send to channel2 count 131
+
+E (357682) AGENT: 0 Peer not response for binding after 30000
+
+E (357682) PEER_DEF: Peer disconnected
+
+I (357683) webrtc: PeerConnectionState: 1
+
+I (357723) AUD_SRC: Closed, 0x48041594
+
+I (357751) GMF_CAPTURE_VPATH: Drop for disable
+
+I (357754) AUD_SRC: Audio src thread exited
+
+I (357761) ESP_GMF_TASK: One times job is complete, del[wk:0x48041358, ctx:0x48041594, label:aud_src_close]
+
+I (357762) ESP_GMF_TASK: One times job is complete, del[wk:0x480c7214, ctx:0x480bf99c, label:aud_enc_close]
+
+I (357771) ESP_GMF_TASK: Waiting to run... [tsk:aenc_0-0x4ff56b20, wk:0x0, run:0]
+
+I (357814) ESP_GMF_TASK: One times job is complete, del[wk:0x4802a694, ctx:0x48029100, label:vid_src_close]
+
+I (357815) ESP_GMF_TASK: One times job is complete, del[wk:0x480c7214, ctx:0x4801979c, label:vid_overlay_close]
+
+I (357825) ESP_GMF_TASK: One times job is complete, del[wk:0x48041358, ctx:0x480adac0, label:vid_ppa_close]
+
+I (357834) ESP_GMF_TASK: One times job is complete, del[wk:0x48030d08, ctx:0x48029b1c, label:vid_enc_close]
+
+I (357843) ESP_GMF_TASK: Waiting to run... [tsk:venc_0-0x4ff59d58, wk:0x0, run:0]
+
+I (357850) AV_RENDER: Adec got msg:Close
+
+I (357853) AV_RENDER: Thread Adec exited
+
+I (357850) AV_RENDER: ARender got msg:Close
+
+I (357862) AV_RENDER: Thread ARender exited
+
+I (357865) AV_RENDER: Close done
+
+I (357869) AGENT: agent disconnected done
+
+I (357872) SCTP: 0 state 6
+
+I (357875) DOOR_BELL: Removed channel1 id 0 finished
+
+I (357878) webrtc: PeerConnectionState: 11
+
+I (357881) DOOR_BELL: Removed channel2 id 2 finished
+
+I (357887) webrtc: PeerConnectionState: 11
+
+I (357890) webrtc: PeerConnectionState: 12
+
+Received {"type":"customized","data":"RING"}
+
+I (1596985) DOOR_BELL: Ring button on state 0
+
+Get post request
+
+Request length 42
+
+Get post {"type":"customized","data":"ACCEPT_CALL"}
+
+I (1694039) webrtc: Received customized data
+
+I (1694039) DOOR_BELL: Receive command ACCEPT_CALL
+
+I (1694046) AV_RENDER: Adec got msg:Close
+
+I (1694049) AV_RENDER: Thread Adec exited
+
+I (1694052) AV_RENDER: Close done
+
+I (1694065) webrtc: PeerConnectionState: 2
+
+I (1694074) webrtc: PeerConnectionState: 3
+
+I (1694075) AGENT: Start agent as Controlling
+
+I (1694086) AGENT: Send STUN binding request
+
+I (1694158) AGENT: 0 Get candidate success user: psw:
+
+Add audio codec 5 sample_rate 8000
+
+E (1694159) AV_RENDER: Video render not set, stream is skipped
+
+E (1694163) AV_RENDER: Fail to add video stream 262
+
+I (1694166) webrtc: Send client sdp: v=0
+
+
+o=- 7801614086411001801 2 IN IP4 0.0.0.0
+
+
+s=-
+
+
+t=0 0
+
+
+a=msid-semantic: esp-webrtc
+
+
+a=group:BUNDLE 0 1 2
+
+
+m=audio 9 UDP/TLS/RTP/SAVPF 8
+
+
+c=IN IP4 0.0.0.0
+
+
+a=mid:0
+
+
+a=msid:esp_stream a0
+
+
+a=rtcp-mux
+
+
+a=rtpmap:8 PCMA/8000
+
+
+a=ssrc:4 cname:EspSSpbA0
+
+
+a=ssrc:4 msid:esp_stream a0
+
+
+a=sendrecv
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:nMec
+
+
+a=ice-pwd:4jl45UtZCiuXZ5F8XS4zGntE
+
+
+a=candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host
+
+
+a=candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=video 9 UDP/TLS/RTP/SAVPF 102
+
+
+a=rtpmap:102 H264/90000
+
+
+a=rtcp-fb:102 goog-remb
+
+
+a=rtcp-fb:102 transport-cc
+
+
+a=rtcp-fb:102 ccm fir
+
+
+a=rtcp-fb:102 nack
+
+
+a=rtcp-fb:102 nack pli
+
+
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=ssrc:1 cname:webrtc-h264
+
+
+a=ssrc:1 msid:esp_stream v0
+
+
+a=sendonly
+
+
+a=mid:1
+
+
+a=msid:esp_stream v0
+
+
+c=IN IP4 0.0.0.0
+
+
+a=rtcp-mux
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:nMec
+
+
+a=ice-pwd:4jl45UtZCiuXZ5F8XS4zGntE
+
+
+a=candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host
+
+
+a=candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=application 50712 UDP/DTLS/SCTP webrtc-datachannel
+
+
+a=mid:2
+
+
+a=sctp-port:5000
+
+
+c=IN IP4 0.0.0.0
+
+
+a=max-message-size:262144
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:nMec
+
+
+a=ice-pwd:4jl45UtZCiuXZ5F8XS4zGntE
+
+
+a=candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host
+
+
+a=candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0
+
+
+
+
+
+
+Received {"type":"offer","sdp":"v=0\r\no=- 7801614086411001801 2 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=msid-semantic: esp-webrtc\r\na=group:BUNDLE 0 1 2\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=mid:0\r\na=msid:esp_stream a0\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:4 cname:EspSSpbA0\r\na=ssrc:4 msid:esp_stream a0\r\na=sendrecv\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:actpass\r\na=ice-ufrag:nMec\r\na=ice-pwd:4jl45UtZCiuXZ5F8XS4zGntE\r\na=candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host\r\na=candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=ssrc:1 cname:webrtc-h264\r\na=ssrc:1 msid:esp_stream v0\r\na=sendonly\r\na=mid:1\r\na=msid:esp_stream v0\r\nc=IN IP4 0.0.0.0\r\na=rtcp-mux\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:actpass\r\na=ice-ufrag:nMec\r\na=ice-pwd:4jl45UtZCiuXZ5F8XS4zGntE\r\na=candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host\r\na=candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0\r\nm=application 50712 UDP/DTLS/SCTP webrtc-datachannel\r\na=mid:2\r\na=sctp-port:5000\r\nc=IN IP4 0.0.0.0\r\na=max-message-size:262144\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:E6:47\r\na=setup:actpass\r\na=ice-ufrag:nMec\r\na=ice-pwd:4jl45UtZCiuXZ5F8XS4zGntE\r\na=candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host\r\na=candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0\r\n"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2127158271 192.168.0.103 51675 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1679001599 117.172.228.230 4999 typ srflx raddr 0.0.0.0 rport 0"}
+
+Get post request
+
+Request length 1612
+
+Get post {"type":"answer","sdp":"v=0\r\no=- 5963218876996025329 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS 09172a6e-c959-4022-9758-90a07ed2c33b\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:z76Y\r\na=ice-pwd:RHsN7uDkmswVvEwCkjBcLcVG\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:3E:71\r\na=setup:active\r\na=mid:0\r\na=sendrecv\r\na=msid:09172a6e-c959-4022-9758-90a07ed2c33b 0c4848a0-390f-4d9b-b800-e25148cd9273\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:3484987625 cname:95IFS60i/I4zlssu\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:z76Y\r\na=ice-pwd:RHsN7uDkmswVvEwCkjBcLcVG\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:3E:71\r\na=setup:active\r\na=mid:1\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:z76Y\r\na=ice-pwd:RHsN7uDkmswVvEwCkjBcLcVG\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:3E:71\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+
+I (1694754) PEER_DEF: Get peer role 0
+
+I (1694755) PEER_DEF: Get peer role 0
+
+I (1694761) PEER_DEF: Get peer role 0
+
+I (1694764) PEER_DEF: Extract SDP: stream_count=3, audio_mid=255 (dir=3), video_mid=255 (dir=2), data_mid=255, assrc=3484987625, vssrc=0, vrtx_ssrc=0, vfmt=102, vrtx_fmt=0
+
+E (1694880) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+E (1695020) AGENT: 0 Not found for bind remote 198.18.0.1:57130
+
+Get post request
+
+Request length 182
+
+Get post {"type":"candidate","candidate":"candidate:3537520606 1 udp 2122260223 198.18.0.1 57130 typ host generation 0 ufrag z76Y network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+E (1695457) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+I (1695459) AGENT: 0 Add remote type:1 198.18.0.1:57130
+
+I (1695459) webrtc: PeerConnectionState: 4
+
+I (1695469) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:198.18.0.1:57130 id:17552ed80a7c5cb17ab97d10
+
+I (1695584) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51675 remote0:198.18.0.1:57130
+
+I (1695585) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:1663237633 1 udp 2122129151 192.168.148.1 57132 typ host generation 0 ufrag z76Y network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+I (1695914) AGENT: 0 Add remote type:1 192.168.148.1:57132
+
+I (1695915) webrtc: PeerConnectionState: 4
+
+I (1695924) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51675 remote1:198.18.0.1:57130 id:4170719a75d77cae515a5105
+
+I (1695926) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.148.1:57132 id:40a722086fbfe33855e2dd84
+
+E (1695958) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+I (1696100) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+I (1696101) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Get post request
+
+Request length 192
+
+Get post {"type":"candidate","candidate":"candidate:745575242 1 tcp 1518280447 198.18.0.1 9 typ host tcptype active generation 0 ufrag z76Y network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+I (1696431) AGENT: 0 Add remote type:1 198.18.0.1:9
+
+I (1696432) webrtc: PeerConnectionState: 4
+
+I (1696442) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51675 remote1:198.18.0.1:57130 id:7dcb6bd60a1b990a24872187
+
+I (1696444) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.148.1:57132 id:242d4a553fcad87a03e4e3a3
+
+E (1696522) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+I (1696676) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+I (1696677) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Get post request
+
+Request length 180
+
+Get post {"type":"candidate","candidate":"candidate:2642946709 1 tcp 1518149375 192.168.148.1 9 typ host tcptype active generation 0 ufrag z76Y network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+I (1696845) AGENT: 0 Add remote type:1 192.168.148.1:9
+
+I (1696846) webrtc: PeerConnectionState: 4
+
+I (1696855) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51675 remote1:198.18.0.1:57130 id:5e1dce7551f0aa352aec52bf
+
+I (1696858) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.148.1:57132 id:1809f23e5a7368716fe91e6c
+
+E (1697051) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+I (1697176) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+I (1697177) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:3937616855 1 udp 2122194687 192.168.159.1 57131 typ host generation 0 ufrag z76Y network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+I (1697345) AGENT: 0 Add remote type:1 192.168.159.1:57131
+
+I (1697346) webrtc: PeerConnectionState: 4
+
+I (1697355) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51675 remote1:198.18.0.1:57130 id:2322a8846df778271e63da77
+
+I (1697357) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.159.1:57131 id:2a81f9c13740f7d1621f7dc2
+
+I (1697370) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.148.1:57132 id:473fade00ecfd39645480065
+
+E (1697567) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+I (1697692) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+I (1697693) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Get post request
+
+Request length 195
+
+Get post {"type":"candidate","candidate":"candidate:675178153 1 tcp 1518083839 192.168.0.102 9 typ host tcptype active generation 0 ufrag z76Y network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+I (1697861) AGENT: 0 Add remote type:1 192.168.0.102:9
+
+I (1697862) webrtc: PeerConnectionState: 4
+
+I (1697871) AGENT: 0 0 Send binding request (cand:0) local0:192.168.0.103:51675 remote1:198.18.0.1:57130 id:562666204bf4e96457f7686d
+
+I (1697874) AGENT: 0 2 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.159.1:57131 id:7936f3746ee7eb0755ee4c0b
+
+I (1697886) AGENT: 0 1 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.148.1:57132 id:44c1aa5d4f7df38716dc9960
+
+E (1698099) AGENT: 0 Not found for bind remote 192.168.0.102:57133
+
+Get post request
+
+Request length 185
+
+Get post {"type":"candidate","candidate":"candidate:3600069181 1 udp 2122063615 192.168.0.102 57133 typ host generation 0 ufrag z76Y network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+I (1698240) AGENT: 0 0 PeerBinding recv local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+I (1698241) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+I (1698248) AGENT: 0 Add remote type:1 192.168.0.102:57133
+
+I (1698252) webrtc: PeerConnectionState: 4
+
+I (1698258) AGENT: 0 3 Send binding request (cand:0) local0:192.168.0.103:51675 remote0:192.168.0.102:57133 id:5368c1de0aa98cb7314d8d5d
+
+I (1698275) AGENT: 0 3 LocalBinding resp 5368c1de0aa98cb7314d8d5d local1
+
+I (1698276) AGENT: 0 Select pair192.168.0.102:57133
+
+I (1698280) AGENT: 0 3 Send binding request (cand:1) local0:192.168.0.103:51675 remote0:192.168.0.102:57133 id:5964648b6f64168409f4ba36
+
+I (1698304) AGENT: 0 3 LocalBinding resp 5964648b6f64168409f4ba36 local1
+
+I (1698304) AGENT: 0 Candidate responded
+
+I (1698305) AGENT: 0 Connection OK 192.168.0.102:57133
+
+I (1698308) webrtc: PeerConnectionState: 5
+
+I (1698311) DOOR_BELL: RTP sender transformer set up successfully
+
+I (1698318) DOOR_BELL: RTP receiver transformer set up successfully
+
+I (1698324) DOOR_BELL: Paired with 192.168.0.102:57133
+
+I (1698330) PEER_DEF: Start DTLS role as 1
+
+I (1698334) webrtc: PeerConnectionState: 6
+
+I (1698347) DTLS: Start to do server handshake
+
+I (1698665) DTLS: SRTP connected OK
+
+I (1698668) DTLS: Server handshake success
+
+I (1698668) PEER_DEF: DTLS handshake success
+
+I (1698669) PEER_DEF: Sctp role as 0
+
+I (1698669) webrtc: PeerConnectionState: 7
+
+W (1698672) ESP_CAPTURE: Already started
+
+I (1698679) AUD_PIPE_NEGO: Negotiate return 0 src_format:541934416 sample_rate:8000
+
+
+
+I (1698685) AUD_PIPE_NEGO: Path mask 1 select sink:0 format 1463897153
+
+I (1698691) AUD_SRC: Get rate:8000, ch:1, bits:16
+
+I (1698695) ESP_GMF_TASK: Waiting to run... [tsk:aenc_0-0x4ff3b878, wk:0x0, run:0]
+
+I (1698701) VID_PIPE_NEGO: Start to nego for input format h264 640x480 15fps
+
+E (1698702) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (1698711) V4L2_SRC: Success to open camera
+
+I (1698717) I2S_IF: Paired data: 0x4ff3f9c4, current mode: record, paired in_enable: 0, paired out_enable: 0
+
+I (1698720) V4L2_SRC: Best match 1280x960
+
+W (1698729) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (1698736) VID_PIPE_NEGO: Set sel_path 0 in o_uyy_e_vyy out h264 fps:15
+
+I (1698745) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (1698751) VID_SRC: Info 1280x960 15fps
+
+I (1698760) I2S_IF: STD: RX, sample_rate_hz: 8000, mclk_multiple: 256, clk_src: 0
+
+I (1698763) VID_PIPE_NEGO: Success to negotiate 0 format:o_uyy_e_vyy 640x480 15fps
+
+E (1698770) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+W (1698785) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (1698794) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (1698804) I2S_IF: STD: TX, sample_rate_hz: 8000, mclk_multiple: 256, clk_src: 0
+
+I (1698776) ESP_GMF_TASK: Waiting to run... [tsk:venc_0-0x4ff530f0, wk:0x0, run:0]
+
+Get post request
+
+Request length 179
+
+Get post {"type":"candidate","candidate":"candidate:337221443 1 tcp 1518214911 192.168.159.1 9 typ host tcptype active generation 0 ufrag z76Y network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+I (1698832) SCTP: 0 Receive chunk 1 SCTP_INIT
+
+I (1698827) Adev_Codec: Open codec device OK
+
+I (1698842) SCTP: 0 state 2
+
+I (1698845) AUD_SRC: Start to fetch audio src data now
+
+I (1698848) SCTP: Support ext 82
+
+I (1698828) VIDEO_COMM: Video info for vid_overlay-0x4801979c format:o_uyy_e_vyy 1280x960 15fps
+
+I (1698854) SCTP: Support ext c0
+
+I (1698845) ESP_GMF_TASK: One times job is complete, del[wk:0x480231fc, ctx:0x48041594, label:aud_src_open]
+
+I (1698866) SCTP: Send INIT_ACK chunk
+
+I (1698863) ESP_GMF_TASK: One times job is complete, del[wk:0x480c849c, ctx:0x48029100, label:vid_src_open]
+
+I (1698888) VIDEO_COMM: Video info for vid_ppa-0x480adac0 format:o_uyy_e_vyy 1280x960 15fps
+
+I (1698839) AGENT: 0 Add remote type:1 192.168.159.1:9
+
+I (1698876) ESP_GMF_AENC: Open, type:G711-Alaw, acquire in frame: 320, out frame: 160
+
+I (1698910) SCTP: 0 Receive chunk 10 SCTP_COOKIE_ECHO
+
+I (1698897) ESP_GMF_TASK: One times job is complete, del[wk:0x4801976c, ctx:0x4801979c, label:vid_overlay_open]
+
+I (1698913) SCTP: Send ECHO_ACK chunk
+
+Get samplerate 8000 chanel 1
+
+I (1698928) SCTP: 0 state 5
+
+I (1698910) ESP_GMF_TASK: One times job is complete, del[wk:0x480290d8, ctx:0x480bf99c, label:aud_enc_open]
+
+I (1698933) webrtc: PeerConnectionState: 9
+
+I (1698924) PPA_EL: Convert in o_uyy_e_vyy 1280x960 to o_uyy_e_vyy 640x480 ppa:1 soft_in:0 soft_out:0 reuse_out:0 hw_native:1 imgfx_only:0 geom:1 bridge o_uyy_e_vyy->o_uyy_e_vyy
+
+I (1698947) BUF_MNGR: L: 4913
+
+I (1698930) AV_RENDER: Get need resample 0 in:8000 out:0
+
+I (1698964) BUF_MNGR: L: 4914
+
+I (1698962) VIDEO_COMM: Video info for vid_enc-0x48029b1c format:o_uyy_e_vyy 640x480 15fps
+
+I (1698972) BUF_MNGR: L: 4913
+
+I (1698971) I2S_RENDER: open channel:1 sample_rate:8000 bits:16
+
+I (1698984) BUF_MNGR: L: 4914
+
+I (1698981) ESP_GMF_TASK: One times job is complete, del[wk:0x480c849c, ctx:0x480adac0, label:vid_ppa_open]
+
+I (1698993) SCTP: Get DCEP channel1 event:3 type:0 si:0 param:0
+
+I (1698990) I2S_IF: Current mode(playback) and peer mode have same sample_rate 8000, channel 2, bits_per_sample 16
+
+I (1699007) DOOR_BELL: Channel channel1 opened stream id 0
+
+W (1699015) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (1699021) webrtc: PeerConnectionState: 10
+
+I (1699031) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (1699039) SCTP: Get DCEP channel2 event:3 type:0 si:2 param:0
+
+I (1699043) I2S_IF: STD: TX, sample_rate_hz: 8000, mclk_multiple: 256, clk_src: 0
+
+I (1699051) DOOR_BELL: Channel channel2 opened stream id 2
+
+Send string Send to channel1 count 0
+
+I (1699062) webrtc: PeerConnectionState: 10
+
+I (1699047) ESP_GMF_TASK: One times job is complete, del[wk:0x480231fc, ctx:0x48029b1c, label:vid_enc_open]
+
+I (1699067) Adev_Codec: Open codec device OK
+
+Send string Send to channel2 count 0
+
+I (1699082) AV_RENDER: ARender Auto pause audio first frame at 319892679
+
+I (1699226) webrtc: Send A:1475541 [42:6720] V:1475400 [10:65315] Recv A:319893199 [17:2720] Recv V:[0:0]
+
+I (1699227) PEER_DEF: Send 133:101648 d_out:32768 receive 42:4797 din:328
+
+I (1699231) SCTP: Send: 1250 Ack: 1249 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1699238) SCTP: Recv: 198280472 ACK:198280472 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 1
+
+Send string Send to channel2 count 1
+
+Send string Send to channel1 count 2
+
+Send string Send to channel2 count 2
+
+I (1701246) webrtc: Send A:1477581 [101:16160] V:1477400 [30:110812] Recv A:319895219 [99:15840] Recv V:[0:0]
+
+I (1701247) PEER_DEF: Send 243:167998 d_out:32768 receive 223:31908 din:12188
+
+I (1701253) SCTP: Send: 1278 Ack: 1276 Fwd: 0:0 Cached: 1200 Receive:3
+
+I (1701259) SCTP: Recv: 198280482 ACK:198280478 Cached: 11584 SackCount:0
+
+
+
+I (1701770) DOOR_BELL: Get data label channel1 verify:1 data: This is the 1 on channel1
+
+I (1701953) DOOR_BELL: Get data label channel2 verify:1 data: This is the 1 on channel2
+
+Send string Send to channel1 count 3
+
+Send string Send to channel2 count 3
+
+I (1703108) DOOR_BELL: Get data label channel1 verify:1 data: This is the 2 on channel1
+
+Send string Send to channel1 count 4
+
+Send string Send to channel2 count 4
+
+I (1703268) webrtc: Send A:1479561 [99:15840] V:1479400 [29:110985] Recv A:319897239 [100:16000] Recv V:[0:0]
+
+I (1703269) PEER_DEF: Send 249:170376 d_out:32768 receive 242:39059 din:18600
+
+I (1703277) SCTP: Send: 1306 Ack: 1305 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1703280) SCTP: Recv: 198280502 ACK:198280502 Cached: 5800 SackCount:1
+
+
+
+I (1703305) DOOR_BELL: Get data label channel2 verify:1 data: This is the 2 on channel2
+
+I (1703833) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Send string Send to channel1 count 5
+
+Send string Send to channel2 count 5
+
+I (1705099) DOOR_BELL: Get data label channel1 verify:1 data: This is the 3 on channel1
+
+Send string Send to channel1 count 6
+
+Send string Send to channel2 count 6
+
+I (1705279) DOOR_BELL: Get data label channel2 verify:1 data: This is the 3 on channel2
+
+I (1705287) webrtc: Send A:1481621 [101:16160] V:1481466 [30:109416] Recv A:319899259 [100:16000] Recv V:[0:0]
+
+I (1705288) PEER_DEF: Send 246:166723 d_out:32768 receive 239:41464 din:20892
+
+I (1705294) SCTP: Send: 1334 Ack: 1333 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1705300) SCTP: Recv: 198280523 ACK:198280523 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 7
+
+Send string Send to channel2 count 7
+
+Send string Send to channel1 count 8
+
+Send string Send to channel2 count 8
+
+I (1707307) webrtc: Send A:1483621 [100:16000] V:1483466 [30:143108] Recv A:319901279 [100:16000] Recv V:[0:0]
+
+I (1707308) PEER_DEF: Send 269:200602 d_out:32768 receive 244:36433 din:15836
+
+I (1707314) SCTP: Send: 1362 Ack: 1361 Fwd: 0:0 Cached: 0 Receive:3
+
+I (1707320) SCTP: Recv: 198280536 ACK:198280529 Cached: 15080 SackCount:0
+
+
+
+I (1707553) DOOR_BELL: Get data label channel1 verify:1 data: This is the 4 on channel1
+
+I (1707555) DOOR_BELL: Get data label channel2 verify:1 data: This is the 4 on channel2
+
+I (1707664) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Send string Send to channel1 count 9
+
+Send string Send to channel2 count 9
+
+I (1709180) DOOR_BELL: Get data label channel1 verify:1 data: This is the 5 on channel1
+
+Send string Send to channel1 count 10
+
+Send string Send to channel2 count 10
+
+I (1709326) webrtc: Send A:1485641 [101:16160] V:1485466 [30:146364] Recv A:319903299 [100:16000] Recv V:[0:0]
+
+I (1709327) PEER_DEF: Send 276:204391 d_out:32768 receive 245:36845 din:16184
+
+I (1709333) SCTP: Send: 1390 Ack: 1389 Fwd: 0:0 Cached: 0 Receive:6
+
+I (1709345) SCTP: Recv: 198280554 ACK:198280554 Cached: 6960 SackCount:1
+
+
+
+I (1709366) DOOR_BELL: Get data label channel2 verify:1 data: This is the 5 on channel2
+
+I (1709866) AGENT: 0 0 Send binding response local0:192.168.0.103:51675 remote1:198.18.0.1:57130
+
+Send string Send to channel1 count 11
+
+Send string Send to channel2 count 11
+
+I (1711346) webrtc: Send A:1487661 [101:16160] V:1487533 [30:138491] Recv A:319905319 [100:16000] Recv V:[0:0]
+
+I (1711355) PEER_DEF: Send 262:190860 d_out:16384 receive 245:40322 din:19392
+
+Send string Send to channel1 count 12
+
+I (1711368) SCTP: Send: 1415 Ack: 1405 Fwd: 0:0 Cached: 12000 Receive:1
+
+I (1711369) SCTP: Recv: 198280573 ACK:198280563 Cached: 17504 SackCount:0
+
+
+
+Send string Send to channel2 count 12
+
+I (1711418) DOOR_BELL: Get data label channel1 verify:1 data: This is the 6 on channel1
+
+I (1711419) DOOR_BELL: Get data label channel2 verify:1 data: This is the 6 on channel2
+
+Send string Send to channel1 count 13
+
+Send string Send to channel2 count 13
+
+I (1713370) DOOR_BELL: Get data label channel1 verify:1 data: This is the 7 on channel1
+
+I (1713371) webrtc: Send A:1489681 [99:15840] V:1489533 [30:155335] Recv A:319907339 [100:16000] Recv V:[0:0]
+
+I (1713378) PEER_DEF: Send 269:199376 d_out:24576 receive 247:31309 din:9608
+
+I (1713384) SCTP: Send: 1432 Ack: 1431 Fwd: 0:0 Cached: 0 Receive:2
+
+I (1713390) SCTP: Recv: 198280584 ACK:198280587 Cached: 3480 SackCount:0
+
+
+
+Send string Send to channel1 count 14
+
+Send string Send to channel2 count 14
+
+I (1713563) DOOR_BELL: Get data label channel2 verify:1 data: This is the 7 on channel2
+
+Send string Send to channel1 count 15
+
+Send string Send to channel2 count 15
+
+I (1715036) DOOR_BELL: Get data label channel1 verify:1 data: This is the 8 on channel1
+
+I (1715212) DOOR_BELL: Get data label channel2 verify:1 data: This is the 8 on channel2
+
+I (1715396) webrtc: Send A:1491701 [100:16000] V:1491533 [29:125504] Recv A:319909379 [100:16000] Recv V:[0:0]
+
+I (1715397) PEER_DEF: Send 259:185170 d_out:32768 receive 249:43844 din:23888
+
+I (1715402) SCTP: Send: 1460 Ack: 1459 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1715409) SCTP: Recv: 198280608 ACK:198280608 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 16
+
+Send string Send to channel2 count 16
+
+Send string Send to channel1 count 17
+
+Send string Send to channel2 count 17
+
+I (1717415) webrtc: Send A:1493701 [99:15840] V:1493600 [30:109490] Recv A:319911399 [100:16000] Recv V:[0:0]
+
+I (1717416) PEER_DEF: Send 240:166130 d_out:32768 receive 245:36457 din:15716
+
+I (1717422) SCTP: Send: 1488 Ack: 1487 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1717428) SCTP: Recv: 198280624 ACK:198280614 Cached: 15080 SackCount:1
+
+
+
+Send string Send to channel1 count 18
+
+Send string Send to channel2 count 18
+
+I (1717631) DOOR_BELL: Get data label channel1 verify:1 data: This is the 9 on channel1
+
+I (1717634) DOOR_BELL: Get data label channel2 verify:1 data: This is the 9 on channel2
+
+Send string Send to channel1 count 19
+
+Send string Send to channel2 count 19
+
+I (1719263) DOOR_BELL: Get data label channel1 verify:1 data: This is the 10 on channel1
+
+I (1719434) webrtc: Send A:1495761 [101:16160] V:1495600 [30:112161] Recv A:319913419 [100:16000] Recv V:[0:0]
+
+I (1719435) PEER_DEF: Send 251:169973 d_out:32768 receive 250:37348 din:16332
+
+I (1719441) SCTP: Send: 1516 Ack: 1515 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1719447) SCTP: Recv: 198280639 ACK:198280639 Cached: 6960 SackCount:1
+
+
+
+I (1719458) DOOR_BELL: Get data label channel2 verify:1 data: This is the 10 on channel2
+
+Send string Send to channel1 count 20
+
+Send string Send to channel2 count 20
+
+Send string Send to channel1 count 21
+
+Send string Send to channel2 count 21
+
+I (1721098) DOOR_BELL: Get data label channel1 verify:1 data: This is the 11 on channel1
+
+I (1721269) DOOR_BELL: Get data label channel2 verify:1 data: This is the 11 on channel2
+
+I (1721454) webrtc: Send A:1497781 [101:16160] V:1497600 [30:108946] Recv A:319915439 [101:16160] Recv V:[0:0]
+
+I (1721455) PEER_DEF: Send 246:166253 d_out:32768 receive 248:40743 din:19672
+
+I (1721462) SCTP: Send: 1544 Ack: 1543 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1721466) SCTP: Recv: 198280659 ACK:198280659 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 22
+
+Send string Send to channel2 count 22
+
+Send string Send to channel1 count 23
+
+Send string Send to channel2 count 23
+
+I (1723474) webrtc: Send A:1499781 [100:16000] V:1499666 [30:110968] Recv A:319917439 [99:15840] Recv V:[0:0]
+
+I (1723475) PEER_DEF: Send 245:167886 d_out:32768 receive 235:35395 din:14808
+
+I (1723481) SCTP: Send: 1572 Ack: 1571 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1723488) SCTP: Recv: 198280675 ACK:198280665 Cached: 15080 SackCount:1
+
+
+
+I (1723636) DOOR_BELL: Get data label channel1 verify:1 data: This is the 12 on channel1
+
+I (1723638) DOOR_BELL: Get data label channel2 verify:1 data: This is the 12 on channel2
+
+Send string Send to channel1 count 24
+
+Send string Send to channel2 count 24
+
+Send string Send to channel1 count 25
+
+Send string Send to channel2 count 25
+
+I (1725215) DOOR_BELL: Get data label channel1 verify:1 data: This is the 13 on channel1
+
+I (1725432) DOOR_BELL: Get data label channel2 verify:1 data: This is the 13 on channel2
+
+I (1725494) webrtc: Send A:1501801 [101:16160] V:1501666 [30:109191] Recv A:319919479 [102:16320] Recv V:[0:0]
+
+I (1725495) PEER_DEF: Send 249:169028 d_out:32768 receive 223:41121 din:19652
+
+I (1725502) SCTP: Send: 1600 Ack: 1599 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1725508) SCTP: Recv: 198280693 ACK:198280693 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 26
+
+Send string Send to channel2 count 26
+
+Send string Send to channel1 count 27
+
+Send string Send to channel2 count 27
+
+I (1727448) DOOR_BELL: Get data label channel1 verify:1 data: This is the 14 on channel1
+
+I (1727449) DOOR_BELL: Get data label channel2 verify:1 data: This is the 14 on channel2
+
+I (1727514) webrtc: Send A:1503821 [99:15840] V:1503666 [30:107935] Recv A:319921499 [99:15840] Recv V:[0:0]
+
+I (1727515) PEER_DEF: Send 247:167586 d_out:32768 receive 229:38097 din:17276
+
+I (1727521) SCTP: Send: 1628 Ack: 1627 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1727528) SCTP: Recv: 198280710 ACK:198280710 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 28
+
+Send string Send to channel2 count 28
+
+Send string Send to channel1 count 29
+
+Send string Send to channel2 count 29
+
+I (1729089) DOOR_BELL: Get data label channel1 verify:1 data: This is the 15 on channel1
+
+I (1729280) DOOR_BELL: Get data label channel2 verify:1 data: This is the 15 on channel2
+
+I (1729531) webrtc: Send A:1505841 [101:16160] V:1505666 [30:108541] Recv A:319923499 [100:16000] Recv V:[0:0]
+
+I (1729532) PEER_DEF: Send 246:165779 d_out:32768 receive 248:38032 din:17240
+
+I (1729542) SCTP: Send: 1656 Ack: 1655 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1729543) SCTP: Recv: 198280727 ACK:198280727 Cached: 0 SackCount:2
+
+
+
+Send string Send to channel1 count 30
+
+Send string Send to channel2 count 30
+
+Send string Send to channel1 count 31
+
+Send string Send to channel2 count 31
+
+I (1731050) DOOR_BELL: Get data label channel1 verify:1 data: This is the 16 on channel1
+
+I (1731549) webrtc: Send A:1507881 [101:16160] V:1507733 [30:107173] Recv A:319925519 [100:16000] Recv V:[0:0]
+
+I (1731551) PEER_DEF: Send 244:164363 d_out:32768 receive 247:36747 din:16036
+
+I (1731557) SCTP: Send: 1684 Ack: 1683 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1731563) SCTP: Recv: 198280743 ACK:198280741 Cached: 8120 SackCount:2
+
+
+
+I (1731654) DOOR_BELL: Get data label channel2 verify:1 data: This is the 16 on channel2
+
+Send string Send to channel1 count 32
+
+Send string Send to channel2 count 32
+
+Send string Send to channel1 count 33
+
+Send string Send to channel2 count 33
+
+I (1733285) DOOR_BELL: Get data label channel1 verify:1 data: This is the 17 on channel1
+
+I (1733470) DOOR_BELL: Get data label channel2 verify:1 data: This is the 17 on channel2
+
+I (1733569) webrtc: Send A:1509901 [101:16160] V:1509733 [30:114865] Recv A:319927539 [100:16000] Recv V:[0:0]
+
+I (1733570) PEER_DEF: Send 252:172247 d_out:32768 receive 250:39354 din:18428
+
+I (1733576) SCTP: Send: 1712 Ack: 1711 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1733582) SCTP: Recv: 198280761 ACK:198280761 Cached: 0 SackCount:1
+
+
+
+Send string Send to channel1 count 34
+
+Send string Send to channel2 count 34
+
+Send string Send to channel1 count 35
+
+Send string Send to channel2 count 35
+
+I (1735583) DOOR_BELL: Get data label channel1 verify:1 data: This is the 18 on channel1
+
+I (1735589) webrtc: Send A:1511881 [99:15840] V:1511733 [30:109600] Recv A:319929539 [99:15840] Recv V:[0:0]
+
+I (1735592) PEER_DEF: Send 245:166498 d_out:32768 receive 243:36187 din:14560
+
+I (1735604) SCTP: Send: 1740 Ack: 1739 Fwd: 0:0 Cached: 0 Receive:3
+
+I (1735605) SCTP: Recv: 198280774 ACK:198280777 Cached: 8120 SackCount:0
+
+I (1735606) DOOR_BELL: Get data label channel2 verify:1 data: This is the 18 on channel2
+
+
+
+Send string Send to channel1 count 36
+
+Send string Send to channel2 count 36
+
+Send string Send to channel1 count 37
+
+Send string Send to channel2 count 37
+
+I (1737084) DOOR_BELL: Get data label channel1 verify:1 data: This is the 19 on channel1
+
+I (1737275) DOOR_BELL: Get data label channel2 verify:1 data: This is the 19 on channel2
+
+I (1737618) webrtc: Send A:1513941 [101:16160] V:1513800 [30:111648] Recv A:319931599 [102:16320] Recv V:[0:0]
+
+I (1737619) PEER_DEF: Send 251:169075 d_out:32768 receive 248:38419 din:17548
+
+I (1737625) SCTP: Send: 1768 Ack: 1767 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1737632) SCTP: Recv: 198280795 ACK:198280795 Cached: 0 SackCount:3
+
+
+
+Send string Send to channel1 count 38
+
+Send string Send to channel2 count 38
+
+Send string Send to channel1 count 39
+
+Send string Send to channel2 count 39
+
+I (1739467) DOOR_BELL: Get data label channel1 verify:1 data: This is the 20 on channel1
+
+I (1739636) webrtc: Send A:1515941 [100:16000] V:1515800 [30:108376] Recv A:319933619 [99:15840] Recv V:[0:0]
+
+I (1739637) PEER_DEF: Send 244:165339 d_out:32768 receive 246:34257 din:13660
+
+I (1739643) SCTP: Send: 1796 Ack: 1795 Fwd: 0:0 Cached: 0 Receive:0
+
+I (1739649) SCTP: Recv: 198280811 ACK:198280804 Cached: 5800 SackCount:1
+
+
+
+I (1739813) DOOR_BELL: Get data label channel2 verify:1 data: This is the 20 on channel2
+
+Send string Send to channel1 count 40
+
+Send string Send to channel2 count 40
+
+Send string Send to channel1 count 41
+
+Send string Send to channel2 count 41
+
+I (1741656) webrtc: Send A:1517961 [101:16160] V:1517800 [30:109946] Recv A:319935639 [101:16160] Recv V:[0:0]
+
+I (1741657) PEER_DEF: Send 245:167091 d_out:32768 receive 244:33568 din:12832
+
+I (1741664) SCTP: Send: 1824 Ack: 1823 Fwd: 0:0 Cached: 0 Receive:2
+
+I (1741667) SCTP: Recv: 198280824 ACK:198280816 Cached: 12760 SackCount:0
+
+
+
+I (1741764) DOOR_BELL: Get data label channel1 verify:1 data: This is the 21 on channel1
+
+I (1741792) DOOR_BELL: Get data label channel2 verify:1 data: This is the 21 on channel2
+
+Send string Send to channel1 count 42
+
+Send string Send to channel2 count 42
+
+I (1743103) DOOR_BELL: Get data label channel1 verify:1 data: This is the 22 on channel1
+
+Send string Send to channel1 count 43
+
+Send string Send to channel2 count 43
+
+I (1743300) DOOR_BELL: Get data label channel2 verify:1 data: This is the 22 on channel2
+

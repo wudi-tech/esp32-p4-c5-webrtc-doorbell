@@ -1,0 +1,992 @@
+E (1006384) WEBRTC_HTTP: Failed to send heartbeat ret 45062
+
+I (1006385) WEBRTC_HTTP: Event Stream hdlr Quit
+
+I (1010068) DOOR_BELL: Ring button on state 0
+
+E (1015067) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+
+E (1015067) task_wdt:  - IDLE0 (CPU 0)
+
+E (1015067) task_wdt: Tasks currently running:
+
+E (1015067) task_wdt: CPU 0: music_player
+
+E (1015067) task_wdt: CPU 1: IDLE1
+
+E (1015067) task_wdt: Print CPU 0 (current core) registers
+
+Core  0 register dump:
+
+MEPC    : 0x4ff01928  RA      : 0x40015d6a  SP      : 0x4801ac10  GP      : 0x4ff1d100  
+
+TP      : 0x4801ac80  T0      : 0x4fc1a058  T1      : 0x00000000  T2      : 0xffffffff  
+
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x000f75ad  A1      : 0x00000000  
+
+A2      : 0x0000fa00  A3      : 0x000075ad  A4      : 0x4ff27000  A5      : 0x00000599  
+
+A6      : 0xfa000000  A7      : 0x96800000  S2      : 0x00000000  S3      : 0x00000000  
+
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+
+T3      : 0x00000000  T4      : 0x000f18eb  T5      : 0x480265fc  T6      : 0x48030a4c  
+
+MSTATUS : 0x00001888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+
+MHARTID : 0x00000000  
+
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+I (1017988) AV_RENDER: Adec got msg:Close
+
+I (1017989) AV_RENDER: Thread Adec exited
+
+I (1017989) AV_RENDER: Close done
+
+I (1021506) DOOR_BELL: Ring button on state 1
+
+E (1026505) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+
+E (1026505) task_wdt:  - IDLE0 (CPU 0)
+
+E (1026505) task_wdt: Tasks currently running:
+
+E (1026505) task_wdt: CPU 0: music_player
+
+E (1026505) task_wdt: CPU 1: IDLE1
+
+E (1026505) task_wdt: Print CPU 0 (current core) registers
+
+Core  0 register dump:
+
+MEPC    : 0x4fc055d8  RA      : 0x4ff01946  SP      : 0x4801ac00  GP      : 0x4ff1d100  
+
+TP      : 0x4801ac80  T0      : 0x4fc1a058  T1      : 0x00000000  T2      : 0xffffffff  
+
+S0/FP   : 0x4ff08826  S1      : 0x00000000  A0      : 0x4ff235ec  A1      : 0x00000000  
+
+A2      : 0x0000fa00  A3      : 0x0000a25b  A4      : 0x4ff27000  A5      : 0x4ff235ec  
+
+A6      : 0xfa000000  A7      : 0x96800000  S2      : 0x00000000  S3      : 0x00000000  
+
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+
+T3      : 0x00000000  T4      : 0x000f448d  T5      : 0x480265fc  T6      : 0x48030a4c  
+
+MSTATUS : 0x00001888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+
+MHARTID : 0x00000000  
+
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+I (1029168) AV_RENDER: Adec got msg:Close
+
+I (1029169) AV_RENDER: Thread Adec exited
+
+I (1029169) AV_RENDER: Close done
+
+Get post request
+
+Request length 42
+
+Get post {"type":"customized","data":"ACCEPT_CALL"}
+
+I (1032008) webrtc: Received customized data
+
+I (1032008) DOOR_BELL: Receive command ACCEPT_CALL
+
+I (1032015) DTLS: Init SRTP OK
+
+I (1032040) webrtc: peer_connection_task started
+
+I (1032040) webrtc: PeerConnectionState: 2
+
+I (1032041) webrtc: PeerConnectionState: 3
+
+I (1032042) AGENT: Start agent as Controlling
+
+I (1032077) AGENT: Send STUN binding request
+
+I (1032279) AGENT: 0 Get candidate success user: psw:
+
+Add audio codec 5 sample_rate 8000
+
+E (1032281) AV_RENDER: Video render not set, stream is skipped
+
+E (1032281) AV_RENDER: Fail to add video stream 262
+
+I (1032287) webrtc: Send client sdp: v=0
+
+
+o=- 7801614086411001801 2 IN IP4 0.0.0.0
+
+
+s=-
+
+
+t=0 0
+
+
+a=msid-semantic: esp-webrtc
+
+
+a=group:BUNDLE 0 1 2
+
+
+m=audio 9 UDP/TLS/RTP/SAVPF 8
+
+
+c=IN IP4 0.0.0.0
+
+
+a=mid:0
+
+
+a=msid:esp_stream a0
+
+
+a=rtcp-mux
+
+
+a=rtpmap:8 PCMA/8000
+
+
+a=ssrc:4 cname:EspSSpbA0
+
+
+a=ssrc:4 msid:esp_stream a0
+
+
+a=sendrecv
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host
+
+
+a=candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=video 9 UDP/TLS/RTP/SAVPF 102 106
+
+
+a=rtpmap:102 H264/90000
+
+
+a=rtcp-fb:102 goog-remb
+
+
+a=rtcp-fb:102 transport-cc
+
+
+a=rtcp-fb:102 ccm fir
+
+
+a=rtcp-fb:102 nack
+
+
+a=rtcp-fb:102 nack pli
+
+
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=rtpmap:106 H264/90000
+
+
+a=rtcp-fb:106 goog-remb
+
+
+a=rtcp-fb:106 transport-cc
+
+
+a=rtcp-fb:106 ccm fir
+
+
+a=rtcp-fb:106 nack
+
+
+a=rtcp-fb:106 nack pli
+
+
+a=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=ssrc:1 cname:webrtc-h264
+
+
+a=ssrc:1 msid:esp_stream v0
+
+
+a=sendonly
+
+
+a=mid:1
+
+
+a=msid:esp_stream v0
+
+
+c=IN IP4 0.0.0.0
+
+
+a=rtcp-mux
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host
+
+
+a=candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=application 50712 UDP/DTLS/SCTP webrtc-datachannel
+
+
+a=mid:2
+
+
+a=sctp-port:5000
+
+
+c=IN IP4 0.0.0.0
+
+
+a=max-message-size:262144
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host
+
+
+a=candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0
+
+
+
+
+
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1039920) webrtc: Received customized data
+
+I (1039920) DOOR_BELL: Receive command DENY_CALL
+
+I (1039926) AV_RENDER: Adec got msg:Close
+
+I (1039930) AV_RENDER: Thread Adec exited
+
+I (1039933) AV_RENDER: Close done
+
+I (1039936) webrtc: PeerConnectionState: 1
+
+I (1039939) AV_RENDER: Close done
+
+I (1039943) AGENT: agent disconnected done
+
+I (1039953) AGENT: agent disconnected done
+
+Received {"type":"customized","data":"RING"}
+
+Received {"type":"customized","data":"RING"}
+
+Received {"type":"offer","sdp":"v=0\r\no=- 7801614086411001801 2 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=msid-semantic: esp-webrtc\r\na=group:BUNDLE 0 1 2\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=mid:0\r\na=msid:esp_stream a0\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:4 cname:EspSSpbA0\r\na=ssrc:4 msid:esp_stream a0\r\na=sendrecv\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host\r\na=candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0\r\nm=video 9 UDP/TLS/RTP/SAVPF 102 106\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:106 H264/90000\r\na=rtcp-fb:106 goog-remb\r\na=rtcp-fb:106 transport-cc\r\na=rtcp-fb:106 ccm fir\r\na=rtcp-fb:106 nack\r\na=rtcp-fb:106 nack pli\r\na=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=ssrc:1 cname:webrtc-h264\r\na=ssrc:1 msid:esp_stream v0\r\na=sendonly\r\na=mid:1\r\na=msid:esp_stream v0\r\nc=IN IP4 0.0.0.0\r\na=rtcp-mux\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host\r\na=candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0\r\nm=application 50712 UDP/DTLS/SCTP webrtc-datachannel\r\na=mid:2\r\na=sctp-port:5000\r\nc=IN IP4 0.0.0.0\r\na=max-message-size:262144\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host\r\na=candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0\r\n"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2128112895 192.168.31.207 55404 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1681292287 223.221.31.114 13947 typ srflx raddr 0.0.0.0 rport 0"}
+
+Get post request
+
+Request length 1612
+
+Get post {"type":"answer","sdp":"v=0\r\no=- 9182630194487681377 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS b532fb98-b1c1-4b5b-beb6-e07830d020d9\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:tnd3\r\na=ice-pwd:bi0DvxKeN8MWFVl5j79RXsZw\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:AF:DF\r\na=setup:active\r\na=mid:0\r\na=sendrecv\r\na=msid:b532fb98-b1c1-4b5b-beb6-e07830d020d9 c36c52ba-17ec-4134-b422-ec0ed05ae12d\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:2892301016 cname:MOvpI1+8i6ZEliDs\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:tnd3\r\na=ice-pwd:bi0DvxKeN8MWFVl5j79RXsZw\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:AF:DF\r\na=setup:active\r\na=mid:1\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:tnd3\r\na=ice-pwd:bi0DvxKeN8MWFVl5j79RXsZw\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:AF:DF\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:4084314672 1 udp 2122129151 192.168.148.1 55581 typ host generation 0 ufrag tnd3 network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 186
+
+Get post {"type":"candidate","candidate":"candidate:2004843896 1 udp 2122063615 192.168.31.186 55582 typ host generation 0 ufrag tnd3 network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 193
+
+Get post {"type":"candidate","candidate":"candidate:3156467579 1 tcp 1518280447 198.18.0.1 9 typ host tcptype active generation 0 ufrag tnd3 network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 179
+
+Get post {"type":"candidate","candidate":"candidate:232482468 1 tcp 1518149375 192.168.148.1 9 typ host tcptype active generation 0 ufrag tnd3 network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 182
+
+Get post {"type":"candidate","candidate":"candidate:1116277743 1 udp 2122260223 198.18.0.1 55579 typ host generation 0 ufrag tnd3 network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+I (1052605) DOOR_BELL: Ring button on state 0
+
+Received {"type":"customized","data":"RING"}
+
+Get post request
+
+Request length 180
+
+Get post {"type":"candidate","candidate":"candidate:2219498354 1 tcp 1518214911 192.168.159.1 9 typ host tcptype active generation 0 ufrag tnd3 network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:2061504486 1 udp 2122194687 192.168.159.1 55580 typ host generation 0 ufrag tnd3 network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 197
+
+Get post {"type":"candidate","candidate":"candidate:2312481260 1 tcp 1518083839 192.168.31.186 9 typ host tcptype active generation 0 ufrag tnd3 network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1057399) webrtc: Received customized data
+
+I (1057400) DOOR_BELL: Receive command DENY_CALL
+
+I (1057404) AV_RENDER: Adec got msg:Close
+
+I (1057407) AV_RENDER: Thread Adec exited
+
+I (1057411) AV_RENDER: Close done
+
+I (1057414) AV_RENDER: Close done
+
+E (1069136) WEBRTC_HTTP: Failed to send heartbeat ret 45062
+
+I (1069138) WEBRTC_HTTP: Event Stream hdlr Quit
+
+I (1069523) DOOR_BELL: Ring button on state 0
+
+E (1074522) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+
+E (1074522) task_wdt:  - IDLE0 (CPU 0)
+
+E (1074522) task_wdt: Tasks currently running:
+
+E (1074522) task_wdt: CPU 0: music_player
+
+E (1074522) task_wdt: CPU 1: IDLE1
+
+E (1074522) task_wdt: Print CPU 0 (current core) registers
+
+Core  0 register dump:
+
+MEPC    : 0x4fc055ec  RA      : 0x4ff01946  SP      : 0x4802f470  GP      : 0x4ff1d100  
+
+TP      : 0x4802f4f0  T0      : 0x4fc1a058  T1      : 0x00000000  T2      : 0xffffffff  
+
+S0/FP   : 0x4ff08826  S1      : 0x00000000  A0      : 0x4ff235ec  A1      : 0x00000000  
+
+A2      : 0x0000fa00  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x500e2000  
+
+A6      : 0xfa000000  A7      : 0x96800000  S2      : 0x00000000  S3      : 0x00000000  
+
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+
+T3      : 0x00000000  T4      : 0x000ffbb9  T5      : 0x4802fdc0  T6      : 0x48037bb8  
+
+MSTATUS : 0x00001888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+
+MHARTID : 0x00000000  
+
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+I (1076665) AV_RENDER: Adec got msg:Close
+
+I (1076666) AV_RENDER: Thread Adec exited
+
+I (1076666) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1098152) webrtc: Received customized data
+
+I (1098153) DOOR_BELL: Receive command DENY_CALL
+
+I (1098156) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+I (1101272) DOOR_BELL: Ring button on state 0
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1104128) webrtc: Received customized data
+
+I (1104129) DOOR_BELL: Receive command DENY_CALL
+
+I (1104133) AV_RENDER: Adec got msg:Close
+
+I (1104136) AV_RENDER: Thread Adec exited
+
+I (1104140) AV_RENDER: Close done
+
+I (1104143) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+I (1111323) DOOR_BELL: Ring button on state 0
+
+I (1111324) WEBRTC_HTTP: Event Stream hdlr Quit
+
+E (1116327) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+
+E (1116327) task_wdt:  - IDLE0 (CPU 0)
+
+E (1116327) task_wdt: Tasks currently running:
+
+E (1116327) task_wdt: CPU 0: music_player
+
+E (1116327) task_wdt: CPU 1: IDLE1
+
+E (1116327) task_wdt: Print CPU 0 (current core) registers
+
+Core  0 register dump:
+
+MEPC    : 0x4ff01932  RA      : 0x40015d28  SP      : 0x4802ca60  GP      : 0x4ff1d100  
+
+TP      : 0x4802cae0  T0      : 0x4fc1a058  T1      : 0x00000000  T2      : 0xffffffff  
+
+S0/FP   : 0x00000000  S1      : 0x00110139  A0      : 0x4ff23000  A1      : 0x00000000  
+
+A2      : 0x0000002e  A3      : 0x000000ff  A4      : 0x00000022  A5      : 0x000005a8  
+
+A6      : 0xfa000000  A7      : 0x96800000  S2      : 0x00000000  S3      : 0x00000000  
+
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+
+T3      : 0x00000000  T4      : 0x00109b32  T5      : 0x4802b358  T6      : 0x4803184c  
+
+MSTATUS : 0x00001888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+
+MHARTID : 0x00000000  
+
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+I (1118933) AV_RENDER: Adec got msg:Close
+
+I (1118934) AV_RENDER: Thread Adec exited
+
+I (1118934) AV_RENDER: Close done
+
+Get post request
+
+Request length 42
+
+Get post {"type":"customized","data":"ACCEPT_CALL"}
+
+I (1122052) webrtc: Received customized data
+
+I (1122053) DOOR_BELL: Receive command ACCEPT_CALL
+
+I (1122065) webrtc: peer_connection_task started
+
+I (1122065) webrtc: PeerConnectionState: 2
+
+I (1122065) webrtc: PeerConnectionState: 3
+
+I (1122069) AGENT: Start agent as Controlling
+
+I (1122073) AGENT: Send STUN binding request
+
+I (1122276) AGENT: 0 Get candidate success user: psw:
+
+Add audio codec 5 sample_rate 8000
+
+E (1122278) AV_RENDER: Video render not set, stream is skipped
+
+E (1122282) AV_RENDER: Fail to add video stream 262
+
+I (1122285) webrtc: Send client sdp: v=0
+
+
+o=- 7801614086411001801 2 IN IP4 0.0.0.0
+
+
+s=-
+
+
+t=0 0
+
+
+a=msid-semantic: esp-webrtc
+
+
+a=group:BUNDLE 0 1 2
+
+
+m=audio 9 UDP/TLS/RTP/SAVPF 8
+
+
+c=IN IP4 0.0.0.0
+
+
+a=mid:0
+
+
+a=msid:esp_stream a0
+
+
+a=rtcp-mux
+
+
+a=rtpmap:8 PCMA/8000
+
+
+a=ssrc:4 cname:EspSSpbA0
+
+
+a=ssrc:4 msid:esp_stream a0
+
+
+a=sendrecv
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host
+
+
+a=candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=video 9 UDP/TLS/RTP/SAVPF 102 106
+
+
+a=rtpmap:102 H264/90000
+
+
+a=rtcp-fb:102 goog-remb
+
+
+a=rtcp-fb:102 transport-cc
+
+
+a=rtcp-fb:102 ccm fir
+
+
+a=rtcp-fb:102 nack
+
+
+a=rtcp-fb:102 nack pli
+
+
+a=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=rtpmap:106 H264/90000
+
+
+a=rtcp-fb:106 goog-remb
+
+
+a=rtcp-fb:106 transport-cc
+
+
+a=rtcp-fb:106 ccm fir
+
+
+a=rtcp-fb:106 nack
+
+
+a=rtcp-fb:106 nack pli
+
+
+a=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f
+
+
+a=ssrc:1 cname:webrtc-h264
+
+
+a=ssrc:1 msid:esp_stream v0
+
+
+a=sendonly
+
+
+a=mid:1
+
+
+a=msid:esp_stream v0
+
+
+c=IN IP4 0.0.0.0
+
+
+a=rtcp-mux
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host
+
+
+a=candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0
+
+
+m=application 50712 UDP/DTLS/SCTP webrtc-datachannel
+
+
+a=mid:2
+
+
+a=sctp-port:5000
+
+
+c=IN IP4 0.0.0.0
+
+
+a=max-message-size:262144
+
+
+a=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB
+
+
+a=setup:actpass
+
+
+a=ice-ufrag:Xd4P
+
+
+a=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY
+
+
+a=candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host
+
+
+a=candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0
+
+
+
+
+
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1124936) webrtc: Received customized data
+
+I (1124937) DOOR_BELL: Receive command DENY_CALL
+
+I (1124943) AV_RENDER: Adec got msg:Close
+
+I (1124946) AV_RENDER: Thread Adec exited
+
+I (1124949) AV_RENDER: Close done
+
+I (1124952) webrtc: PeerConnectionState: 1
+
+I (1124956) AV_RENDER: Close done
+
+I (1124959) AGENT: agent disconnected done
+
+I (1124969) AGENT: agent disconnected done
+
+I (1128027) DOOR_BELL: Ring button on state 0
+
+I (1132178) DOOR_BELL: Ring button on state 1
+
+E (1132178) MEDIA_SYS: Music is playing, stop automatically
+
+I (1132180) AV_RENDER: Adec got msg:Close
+
+I (1132180) AV_RENDER: Thread Adec exited
+
+I (1132183) AV_RENDER: Close done
+
+Received {"type":"offer","sdp":"v=0\r\no=- 7801614086411001801 2 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=msid-semantic: esp-webrtc\r\na=group:BUNDLE 0 1 2\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=mid:0\r\na=msid:esp_stream a0\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:4 cname:EspSSpbA0\r\na=ssrc:4 msid:esp_stream a0\r\na=sendrecv\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host\r\na=candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0\r\nm=video 9 UDP/TLS/RTP/SAVPF 102 106\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:106 H264/90000\r\na=rtcp-fb:106 goog-remb\r\na=rtcp-fb:106 transport-cc\r\na=rtcp-fb:106 ccm fir\r\na=rtcp-fb:106 nack\r\na=rtcp-fb:106 nack pli\r\na=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=ssrc:1 cname:webrtc-h264\r\na=ssrc:1 msid:esp_stream v0\r\na=sendonly\r\na=mid:1\r\na=msid:esp_stream v0\r\nc=IN IP4 0.0.0.0\r\na=rtcp-mux\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host\r\na=candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0\r\nm=application 50712 UDP/DTLS/SCTP webrtc-datachannel\r\na=mid:2\r\na=sctp-port:5000\r\nc=IN IP4 0.0.0.0\r\na=max-message-size:262144\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:F5:EB\r\na=setup:actpass\r\na=ice-ufrag:Xd4P\r\na=ice-pwd:oKWwUlPd9ZwfQgpeN3WiStdY\r\na=candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host\r\na=candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0\r\n"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"candidate","candidate":"candidate:0 1 UDP 2128113151 192.168.31.207 55405 typ host"}
+
+Received {"type":"candidate","candidate":"candidate:1 1 UDP 1681313279 223.221.31.114 14029 typ srflx raddr 0.0.0.0 rport 0"}
+
+Received {"type":"customized","data":"RING"}
+
+Received {"type":"customized","data":"RING"}
+
+E (1137199) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+
+E (1137199) task_wdt:  - IDLE0 (CPU 0)
+
+E (1137199) task_wdt: Tasks currently running:
+
+E (1137199) task_wdt: CPU 0: music_player
+
+E (1137199) task_wdt: CPU 1: IDLE1
+
+E (1137199) task_wdt: Print CPU 0 (current core) registers
+
+Core  0 register dump:
+
+MEPC    : 0x4fc055ec  RA      : 0x4ff01946  SP      : 0x4801ac00  GP      : 0x4ff1d100  
+
+TP      : 0x4801ac80  T0      : 0x4fc1a058  T1      : 0x00000000  T2      : 0xffffffff  
+
+S0/FP   : 0x4ff08826  S1      : 0x001152c1  A0      : 0x4ff235ec  A1      : 0x00000000  
+
+A2      : 0x0000002e  A3      : 0x00000001  A4      : 0x00000000  A5      : 0x500e2000  
+
+A6      : 0xfa000000  A7      : 0x96800000  S2      : 0x00000000  S3      : 0x00000000  
+
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+
+T3      : 0x00000000  T4      : 0x0010ead1  T5      : 0x4802b358  T6      : 0x4803184c  
+
+MSTATUS : 0x00001888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+
+MHARTID : 0x00000000  
+
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+I (1139278) AV_RENDER: Adec got msg:Close
+
+I (1139279) AV_RENDER: Thread Adec exited
+
+I (1139279) AV_RENDER: Close done
+
+Get post request
+
+Request length 1612
+
+Get post {"type":"answer","sdp":"v=0\r\no=- 8082100447485835907 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS 95f2ca89-2fa2-4d8b-a35b-b6ddddd09d44\r\nm=audio 9 UDP/TLS/RTP/SAVPF 8\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:OFQy\r\na=ice-pwd:OhSD7AEli1XpjS2S77+ek3VH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:7D:78\r\na=setup:active\r\na=mid:0\r\na=sendrecv\r\na=msid:95f2ca89-2fa2-4d8b-a35b-b6ddddd09d44 877cfadb-03de-438c-8214-44147058e86b\r\na=rtcp-mux\r\na=rtpmap:8 PCMA/8000\r\na=ssrc:4245012864 cname:frQ7F5XKPrFcrlIJ\r\nm=video 9 UDP/TLS/RTP/SAVPF 102\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:OFQy\r\na=ice-pwd:OhSD7AEli1XpjS2S77+ek3VH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:7D:78\r\na=setup:active\r\na=mid:1\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:OFQy\r\na=ice-pwd:OhSD7AEli1XpjS2S77+ek3VH\r\na=ice-options:trickle\r\na=fingerprint:sha-256 [LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:[LOCAL_MAC]:7D:78\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+
+Get post request
+
+Request length 179
+
+Get post {"type":"candidate","candidate":"candidate:198914028 1 tcp 1518214911 192.168.159.1 9 typ host tcptype active generation 0 ufrag OFQy network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 196
+
+Get post {"type":"candidate","candidate":"candidate:105143666 1 tcp 1518083839 192.168.31.186 9 typ host tcptype active generation 0 ufrag OFQy network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1141294) webrtc: Received customized data
+
+I (1141294) DOOR_BELL: Receive command DENY_CALL
+
+I (1141298) AV_RENDER: Close done
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:2095072942 1 udp 2122129151 192.168.148.1 58625 typ host generation 0 ufrag OFQy network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 169
+
+Get post {"type":"candidate","candidate":"candidate:4117887864 1 udp 2122194687 192.168.159.1 58624 typ host generation 0 ufrag OFQy network-id 2","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 182
+
+Get post {"type":"candidate","candidate":"candidate:3440967537 1 udp 2122260223 198.18.0.1 58623 typ host generation 0 ufrag OFQy network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 180
+
+Get post {"type":"candidate","candidate":"candidate:2185925178 1 tcp 1518149375 192.168.148.1 9 typ host tcptype active generation 0 ufrag OFQy network-id 4","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 186
+
+Get post {"type":"candidate","candidate":"candidate:4176382438 1 udp 2122063615 192.168.31.186 58626 typ host generation 0 ufrag OFQy network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}
+
+Get post request
+
+Request length 192
+
+Get post {"type":"candidate","candidate":"candidate:867314661 1 tcp 1518280447 198.18.0.1 9 typ host tcptype active generation 0 ufrag OFQy network-id 1 network-cost 50","sdpMid":"0","sdpMLineIndex":0}
+
+E (1156514) WEBRTC_HTTP: Failed to send heartbeat ret 45062
+
+I (1156515) WEBRTC_HTTP: Event Stream hdlr Quit
+
+I (1160611) DOOR_BELL: Ring button on state 0
+
+E (1165610) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:
+
+E (1165610) task_wdt:  - IDLE0 (CPU 0)
+
+E (1165610) task_wdt: Tasks currently running:
+
+E (1165610) task_wdt: CPU 0: music_player
+
+E (1165610) task_wdt: CPU 1: IDLE1
+
+E (1165610) task_wdt: Print CPU 0 (current core) registers
+
+Core  0 register dump:
+
+MEPC    : 0x40015d42  RA      : 0x40015d36  SP      : 0x4803b2c0  GP      : 0x4ff1d100  
+
+TP      : 0x4803b330  T0      : 0x4fc1a058  T1      : 0x00000000  T2      : 0xffffffff  
+
+S0/FP   : 0x00000000  S1      : 0x00000000  A0      : 0x0011c1bc  A1      : 0x00000000  
+
+A2      : 0x0000fa00  A3      : 0x0000c1bc  A4      : 0x96800000  A5      : 0x0000059f  
+
+A6      : 0xfa000000  A7      : 0x96800000  S2      : 0x00000000  S3      : 0x00000000  
+
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+
+T3      : 0x00000000  T4      : 0x00115732  T5      : 0x48024114  T6      : 0x48045708  
+
+MSTATUS : 0x00001888  MTVEC   : 0x4ff00003  MCAUSE  : 0xdeadc0de  MTVAL   : 0xdeadc0de  
+
+MHARTID : 0x00000000  
+
+Please enable CONFIG_ESP_SYSTEM_USE_FRAME_POINTER option to have a full backtrace.
+
+I (1168529) AV_RENDER: Adec got msg:Close
+
+I (1168530) AV_RENDER: Thread Adec exited
+
+I (1168530) AV_RENDER: Close done
+
+Received {"type":"customized","data":"RING"}
+
+Get post request
+
+Request length 40
+
+Get post {"type":"customized","data":"DENY_CALL"}
+
+I (1176628) webrtc: Received customized data
+
+I (1176628) DOOR_BELL: Receive command DENY_CALL
+
+I (1176631) AV_RENDER: Close done
+

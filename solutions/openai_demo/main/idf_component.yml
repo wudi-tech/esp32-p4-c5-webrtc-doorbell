@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=5.0"
+  ## Import needed components only
+  esp_peer:
+    override_path: ../../../components/esp_peer
+  ## Note: openai_signaling is implemented locally in openai_signaling.c

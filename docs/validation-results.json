@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Asia/Shanghai",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "gcc": "gcc.exe (x86_64-win32-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0"
+  },
+  "scope": "Host checks only; no ESP-IDF build, flash or hardware run in this archive task.",
+  "checks": [
+    {
+      "name": "verify_door_lock.py",
+      "returncode": 0,
+      "stdout": "PASS: door lock state transitions\nPASS: Task 7 door-lock contract is consistent\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_doorbell_ring_policy.py",
+      "returncode": 0,
+      "stdout": "PASS: doorbell ring policy\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_doorbell_status.py",
+      "returncode": 0,
+      "stdout": "PASS: display-independent doorbell status seam\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_hybrid_vision_ui.py",
+      "returncode": 0,
+      "stdout": "PASS: hybrid vision browser UI contract\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_pcm_overlay.py",
+      "returncode": 0,
+      "stdout": "PASS: PCM prompt overlay\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_pedestrian_filter.py",
+      "returncode": 0,
+      "stdout": "PASS: pedestrian false-positive filter\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_presence_fusion.py",
+      "returncode": 0,
+      "stdout": "PASS: presence fusion state machine\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_radar_ld2450.py",
+      "returncode": 0,
+      "stdout": "PASS: LD2450 protocol parser\nPASS: serialized doorbell ring transaction\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_round_two_ui.py",
+      "returncode": 0,
+      "stdout": "PASS: round-two UI and signaling contracts\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_task_8_3_8_4.py",
+      "returncode": 0,
+      "stdout": "PASS: structured radar event schema\nPASS: radar and vision multimodal fusion\nPASS: pedestrian RGB565 format probe\nPASS: camera motion confirmation\nPASS: Task 8.3/8.4 integration contract\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_vision_event.py",
+      "returncode": 0,
+      "stdout": "PASS: vision event serializer\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_vision_runtime_safety.py",
+      "returncode": 0,
+      "stdout": "PASS: vision runtime stack, format, and BOOT diagnostics are safe\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_vision_tracker.py",
+      "returncode": 0,
+      "stdout": "PASS: vision tracker\n",
+      "stderr": ""
+    },
+    {
+      "name": "verify_wt99p4c5_config.py",
+      "returncode": 0,
+      "stdout": "PASS: WT99P4C5-S1 Task 4 configuration is consistent\n",
+      "stderr": ""
+    },
+    {
+      "name": "cad.acrylic_plate.test_geometry",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_camera_axis_is_straight_and_has_no_cut_features (cad.acrylic_plate.test_geometry.GeometryTests.test_camera_axis_is_straight_and_has_no_cut_features) ... ok\ntest_corner_support_holes_are_ten_millimetres_from_edges (cad.acrylic_plate.test_geometry.GeometryTests.test_corner_support_holes_are_ten_millimetres_from_edges) ... ok\ntest_distinct_holes_have_two_millimetres_of_material (cad.acrylic_plate.test_geometry.GeometryTests.test_distinct_holes_have_two_millimetres_of_material) ... ok\ntest_every_cut_feature_stays_inside_plate (cad.acrylic_plate.test_geometry.GeometryTests.test_every_cut_feature_stays_inside_plate) ... ok\ntest_holes_clear_the_cable_cutout_by_two_millimetres (cad.acrylic_plate.test_geometry.GeometryTests.test_holes_clear_the_cable_cutout_by_two_millimetres) ... ok\ntest_mainboard_holes_are_derived_from_approved_outline (cad.acrylic_plate.test_geometry.GeometryTests.test_mainboard_holes_are_derived_from_approved_outline) ... ok\ntest_only_approved_holes_remain (cad.acrylic_plate.test_geometry.GeometryTests.test_only_approved_holes_remain) ... ok\ntest_plate_matches_approved_manufacturing_baseline (cad.acrylic_plate.test_geometry.GeometryTests.test_plate_matches_approved_manufacturing_baseline) ... ok\ntest_power_board_holes_match_approved_absolute_coordinates (cad.acrylic_plate.test_geometry.GeometryTests.test_power_board_holes_match_approved_absolute_coordinates) ... ok\ntest_radar_uses_two_official_diagonal_notch_centres (cad.acrylic_plate.test_geometry.GeometryTests.test_radar_uses_two_official_diagonal_notch_centres) ... ok\ntest_speaker_and_servo_are_reference_only (cad.acrylic_plate.test_geometry.GeometryTests.test_speaker_and_servo_are_reference_only) ... ok\ntest_w1_is_the_approved_rounded_rectangular_cutout (cad.acrylic_plate.test_geometry.GeometryTests.test_w1_is_the_approved_rounded_rectangular_cutout) ... ok\ntest_vendor_zip_contains_complete_v3_delivery (cad.acrylic_plate.test_geometry.PackageTests.test_vendor_zip_contains_complete_v3_delivery) ... ok\ntest_pdf_has_four_pages_and_v3_manufacturing_content (cad.acrylic_plate.test_geometry.PdfOutputTests.test_pdf_has_four_pages_and_v3_manufacturing_content) ... ok\ntest_dxf_and_csv_outputs_have_v3_structure (cad.acrylic_plate.test_geometry.VectorOutputTests.test_dxf_and_csv_outputs_have_v3_structure) ... ok\ntest_generator_can_run_directly_from_repo_root (cad.acrylic_plate.test_geometry.VectorOutputTests.test_generator_can_run_directly_from_repo_root) ... ok\ntest_separate_front_and_rear_svg_references (cad.acrylic_plate.test_geometry.VectorOutputTests.test_separate_front_and_rear_svg_references) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 1.579s\n\nOK\n"
+    }
+  ]
+}

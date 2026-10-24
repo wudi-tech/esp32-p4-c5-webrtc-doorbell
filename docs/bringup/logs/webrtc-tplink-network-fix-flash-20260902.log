@@ -1,0 +1,330 @@
+
+Done! You can now compile ESP-IDF projects.
+Go to the project directory and run:
+
+  idf.py build
+
+Executing action: flash
+Running ninja in directory <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build
+Executing "ninja flash"...
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x9000 partition --type app C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/partition_table/partition-table.bin C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/doorbell_demo.bin"
+
+doorbell_demo.bin binary size 0x339170 bytes. Smallest app partition is 0x600000 bytes. 0x2c6e90 bytes (46%) free.
+
+
+[2/5] Performing build step for 'bootloader'
+
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x9000 bootloader 0x2000 C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/bootloader/bootloader.bin"
+
+
+Bootloader binary size 0x5de0 bytes. 0x1220 bytes (16%) free.
+
+
+
+[3/5] No install step for 'bootloader'
+
+[4/5] Completed 'bootloader'
+
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D E:\Espressif\frameworks\esp-idf-v5.5.5\components\esptool_py && E:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=E:/Espressif/frameworks/esp-idf-v5.5.5 -D SERIAL_TOOL=E:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/esptool/esptool.py;--chip;esp32p4 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build -P E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/run_serial_tool.cmake"
+
+esptool.py --chip esp32p4 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x2000 bootloader/bootloader.bin 0x10000 doorbell_demo.bin 0x9000 partition_table/partition-table.bin
+
+esptool.py v4.12.0
+
+Serial port COM5
+
+Connecting....
+
+Chip is ESP32-P4 (revision v1.3)
+
+Features: High-Performance MCU
+
+Crystal is 40MHz
+
+MAC: [LOCAL_MAC]
+
+Uploading stub...
+
+Running stub...
+
+Stub running...
+
+Changing baud rate to 460800
+
+Changed.
+
+Configuring flash size...
+
+Flash will be erased from 0x00002000 to 0x00007fff...
+
+Flash will be erased from 0x00010000 to 0x00349fff...
+
+Flash will be erased from 0x00009000 to 0x00009fff...
+
+SHA digest in image updated
+
+Compressed 24032 bytes to 14902...
+
+Writing at 0x00002000... (100 %)
+
+Wrote 24032 bytes (14902 compressed) at 0x00002000 in 0.7 seconds (effective 263.0 kbit/s)...
+
+Hash of data verified.
+
+Compressed 3379568 bytes to 1921482...
+
+Writing at 0x00010000... (0 %)
+
+Writing at 0x0001e516... (1 %)
+
+Writing at 0x0002d2ec... (2 %)
+
+Writing at 0x0003e157... (3 %)
+
+Writing at 0x0004d4b1... (4 %)
+
+Writing at 0x0005b414... (5 %)
+
+Writing at 0x0006b111... (5 %)
+
+Writing at 0x0007afa2... (6 %)
+
+Writing at 0x000854cc... (7 %)
+
+Writing at 0x00089c6f... (8 %)
+
+Writing at 0x0008ddbc... (9 %)
+
+Writing at 0x00091f1c... (10 %)
+
+Writing at 0x00097b66... (11 %)
+
+Writing at 0x0009c655... (11 %)
+
+Writing at 0x000a188b... (12 %)
+
+Writing at 0x000a62b4... (13 %)
+
+Writing at 0x000abf41... (14 %)
+
+Writing at 0x000b02a6... (15 %)
+
+Writing at 0x000b6611... (16 %)
+
+Writing at 0x000bc03c... (16 %)
+
+Writing at 0x000c0de1... (17 %)
+
+Writing at 0x000c561c... (18 %)
+
+Writing at 0x000ccd17... (19 %)
+
+Writing at 0x000d5f90... (20 %)
+
+Writing at 0x000dd1bc... (21 %)
+
+Writing at 0x000e3d45... (22 %)
+
+Writing at 0x000eb564... (22 %)
+
+Writing at 0x000f32ab... (23 %)
+
+Writing at 0x000faf72... (24 %)
+
+Writing at 0x00106551... (25 %)
+
+Writing at 0x0010e9b4... (26 %)
+
+Writing at 0x00115921... (27 %)
+
+Writing at 0x0011c910... (27 %)
+
+Writing at 0x0012364b... (28 %)
+
+Writing at 0x0012a3c2... (29 %)
+
+Writing at 0x00130bef... (30 %)
+
+Writing at 0x00137b96... (31 %)
+
+Writing at 0x0013efe5... (32 %)
+
+Writing at 0x00146d72... (33 %)
+
+Writing at 0x0014f3ad... (33 %)
+
+Writing at 0x00157232... (34 %)
+
+Writing at 0x0015dada... (35 %)
+
+Writing at 0x001670ac... (36 %)
+
+Writing at 0x0016d366... (37 %)
+
+Writing at 0x001726af... (38 %)
+
+Writing at 0x00178154... (38 %)
+
+Writing at 0x0017dda8... (39 %)
+
+Writing at 0x001835e1... (40 %)
+
+Writing at 0x00188867... (41 %)
+
+Writing at 0x0018d99e... (42 %)
+
+Writing at 0x001929fb... (43 %)
+
+Writing at 0x00198710... (44 %)
+
+Writing at 0x0019dd4d... (44 %)
+
+Writing at 0x001a3a96... (45 %)
+
+Writing at 0x001a8d94... (46 %)
+
+Writing at 0x001adf62... (47 %)
+
+Writing at 0x001b315d... (48 %)
+
+Writing at 0x001b8725... (49 %)
+
+Writing at 0x001bdb70... (50 %)
+
+Writing at 0x001c2c6f... (50 %)
+
+Writing at 0x001c7cee... (51 %)
+
+Writing at 0x001cd0ca... (52 %)
+
+Writing at 0x001d2d73... (53 %)
+
+Writing at 0x001d812f... (54 %)
+
+Writing at 0x001dd1da... (55 %)
+
+Writing at 0x001e25a2... (55 %)
+
+Writing at 0x001e7bb1... (56 %)
+
+Writing at 0x001eccae... (57 %)
+
+Writing at 0x001f211f... (58 %)
+
+Writing at 0x001f7178... (59 %)
+
+Writing at 0x001fc1c2... (60 %)
+
+Writing at 0x00201842... (61 %)
+
+Writing at 0x00206f7d... (61 %)
+
+Writing at 0x0020c9b9... (62 %)
+
+Writing at 0x00212177... (63 %)
+
+Writing at 0x00219000... (64 %)
+
+Writing at 0x00224bd8... (65 %)
+
+Writing at 0x0022d279... (66 %)
+
+Writing at 0x0023328b... (66 %)
+
+Writing at 0x00239142... (67 %)
+
+Writing at 0x0023e520... (68 %)
+
+Writing at 0x00243b3f... (69 %)
+
+Writing at 0x00248d62... (70 %)
+
+Writing at 0x0024e048... (71 %)
+
+Writing at 0x002539f2... (72 %)
+
+Writing at 0x00259e82... (72 %)
+
+Writing at 0x002609b4... (73 %)
+
+Writing at 0x00266c91... (74 %)
+
+Writing at 0x002700bf... (75 %)
+
+Writing at 0x00278ab4... (76 %)
+
+Writing at 0x00280baf... (77 %)
+
+Writing at 0x0028c458... (77 %)
+
+Writing at 0x0029598e... (78 %)
+
+Writing at 0x0029e849... (79 %)
+
+Writing at 0x002a5bfe... (80 %)
+
+Writing at 0x002ac4c9... (81 %)
+
+Writing at 0x002b3550... (82 %)
+
+Writing at 0x002ba236... (83 %)
+
+Writing at 0x002c179f... (83 %)
+
+Writing at 0x002c8440... (84 %)
+
+Writing at 0x002cf4b2... (85 %)
+
+Writing at 0x002d7ba0... (86 %)
+
+Writing at 0x002df444... (87 %)
+
+Writing at 0x002e56be... (88 %)
+
+Writing at 0x002ebf77... (88 %)
+
+Writing at 0x002f2f77... (89 %)
+
+Writing at 0x002f987e... (90 %)
+
+Writing at 0x002fff84... (91 %)
+
+Writing at 0x003066d4... (92 %)
+
+Writing at 0x0030ddae... (93 %)
+
+Writing at 0x0031402b... (94 %)
+
+Writing at 0x0031a03a... (94 %)
+
+Writing at 0x00321ba1... (95 %)
+
+Writing at 0x00328dd6... (96 %)
+
+Writing at 0x00330612... (97 %)
+
+Writing at 0x003378a7... (98 %)
+
+Writing at 0x0033ee0e... (99 %)
+
+Writing at 0x00345fba... (100 %)
+
+Wrote 3379568 bytes (1921482 compressed) at 0x00010000 in 50.6 seconds (effective 534.6 kbit/s)...
+
+Hash of data verified.
+
+Compressed 3072 bytes to 129...
+
+Writing at 0x00009000... (100 %)
+
+Wrote 3072 bytes (129 compressed) at 0x00009000 in 0.1 seconds (effective 338.1 kbit/s)...
+
+Hash of data verified.
+
+
+
+Leaving...
+
+Hard resetting via RTS pin...
+
+Done

@@ -1,0 +1,19 @@
+Activating ESP-IDF 5.5
+Setting IDF_PATH to 'E:\Espressif\frameworks\esp-idf-v5.5.5'.
+* Checking python version ... 3.11.2
+* Checking python dependencies ... OK
+* Deactivating the current ESP-IDF environment (if any) ... OK
+* Establishing a new ESP-IDF environment ... OK
+* Identifying shell ... powershell.exe
+* Detecting outdated tools in system ... Found tools that are not used by active ESP-IDF version.
+For removing old versions of idf-driver, idf-python-wheels use command 'python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf_tools.py uninstall'
+To free up even more space, remove installation packages of those tools.
+Use option python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf_tools.py uninstall --remove-archives.
+CMake Error at run_serial_tool.cmake:67 (message):
+  
+  E:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/esptool/esptool.py;--chip;esp32p4
+  failed.
+
+
+
+ninja failed with exit code 1, output of the command is in the <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\log\idf_py_stderr_output_30268 and <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\log\idf_py_stdout_output_30268

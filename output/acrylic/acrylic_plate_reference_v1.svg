@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220mm" height="190mm" viewBox="0 0 220 190">
+<style>
+.cut{fill:none;stroke:#e31b23;stroke-width:.35}.hole{fill:none;stroke:#e31b23;stroke-width:.3}
+.front{fill:#214f43;fill-opacity:.09;stroke:#214f43;stroke-width:.35}.rear{fill:#c58a24;fill-opacity:.08;stroke:#c58a24;stroke-width:.35;stroke-dasharray:2 1}
+.camera-axis{fill:none;stroke-dasharray:2 1}.label{font-family:Arial,sans-serif;font-size:3px;fill:#202020}.rear-text{fill:#8a611e}
+</style>
+<rect x="0.175" y="0.175" width="219.65" height="189.65" rx="10.0" class="cut"/>
+<rect x="15.0" y="15.0" width="120.0" height="90.0" rx="1.5" class="front"/><text x="16.5" y="20.0" class="label front-text">WT99P4C5-S1 120x90</text>
+<line x1="117.0" y1="155.0" x2="117.0" y2="105.0" class="front camera-axis"/><text x="119.0" y="130.0" class="label">CAMERA AXIS 50 mm</text>
+<rect x="72.5" y="120.5" width="15.0" height="44.0" rx="1.5" class="front"/><text x="74.0" y="125.5" class="label front-text">RADAR 44x15 VERTICAL</text>
+<rect x="157.5" y="132.5" width="35.0" height="25.0" rx="1.5" class="front"/><text x="159.0" y="137.5" class="label front-text">3525 SPEAKER 4 OHM 3 W</text>
+<rect x="164.0" y="35.5" width="22.8" height="28.5" rx="1.5" class="front"/><text x="165.5" y="40.5" class="label front-text">MG90S</text>
+<rect x="202.0" y="20.0" width="8.0" height="75.0" rx="1.5" class="front"/><text x="203.5" y="25.0" class="label front-text">DEMO DOOR</text>
+<rect x="128.0" y="48.55" width="85.1" height="61.45" rx="1.5" class="rear"/><text x="129.5" y="53.55" class="label rear-text">POWER BOARD REAR</text>
+<circle cx="10.0" cy="180.0" r="1.6" class="hole"/>
+<text x="12.0" y="178.0" class="label">C1</text>
+<circle cx="210.0" cy="180.0" r="1.6" class="hole"/>
+<text x="212.0" y="178.0" class="label">C2</text>
+<circle cx="10.0" cy="10.0" r="1.6" class="hole"/>
+<text x="12.0" y="8.0" class="label">C3</text>
+<circle cx="210.0" cy="10.0" r="1.6" class="hole"/>
+<text x="212.0" y="8.0" class="label">C4</text>
+<circle cx="17.525" cy="102.48" r="1.6" class="hole"/>
+<text x="19.525" y="100.48" class="label">MB1</text>
+<circle cx="132.475" cy="102.48" r="1.6" class="hole"/>
+<text x="134.475" y="100.48" class="label">MB2</text>
+<circle cx="17.525" cy="17.52000000000001" r="1.6" class="hole"/>
+<text x="19.525" y="15.52000000000001" class="label">MB3</text>
+<circle cx="132.475" cy="17.52000000000001" r="1.6" class="hole"/>
+<text x="134.475" y="15.52000000000001" class="label">MB4</text>
+<circle cx="65.0" cy="170.0" r="1.35" class="hole"/>
+<text x="67.0" y="168.0" class="label">R1</text>
+<circle cx="95.0" cy="170.0" r="1.35" class="hole"/>
+<text x="97.0" y="168.0" class="label">R2</text>
+<circle cx="65.0" cy="115.0" r="1.35" class="hole"/>
+<text x="67.0" y="113.0" class="label">R3</text>
+<circle cx="95.0" cy="115.0" r="1.35" class="hole"/>
+<text x="97.0" y="113.0" class="label">R4</text>
+<circle cx="150.0" cy="165.0" r="1.35" class="hole"/>
+<text x="152.0" y="163.0" class="label">SP1</text>
+<circle cx="200.0" cy="165.0" r="1.35" class="hole"/>
+<text x="202.0" y="163.0" class="label">SP2</text>
+<circle cx="150.0" cy="125.0" r="1.35" class="hole"/>
+<text x="152.0" y="123.0" class="label">SP3</text>
+<circle cx="200.0" cy="125.0" r="1.35" class="hole"/>
+<text x="202.0" y="123.0" class="label">SP4</text>
+<circle cx="155.0" cy="70.0" r="1.35" class="hole"/>
+<text x="157.0" y="68.0" class="label">SV1</text>
+<circle cx="195.0" cy="70.0" r="1.35" class="hole"/>
+<text x="197.0" y="68.0" class="label">SV2</text>
+<circle cx="155.0" cy="25.0" r="1.35" class="hole"/>
+<text x="157.0" y="23.0" class="label">SV3</text>
+<circle cx="195.0" cy="25.0" r="1.35" class="hole"/>
+<text x="197.0" y="23.0" class="label">SV4</text>
+<circle cx="210.0" cy="75.0" r="1.35" class="hole"/>
+<text x="212.0" y="73.0" class="label">D1</text>
+<circle cx="210.0" cy="50.0" r="1.35" class="hole"/>
+<text x="212.0" y="48.0" class="label">D2</text>
+<circle cx="210.0" cy="25.0" r="1.35" class="hole"/>
+<text x="212.0" y="23.0" class="label">D3</text>
+<circle cx="141.55" cy="103.775" r="1.1" class="hole"/>
+<text x="143.55" y="101.775" class="label">P1</text>
+<circle cx="199.55" cy="103.775" r="1.1" class="hole"/>
+<text x="201.55" y="101.775" class="label">P2</text>
+<circle cx="141.55" cy="54.775000000000006" r="1.1" class="hole"/>
+<text x="143.55" y="52.775000000000006" class="label">P3</text>
+<circle cx="199.55" cy="54.775000000000006" r="1.1" class="hole"/>
+<text x="201.55" y="52.775000000000006" class="label">P4</text>
+<circle cx="145.0" cy="118.0" r="4.0" class="hole"/>
+<text x="147.0" y="116.0" class="label">W1</text>
+<rect x="102.0" y="163.4" width="6.0" height="3.2" rx="1.6" class="hole"/>
+<text x="109.0" y="163.0" class="label">CAM1</text>
+<rect x="126.0" y="163.4" width="6.0" height="3.2" rx="1.6" class="hole"/>
+<text x="133.0" y="163.0" class="label">CAM2</text>
+<rect x="102.0" y="123.4" width="6.0" height="3.2" rx="1.6" class="hole"/>
+<text x="109.0" y="123.0" class="label">CAM3</text>
+<rect x="126.0" y="123.4" width="6.0" height="3.2" rx="1.6" class="hole"/>
+<text x="133.0" y="123.0" class="label">CAM4</text>
+<path d="M2 188h10M2 188v-10" stroke="#111" stroke-width=".4"/>
+<text x="4" y="186" class="label">ORIGIN (0,0)</text>
+<text x="110" y="6" text-anchor="middle" class="label">FRONT VIEW - DO NOT MIRROR - UNITS mm - 1:1</text>
+</svg>

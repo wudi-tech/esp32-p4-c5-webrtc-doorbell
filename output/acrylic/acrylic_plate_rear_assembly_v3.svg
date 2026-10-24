@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220mm" height="190mm" viewBox="0 0 220 190">
+<style>
+.plate{fill:#f8fbfa;stroke:#1f3b36;stroke-width:.6}
+.cut{fill:none;stroke:#d43d3d;stroke-width:.35}
+.component{fill:#dfeee9;stroke:#1e6556;stroke-width:.45}
+.camera{fill:#f5c36a;stroke:#8d5a00;stroke-width:.4}
+.radar{fill:#225b8a;stroke:#123750;stroke-width:.45}
+.speaker{fill:#e9e5dc;stroke:#5b554b;stroke-width:.45}
+.servo{fill:#5f84a2;stroke:#263e50;stroke-width:.45}
+.rear{fill:#f0dfb5;stroke:#9b6d18;stroke-width:.45}
+.keepout{fill:none;stroke:#a87324;stroke-width:.35;stroke-dasharray:2 1}
+.axis{fill:none;stroke:#9b6500;stroke-width:.4;stroke-dasharray:2 1}
+.label{font-family:Arial,'Microsoft YaHei',sans-serif;font-size:3px;fill:#17201e}
+.small{font-size:2.4px}.title{font-size:4.2px;font-weight:bold}
+.warning{font-size:2.7px;font-weight:bold;fill:#a32626}
+</style>
+<rect x=".3" y=".3" width="219.400" height="189.400" rx="10.000" class="plate"/>
+<text x="110.000" y="5.000" text-anchor="middle" class="label title">PAGE 3 - REAR ASSEMBLY REFERENCE</text>
+<text x="110.000" y="9.500" text-anchor="middle" class="label small">REAR COMPONENTS SHOWN IN FRONT-DATUM COORDINATES - DO NOT FLIP X</text>
+<circle cx="10.000" cy="180.000" r="1.600" class="cut"/>
+<text x="12.000" y="178.000" text-anchor="start" class="label small">C1</text>
+<circle cx="210.000" cy="180.000" r="1.600" class="cut"/>
+<text x="212.000" y="178.000" text-anchor="start" class="label small">C2</text>
+<circle cx="10.000" cy="10.000" r="1.600" class="cut"/>
+<text x="12.000" y="8.000" text-anchor="start" class="label small">C3</text>
+<circle cx="210.000" cy="10.000" r="1.600" class="cut"/>
+<text x="212.000" y="8.000" text-anchor="start" class="label small">C4</text>
+<circle cx="22.525" cy="102.480" r="1.600" class="cut"/>
+<text x="24.525" y="100.480" text-anchor="start" class="label small">MB1</text>
+<circle cx="137.475" cy="102.480" r="1.600" class="cut"/>
+<text x="139.475" y="100.480" text-anchor="start" class="label small">MB2</text>
+<circle cx="22.525" cy="17.520" r="1.600" class="cut"/>
+<text x="24.525" y="15.520" text-anchor="start" class="label small">MB3</text>
+<circle cx="137.475" cy="17.520" r="1.600" class="cut"/>
+<text x="139.475" y="15.520" text-anchor="start" class="label small">MB4</text>
+<circle cx="28.278" cy="163.222" r="1.100" class="cut"/>
+<text x="30.278" y="161.222" text-anchor="start" class="label small">R1</text>
+<circle cx="41.722" cy="120.778" r="1.100" class="cut"/>
+<text x="43.722" y="118.778" text-anchor="start" class="label small">R2</text>
+<circle cx="143.600" cy="171.500" r="1.100" class="cut"/>
+<text x="145.600" y="169.500" text-anchor="start" class="label small">P1</text>
+<circle cx="201.600" cy="171.500" r="1.100" class="cut"/>
+<text x="203.600" y="169.500" text-anchor="start" class="label small">P2</text>
+<circle cx="143.600" cy="122.500" r="1.100" class="cut"/>
+<text x="145.600" y="120.500" text-anchor="start" class="label small">P3</text>
+<circle cx="201.600" cy="122.500" r="1.100" class="cut"/>
+<text x="203.600" y="120.500" text-anchor="start" class="label small">P4</text>
+<rect id="W1" x="154.000" y="90.000" width="32.000" height="18.000" rx="3.000" class="cut"/>
+<text x="170.000" y="99.000" text-anchor="middle" class="label small">W1 32x18 R3</text>
+<rect id="POWER_MAX_ENVELOPE" x="120.000" y="113.550" width="85.100" height="61.450" rx="1.500" class="keepout"/>
+<rect id="POWER_BOARD" x="120.000" y="119.000" width="85.100" height="56.000" rx="1.500" class="rear"/>
+<text x="162.550" y="145.000" text-anchor="middle" class="label">POWER BOARD 85.10x56.00</text>
+<text x="162.550" y="150.000" text-anchor="middle" class="label small">MAX ENVELOPE 85.10x61.45</text>
+<text x="162.550" y="155.000" text-anchor="middle" class="label small">4x M2 x 10 STANDOFF</text>
+<text x="162.550" y="160.000" text-anchor="middle" class="label small">COMPONENTS FACE REAR-OUT</text>
+<text x="110.000" y="182.000" text-anchor="middle" class="label warning">ALL MACHINING COORDINATES ARE DEFINED FROM FRONT VIEW. DO NOT MIRROR CUTTING GEOMETRY.</text>
+<text x="110.000" y="186.000" text-anchor="middle" class="label warning">DO NOT MIRROR CUTTING GEOMETRY</text>
+</svg>

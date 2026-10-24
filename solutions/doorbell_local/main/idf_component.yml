@@ -1,0 +1,46 @@
+## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: ">=5.0"
+  ## Import needed components only
+  espressif/esp_h264:
+    version: "~1.3"
+    rules:
+    - if: target in [esp32p4, esp32s3]
+  espressif/pedestrian_detect:
+    version: "^0.3.0"
+    rules:
+      - if: target in [esp32p4, esp32s3]
+    matches:
+      - if: "$CONFIG{DOORBELL_SUPPORT_PEDESTRIAN_DETECT} == True"
+  espressif/human_face_detect:
+    version: "^0.5.0"
+    rules:
+      - if: target in [esp32p4, esp32s3]
+    matches:
+      - if: "$CONFIG{DOORBELL_SUPPORT_PEDESTRIAN_DETECT} == True"
+  # Pin the P4+C5 transport pair that was used for the verified firmware.
+  # Without direct pins, a clean checkout can resolve a newer esp_hosted
+  # release with a different Kconfig contract.
+  espressif/esp_hosted:
+    version: "2.12.12"
+    rules:
+      - if: target == esp32p4
+  espressif/esp_wifi_remote:
+    version: "1.6.3"
+    rules:
+      - if: target == esp32p4
+  tempotian/codec_board:
+      override_path: ../../../components/codec_board
+  tempotian/esp_webrtc:
+      override_path: ../../../components/esp_webrtc
+  tempotian/media_lib_utils:
+      override_path: ../../../components/media_lib_utils
+  tempotian/av_render:
+      override_path: ../../../components/av_render
+  esp_peer:
+      override_path: ../../../components/esp_peer
+  webrtc_utils:
+      override_path: ../../../components/webrtc_utils
+  ## Note: http_impl signaling is implemented locally in webrtc_http_server.c

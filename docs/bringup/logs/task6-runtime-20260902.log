@@ -1,0 +1,1246 @@
+
+Done! You can now compile ESP-IDF projects.
+Go to the project directory and run:
+
+  idf.py build
+
+Executing action: monitor
+Running idf_monitor in directory <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local
+Executing "E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32p4 --revision 100 --decode-panic backtrace <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\doorbell_demo.elf <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\bootloader\bootloader.elf --force-color -m 'E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'E:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py' '-p' 'COM5'"...
+ESP-ROM:esp32p4-eco2-20240710
+
+Build:Jul 10 2024
+
+rst:0x1 (POWERON),boot:0x20f (SPI_FAST_FLASH_BOOT)
+
+SPI mode:DIO, clock div:1
+
+load:0x4ff33ce0,len:0x173c
+
+load:0x4ff29ed0,len:0x1028
+
+load:0x4ff2cbd0,len:0x3624
+
+entry 0x4ff29eda
+
+I (25) boot: ESP-IDF v5.5.5-dirty 2nd stage bootloader
+
+I (26) boot: compile time Aug 10 2026 12:19:20
+
+I (26) boot: Multicore bootloader
+
+I (28) boot: chip revision: v1.3
+
+I (29) boot: efuse block revision: v0.3
+
+I (33) qio_mode: Enabling default flash chip QIO
+
+I (37) boot.esp32p4: SPI Speed      : 80MHz
+
+I (41) boot.esp32p4: SPI Mode       : QIO
+
+I (45) boot.esp32p4: SPI Flash Size : 16MB
+
+I (49) boot: Enabling RNG early entropy source...
+
+I (53) boot: Partition Table:
+
+I (56) boot: ## Label            Usage          Type ST Offset   Length
+
+I (62) boot:  0 nvs              WiFi [SSID] [PASSWORD] 02 0000a000 00005000
+
+I (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+
+I (75) boot:  2 factory          factory app      00 00 00010000 00600000
+
+I (82) boot:  3 pedestrian_det   Unknown data     01 82 00610000 0007d000
+
+I (89) boot: End of partition table
+
+I (92) esp_image: segment 0: paddr=00010020 vaddr=40250020 size=d5344h (873284) map
+
+I (233) esp_image: segment 1: paddr=000e536c vaddr=30100000 size=0007ch (   124) load
+
+I (235) esp_image: segment 2: paddr=000e53f0 vaddr=4ff00000 size=0ac28h ( 44072) load
+
+I (246) esp_image: segment 3: paddr=000f0020 vaddr=40000020 size=24da58h (2415192) map
+
+I (617) esp_image: segment 4: paddr=0033da80 vaddr=4ff0ac28 size=11a9ch ( 72348) load
+
+I (631) esp_image: segment 5: paddr=0034f524 vaddr=4ff1c700 size=05c10h ( 23568) load
+
+I (643) boot: Loaded app from partition at offset 0x10000
+
+I (644) boot: Disabling RNG early entropy source...
+
+I (655) hex_psram: vendor id    : 0x0d (AP)
+
+I (655) hex_psram: Latency      : 0x01 (Fixed)
+
+I (655) hex_psram: DriveStr.    : 0x00 (25 Ohm)
+
+I (656) hex_psram: dev id       : 0x03 (generation 4)
+
+I (661) hex_psram: density      : 0x07 (256 Mbit)
+
+I (665) hex_psram: good-die     : 0x06 (Pass)
+
+I (669) hex_psram: SRF          : 0x02 (Slow Refresh)
+
+I (674) hex_psram: BurstType    : 0x00 ( Wrap)
+
+I (678) hex_psram: BurstLen     : 0x03 (2048 Byte)
+
+I (683) hex_psram: BitMode      : 0x01 (X16 Mode)
+
+I (687) hex_psram: Readlatency  : 0x04 (14 cycles@Fixed)
+
+I (692) hex_psram: DriveStrength: 0x00 (1/1)
+
+I (696) MSPI Timing: Enter psram timing tuning
+
+I (873) esp_psram: Found 32MB PSRAM device
+
+I (874) esp_psram: Speed: 200MHz
+
+I (874) hex_psram: psram CS IO is dedicated
+
+I (874) cpu_start: Multicore app
+
+I (1825) esp_psram: SPI SRAM memory test OK
+
+I (1834) cpu_start: GPIO 38 and 37 are used as console UART I/O pins
+
+I (1834) cpu_start: Pro cpu start user code
+
+I (1835) cpu_start: cpu freq: 360000000 Hz
+
+I (1837) app_init: Application information:
+
+I (1841) app_init: Project name:     doorbell_demo
+
+I (1845) app_init: App version:      68cdbb1-dirty
+
+I (1850) app_init: Compile time:     Sep  2 2026 08:43:31
+
+I (1855) app_init: ELF file SHA256:  eb2444ea9...
+
+I (1859) app_init: ESP-IDF:          v5.5.5-dirty
+
+I (1864) efuse_init: Min chip rev:     v1.0
+
+I (1867) efuse_init: Max chip rev:     v1.99 
+
+I (1872) efuse_init: Chip rev:         v1.3
+
+I (1875) heap_init: Initializing. RAM available for dynamic allocation:
+
+I (1882) heap_init: At 4FF274F0 len 00013AD0 (78 KiB): RETENT_RAM
+
+I (1888) heap_init: At 4FF3AFC0 len 00004BF0 (18 KiB): RAM
+
+I (1893) heap_init: At 4FF40000 len 00060000 (384 KiB): RAM
+
+I (1898) heap_init: At 50108080 len 00007F80 (31 KiB): RTCRAM
+
+I (1904) heap_init: At 3010007C len 00001F84 (7 KiB): SPM
+
+I (1909) esp_psram: Adding pool of 32768K of PSRAM memory to heap allocator
+
+I (1916) spi_flash: detected chip: generic
+
+I (1919) spi_flash: flash io: qio
+
+I (1922) host_init: ESP Hosted : Host chip_ip[18]
+
+I (1927) H_API: ESP-Hosted starting. Hosted_Tasks: prio:23, stack: 5120 RPC_task_stack: 5120
+
+I (1935) H_API: ** add_esp_wifi_remote_channels **
+
+I (1941) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+
+I (1946) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+
+I (1953) H_SDIO_DRV: sdio_data_to_rx_buf_task started
+
+I (1957) main_task: Started on CPU0
+
+I (1961) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+
+I (1969) main_task: Calling app_main()
+
+I (1972) Board: Init board.
+
+i2c: {sda: 7, scl: 8}
+
+i2s: {mclk: 13, bclk: 12, ws: 10, dout: 9, din: 11}
+
+in_out: {codec: ES8311, pa: 53, use_mclk: 1, pa_gain: 6}
+
+sdcard: {clk: 43, cmd: 44, d0: 39, d1: 40, d2: 41, d3: 42}
+
+camera: {type: mipi}
+
+lcd: {bus: mipi, ldo_chan: 3, ldo_voltage: 2500, lane_num: 2, lane_bitrate: 1000, dpi_clk: 80, bit_depth: 16, fb_num: 2, dsi_hsync: 1344, dsi_vsync: 635, dsi_hbp: 160, dsi_hfp: 160, dsi_vbp: 23, dsi_vfp: 12, rst: -1, width: 1024, height: 600}
+
+E (2015) i2c.master: this port has not been initialized, please initialize it first
+
+I (2022) CODEC_INIT: Set mater handle 0 0x48016384
+
+I (2026) CODEC_INIT: in:1 out:1 port: 1
+
+I (2030) CODEC_INIT: Success to int i2c: 0
+
+I (2034) CODEC_INIT: Init i2s 0 type: 3 mclk:13 bclk:12 ws:10 din:11 dout:9
+
+I (2041) CODEC_INIT: tx:0x480167e4 rx:0x480169a0
+
+I (2045) CODEC_INIT: output init std ret 0
+
+I (2049) CODEC_INIT: Input init std ret 0
+
+I (2052) CODEC_INIT: Init i2s 0 ok
+
+I (2055) CODEC_INIT: Success to init i2s: 0
+
+I (2059) CODEC_INIT: Success to int i2c: 0
+
+I (2063) CODEC_INIT: Success to init i2s: 0
+
+I (2067) CODEC_INIT: Get out handle 0x480167e4 port 0
+
+I (2078) ES8311: Work in Slave mode
+
+I (2082) MEDIA_SYS: Use i2c handle 0x48016384
+
+I (2083) ov5647: Detected Camera sensor PID=0x5647
+
+I (2146) VENC_EL: Create vid_enc-0x48017f28
+
+I (2146) OVERLAY_MIXER: Create video overlay, vid_overlay-0x48017ff8
+
+E (2146) LCD_RENDER: Invalid argument to open
+
+E (2149) MEDIA_SYS: Fail to create video render
+
+[5n
+
+
+Type 'help' to get the list of commands.
+
+
+Use UP/DOWN arrows to navigate through command history.
+
+
+Press TAB when typing command name to auto-complete.
+
+
+
+
+
+Your terminal application does not support escape sequences.
+
+
+
+Line editing and history features are disabled.
+
+
+
+On Windows, try using Windows Terminal or Putty instead.
+
+
+esp> I (2725) transport: Attempt connection with slave: retry[0]
+
+W (2745) H_SDIO_DRV: Reset slave using GPIO[54]
+
+I (2745) os_wrapper_esp: GPIO [54] configured
+
+I (4269) sdio_wrapper: SDIO master: Slot 1, Data-Lines: 4-bit Freq(KHz)[40000 KHz]
+
+I (4269) sdio_wrapper: GPIOs: CLK[18] CMD[19] D0[14] D1[15] D2[16] D3[17] Slave_Reset[54]
+
+I (4273) sdio_wrapper: Queues: Tx[20] Rx[20] SDIO-Rx-Mode[1]
+
+I (4313) sdio_wrapper: Function 0 Blocksize: 512
+
+I (4314) sdio_wrapper: Function 1 Blocksize: 512
+
+I (4414) H_SDIO_DRV: Card init success, TRANSPORT_RX_ACTIVE
+
+I (4414) transport: set_transport_state: 1
+
+I (4414) transport: Waiting for esp_hosted slave to be ready
+
+I (4453) H_SDIO_DRV: SDIO Host operating in STREAMING MODE
+
+I (4453) H_SDIO_DRV: Starting SDIO process rx task
+
+I (4453) H_SDIO_DRV: Open data path at slave
+
+I (4461) H_SDIO_DRV: Received ESP_PRIV_IF type message
+
+I (4462) transport: Received INIT event from ESP32 peripheral
+
+I (4468) transport: EVENT: 12
+
+I (4468) transport: Identified slave [esp32c5]
+
+I (4474) transport: EVENT: 11
+
+I (4477) transport: capabilities: 0xd
+
+I (4480) transport: Features supported are:
+
+I (4484) transport: 	 * WLAN
+
+I (4487) transport: 	   - HCI over SDIO
+
+I (4490) transport: 	   - BLE only
+
+I (4493) transport: EVENT: 13
+
+W (4496) transport: Version mismatch: Host [2.12.0] > Co-proc [0.0.0] ==> Upgrade co-proc to avoid RPC timeouts
+
+I (4505) transport: ESP board type is : 23 
+
+
+
+
+I (4511) transport: Base transport is set-up, TRANSPORT_TX_ACTIVE
+
+I (4514) H_API: Transport active
+
+I (4517) transport: Slave chip Id[12]
+
+I (4520) transport: raw_tp_dir[-], flow_ctrl: low[60] high[80]
+
+I (4526) transport: transport_delayed_init
+
+I (4532) esp_cli: Registering command: crash
+
+I (4536) esp_cli: Registering command: reboot
+
+I (4539) esp_cli: Registering command: mem-dump
+
+I (4545) esp_cli: Registering command: task-dump
+
+I (4548) esp_cli: Registering command: cpu-dump
+
+I (4551) esp_cli: Registering command: heap-trace
+
+I (4557) esp_cli: Registering command: sock-dump
+
+I (4560) esp_cli: Registering command: host-power-save
+
+I (4566) hci_stub_drv: Host BT Support: Disabled
+
+I (4569) H_SDIO_DRV: Received INIT event
+
+I (4573) H_SDIO_DRV: Event type: 0x22
+
+I (4576) H_SDIO_DRV: Write thread started
+
+I (4953) rpc_core: <-- RPC_Req  [0x116], uid 1
+
+I (4953) rpc_evt: EVENT: ESP INIT
+
+
+
+I (4954) RPC_WRAP: Coprocessor Boot-up
+
+I (5063) rpc_rsp:  --> RPC_Resp [0x216], uid 1
+
+I (5064) NETWORK: Use Wi-Fi config supplied by application
+
+I (5065) rpc_core: <-- RPC_Req  [0x104], uid 2
+
+I (5072) rpc_rsp:  --> RPC_Resp [0x204], uid 2
+
+I (5073) rpc_core: <-- RPC_Req  [0x11c], uid 3
+
+I (5087) rpc_rsp:  --> RPC_Resp [0x21c], uid 3
+
+I (5088) rpc_core: <-- RPC_Req  [0x10e], uid 4
+
+I (5100) rpc_rsp:  --> RPC_Resp [0x20e], uid 4
+
+I (5100) rpc_core: <-- RPC_Req  [0x118], uid 5
+
+I (5361) rpc_rsp:  --> RPC_Resp [0x218], uid 5
+
+I (5362) NETWORK: wifi_init_sta finished.
+
+I (5364) rpc_evt: Event [0x2b] received
+
+I (5365) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (5368) rpc_evt: Event [0x2] received
+
+I (5371) rpc_evt: EVT rcvd: Wi-Fi Start
+
+I (5374) RPC_WRAP: ESP Event: wifi [SSID] [PASSWORD]
+
+I (5380) rpc_core: <-- RPC_Req  [0x101], uid 6
+
+I (5387) rpc_rsp:  --> RPC_Resp [0x201], uid 6
+
+I (5388) H_API: esp_wifi_remote_connect
+
+I (5391) rpc_core: <-- RPC_Req  [0x11a], uid 7
+
+I (5403) rpc_rsp:  --> RPC_Resp [0x21a], uid 7
+
+I (12358) rpc_evt: Event [0x2b] received
+
+I (12358) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (12655) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (12656) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (13770) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (13770) NETWORK: got ip:192.168.0.103
+
+E (13772) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (13778) AV_RENDER: Close done
+
+I (13782) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (13789) WEBRTC_HTTP: Success to init http server
+
+I (13795) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (13805) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (13808) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+I (13814) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (13824) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (13833) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (13842) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (13864) Adev_Codec: Open codec device OK
+
+I (13866) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (15783) AV_RENDER: Adec got msg:Close
+
+I (15783) AV_RENDER: Thread Adec exited
+
+I (15832) AV_RENDER: ARender got msg:Close
+
+I (15833) AV_RENDER: Thread ARender exited
+
+I (15833) AV_RENDER: Close done
+
+E (37998860) WEBRTC_HTTP: Failed to send heartbeat ret 45062
+
+I (37998861) WEBRTC_HTTP: Event Stream hdlr Quit
+
+I (38006856) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (38006857) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (38006858) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (38006864) AV_RENDER: Close done
+
+I (38006867) WEBRTC_HTTP: Start to stop https server
+
+I (38006970) WEBRTC_HTTP: End to stop https server
+
+I (38006970) H_API: esp_wifi_remote_connect
+
+I (38006971) rpc_core: <-- RPC_Req  [0x11a], uid 8
+
+I (38006981) rpc_rsp:  --> RPC_Resp [0x21a], uid 8
+
+I (38006982) NETWORK: retry to connect to the AP
+
+I (38013922) rpc_evt: Event [0x2b] received
+
+I (38013923) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (38014252) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (38014252) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (38015374) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (38015374) NETWORK: got ip:192.168.0.103
+
+E (38015376) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (38015382) AV_RENDER: Close done
+
+I (38015386) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (38015396) WEBRTC_HTTP: Success to init http server
+
+I (38015399) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (38015409) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (38015415) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (38015421) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (38015428) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (38015440) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (38015449) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (38015455) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (38015480) Adev_Codec: Open codec device OK
+
+I (38015482) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (38017399) AV_RENDER: Adec got msg:Close
+
+I (38017399) AV_RENDER: Thread Adec exited
+
+I (38017448) AV_RENDER: ARender got msg:Close
+
+I (38017449) AV_RENDER: Thread ARender exited
+
+I (38017449) AV_RENDER: Close done
+
+I (40515914) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (40515915) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (40515916) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (40515922) AV_RENDER: Close done
+
+I (40515925) WEBRTC_HTTP: Start to stop https server
+
+I (40516029) WEBRTC_HTTP: End to stop https server
+
+I (40516029) H_API: esp_wifi_remote_connect
+
+I (40516030) rpc_core: <-- RPC_Req  [0x11a], uid 9
+
+I (40516041) rpc_rsp:  --> RPC_Resp [0x21a], uid 9
+
+I (40516041) NETWORK: retry to connect to the AP
+
+I (40522980) rpc_evt: Event [0x2b] received
+
+I (40522980) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (40522988) rpc_evt: Event [0x2b] received
+
+I (40522988) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (40523318) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (40523318) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (40524428) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (40524428) NETWORK: got ip:192.168.0.103
+
+E (40524430) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (40524436) AV_RENDER: Close done
+
+I (40524440) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (40524450) WEBRTC_HTTP: Success to init http server
+
+I (40524453) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (40524463) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (40524469) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (40524475) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (40524482) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (40524494) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (40524503) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (40524509) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (40524534) Adev_Codec: Open codec device OK
+
+I (40524536) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (40526453) AV_RENDER: Adec got msg:Close
+
+I (40526453) AV_RENDER: Thread Adec exited
+
+I (40526502) AV_RENDER: ARender got msg:Close
+
+I (40526503) AV_RENDER: Thread ARender exited
+
+I (40526503) AV_RENDER: Close done
+
+I (41731032) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (41731033) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (41731034) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (41731040) AV_RENDER: Close done
+
+I (41731043) WEBRTC_HTTP: Start to stop https server
+
+I (41731146) WEBRTC_HTTP: End to stop https server
+
+I (41731146) H_API: esp_wifi_remote_connect
+
+I (41731147) rpc_core: <-- RPC_Req  [0x11a], uid 10
+
+I (41731158) rpc_rsp:  --> RPC_Resp [0x21a], uid 10
+
+I (41731158) NETWORK: retry to connect to the AP
+
+I (41738074) rpc_evt: Event [0x2b] received
+
+I (41738075) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (41738082) rpc_evt: Event [0x2b] received
+
+I (41738083) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (41738412) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (41738413) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (41739535) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (41739535) NETWORK: got ip:192.168.0.103
+
+E (41739537) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (41739543) AV_RENDER: Close done
+
+I (41739547) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (41739557) WEBRTC_HTTP: Success to init http server
+
+I (41739560) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (41739570) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (41739576) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (41739582) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (41739589) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (41739601) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (41739610) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (41739617) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (41739641) Adev_Codec: Open codec device OK
+
+I (41739643) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (41741560) AV_RENDER: Adec got msg:Close
+
+I (41741560) AV_RENDER: Thread Adec exited
+
+I (41741609) AV_RENDER: ARender got msg:Close
+
+I (41741610) AV_RENDER: Thread ARender exited
+
+I (41741610) AV_RENDER: Close done
+
+I (44112977) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (44112978) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (44112979) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (44112985) AV_RENDER: Close done
+
+I (44112988) WEBRTC_HTTP: Start to stop https server
+
+I (44113091) WEBRTC_HTTP: End to stop https server
+
+I (44113091) H_API: esp_wifi_remote_connect
+
+I (44113092) rpc_core: <-- RPC_Req  [0x11a], uid 11
+
+I (44113103) rpc_rsp:  --> RPC_Resp [0x21a], uid 11
+
+I (44113103) NETWORK: retry to connect to the AP
+
+I (44120002) rpc_evt: Event [0x2b] received
+
+I (44120003) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (44120043) rpc_evt: Event [0x2b] received
+
+I (44120043) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (44120372) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (44120373) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (44121489) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (44121489) NETWORK: got ip:192.168.0.103
+
+E (44121491) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (44121497) AV_RENDER: Close done
+
+I (44121501) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (44121511) WEBRTC_HTTP: Success to init http server
+
+I (44121514) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (44121524) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (44121530) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (44121536) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (44121543) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (44121555) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (44121564) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (44121571) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (44121595) Adev_Codec: Open codec device OK
+
+I (44121597) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (44123514) AV_RENDER: Adec got msg:Close
+
+I (44123514) AV_RENDER: Thread Adec exited
+
+I (44123563) AV_RENDER: ARender got msg:Close
+
+I (44123564) AV_RENDER: Thread ARender exited
+
+I (44123564) AV_RENDER: Close done
+
+I (46577904) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (46577906) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (46577906) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (46577912) AV_RENDER: Close done
+
+I (46577915) WEBRTC_HTTP: Start to stop https server
+
+I (46578019) WEBRTC_HTTP: End to stop https server
+
+I (46578019) H_API: esp_wifi_remote_connect
+
+I (46578020) rpc_core: <-- RPC_Req  [0x11a], uid 12
+
+I (46578031) rpc_rsp:  --> RPC_Resp [0x21a], uid 12
+
+I (46578031) NETWORK: retry to connect to the AP
+
+I (46584938) rpc_evt: Event [0x2b] received
+
+I (46584938) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (46584947) rpc_evt: Event [0x2b] received
+
+I (46584947) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (46585276) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (46585277) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (46586412) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (46586412) NETWORK: got ip:192.168.0.103
+
+E (46586414) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (46586420) AV_RENDER: Close done
+
+I (46586424) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (46586434) WEBRTC_HTTP: Success to init http server
+
+I (46586437) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (46586447) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (46586453) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (46586459) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (46586466) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (46586478) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (46586487) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (46586493) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (46586518) Adev_Codec: Open codec device OK
+
+I (46586521) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (46588437) AV_RENDER: Adec got msg:Close
+
+I (46588437) AV_RENDER: Thread Adec exited
+
+I (46588486) AV_RENDER: ARender got msg:Close
+
+I (46588487) AV_RENDER: Thread ARender exited
+
+I (46588487) AV_RENDER: Close done
+
+I (47753460) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (47753461) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (47753462) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (47753468) AV_RENDER: Close done
+
+I (47753471) WEBRTC_HTTP: Start to stop https server
+
+I (47753575) WEBRTC_HTTP: End to stop https server
+
+I (47753575) H_API: esp_wifi_remote_connect
+
+I (47753576) rpc_core: <-- RPC_Req  [0x11a], uid 13
+
+I (47753586) rpc_rsp:  --> RPC_Resp [0x21a], uid 13
+
+I (47753587) NETWORK: retry to connect to the AP
+
+I (47760443) rpc_evt: Event [0x2b] received
+
+I (47760443) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (47760451) rpc_evt: Event [0x2b] received
+
+I (47760451) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (47760781) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (47760782) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (47761899) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (47761899) NETWORK: got ip:192.168.0.103
+
+E (47761901) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (47761907) AV_RENDER: Close done
+
+I (47761911) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (47761921) WEBRTC_HTTP: Success to init http server
+
+I (47761924) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (47761934) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (47761940) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (47761946) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (47761953) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (47761965) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (47761974) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (47761980) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (47762005) Adev_Codec: Open codec device OK
+
+I (47762007) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (47763924) AV_RENDER: Adec got msg:Close
+
+I (47763924) AV_RENDER: Thread Adec exited
+
+I (47763973) AV_RENDER: ARender got msg:Close
+
+I (47763974) AV_RENDER: Thread ARender exited
+
+I (47763974) AV_RENDER: Close done
+
+I (50182693) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (50182694) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (50182695) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (50182701) AV_RENDER: Close done
+
+I (50182704) WEBRTC_HTTP: Start to stop https server
+
+I (50182808) WEBRTC_HTTP: End to stop https server
+
+I (50182808) H_API: esp_wifi_remote_connect
+
+I (50182809) rpc_core: <-- RPC_Req  [0x11a], uid 14
+
+I (50182820) rpc_rsp:  --> RPC_Resp [0x21a], uid 14
+
+I (50182820) NETWORK: retry to connect to the AP
+
+I (50189676) rpc_evt: Event [0x2b] received
+
+I (50189676) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (50189684) rpc_evt: Event [0x2b] received
+
+I (50189684) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (50190014) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (50190014) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (50191122) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (50191122) NETWORK: got ip:192.168.0.103
+
+E (50191124) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (50191130) AV_RENDER: Close done
+
+I (50191134) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (50191144) WEBRTC_HTTP: Success to init http server
+
+I (50191147) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (50191157) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (50191163) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (50191169) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (50191176) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (50191188) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (50191197) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (50191203) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (50191228) Adev_Codec: Open codec device OK
+
+I (50191230) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (50193147) AV_RENDER: Adec got msg:Close
+
+I (50193147) AV_RENDER: Thread Adec exited
+
+I (50193196) AV_RENDER: ARender got msg:Close
+
+I (50193197) AV_RENDER: Thread ARender exited
+
+I (50193197) AV_RENDER: Close done
+
+I (51309288) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (51309289) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (51309290) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (51309296) AV_RENDER: Close done
+
+I (51309299) WEBRTC_HTTP: Start to stop https server
+
+I (51309402) WEBRTC_HTTP: End to stop https server
+
+I (51309402) H_API: esp_wifi_remote_connect
+
+I (51309403) rpc_core: <-- RPC_Req  [0x11a], uid 15
+
+I (51309414) rpc_rsp:  --> RPC_Resp [0x21a], uid 15
+
+I (51309414) NETWORK: retry to connect to the AP
+
+I (51316293) rpc_evt: Event [0x2b] received
+
+I (51316293) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (51316302) rpc_evt: Event [0x2b] received
+
+I (51316302) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (51316631) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (51316632) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (51317769) esp_netif_handlers: sta ip: 192.168.0.103, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (51317769) NETWORK: got ip:192.168.0.103
+
+E (51317771) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (51317777) AV_RENDER: Close done
+
+I (51317781) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (51317791) WEBRTC_HTTP: Success to init http server
+
+I (51317794) Webrtc_Test: Use browser to enter https://192.168.0.103/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (51317804) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (51317810) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (51317816) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (51317823) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (51317835) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (51317844) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (51317850) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (51317875) Adev_Codec: Open codec device OK
+
+I (51317877) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (51319794) AV_RENDER: Adec got msg:Close
+
+I (51319794) AV_RENDER: Thread Adec exited
+
+I (51319843) AV_RENDER: ARender got msg:Close
+
+I (51319844) AV_RENDER: Thread ARender exited
+
+I (51319844) AV_RENDER: Close done
+
+I (56690230) rpc_evt: Event [0x15] received
+
+I (56690231) rpc_evt: EVT rcvd: Wi-Fi Event[21] ignored
+
+I (56692750) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56692751) DOOR_BELL: Start to close webrtc 0x48019ae8
+
+E (56692752) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (56692758) AV_RENDER: Close done
+
+I (56692761) WEBRTC_HTTP: Start to stop https server
+
+I (56692865) WEBRTC_HTTP: End to stop https server
+
+I (56692865) H_API: esp_wifi_remote_connect
+
+I (56692866) rpc_core: <-- RPC_Req  [0x11a], uid 16
+
+I (56692877) rpc_rsp:  --> RPC_Resp [0x21a], uid 16
+
+I (56692877) NETWORK: retry to connect to the AP
+
+I (56699638) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56699639) H_API: esp_wifi_remote_connect
+
+I (56699639) rpc_core: <-- RPC_Req  [0x11a], uid 17
+
+I (56699650) rpc_rsp:  --> RPC_Resp [0x21a], uid 17
+
+I (56699651) NETWORK: retry to connect to the AP
+
+I (56706412) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56706413) H_API: esp_wifi_remote_connect
+
+I (56706413) rpc_core: <-- RPC_Req  [0x11a], uid 18
+
+I (56706424) rpc_rsp:  --> RPC_Resp [0x21a], uid 18
+
+I (56706424) NETWORK: retry to connect to the AP
+
+I (56713186) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56713186) H_API: esp_wifi_remote_connect
+
+I (56713187) rpc_core: <-- RPC_Req  [0x11a], uid 19
+
+I (56713197) rpc_rsp:  --> RPC_Resp [0x21a], uid 19
+
+I (56713198) NETWORK: retry to connect to the AP
+
+I (56719959) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56719960) H_API: esp_wifi_remote_connect
+
+I (56719960) rpc_core: <-- RPC_Req  [0x11a], uid 20
+
+I (56719971) rpc_rsp:  --> RPC_Resp [0x21a], uid 20
+
+I (56719971) NETWORK: retry to connect to the AP
+
+I (56726733) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56726734) H_API: esp_wifi_remote_connect
+
+I (56726734) rpc_core: <-- RPC_Req  [0x11a], uid 21
+
+I (56726745) rpc_rsp:  --> RPC_Resp [0x21a], uid 21
+
+I (56726745) NETWORK: retry to connect to the AP
+
+I (56733507) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56733508) H_API: esp_wifi_remote_connect
+
+I (56733508) rpc_core: <-- RPC_Req  [0x11a], uid 22
+
+I (56733519) rpc_rsp:  --> RPC_Resp [0x21a], uid 22
+
+I (56733519) NETWORK: retry to connect to the AP
+
+I (56740280) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56740281) H_API: esp_wifi_remote_connect
+
+I (56740282) rpc_core: <-- RPC_Req  [0x11a], uid 23
+
+I (56740292) rpc_rsp:  --> RPC_Resp [0x21a], uid 23
+
+I (56740293) NETWORK: retry to connect to the AP
+
+I (56747055) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56747055) H_API: esp_wifi_remote_connect
+
+I (56747056) rpc_core: <-- RPC_Req  [0x11a], uid 24
+
+I (56747066) rpc_rsp:  --> RPC_Resp [0x21a], uid 24
+
+I (56747067) NETWORK: retry to connect to the AP
+
+I (56753828) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56753829) H_API: esp_wifi_remote_connect
+
+I (56753829) rpc_core: <-- RPC_Req  [0x11a], uid 25
+
+I (56753840) rpc_rsp:  --> RPC_Resp [0x21a], uid 25
+
+I (56753841) NETWORK: retry to connect to the AP
+
+I (56760602) RPC_WRAP: ESP Event: Station mode: Disconnected
+
+I (56760602) H_API: esp_wifi_remote_connect
+
+I (56760603) rpc_core: <-- RPC_Req  [0x11a], uid 26
+
+I (56760614) rpc_rsp:  --> RPC_Resp [0x21a], uid 26
+
+I (56760614) NETWORK: retry to connect to the AP
+
+I (56767394) rpc_evt: Event [0x2b] received
+
+I (56767394) rpc_evt: EVT rcvd: Wi-Fi Home channel change
+
+I (56767699) RPC_WRAP: ESP Event: Station mode: Connected
+
+I (56767700) esp_wifi_remote: esp_wifi_internal_reg_rxcb: sta: 0x40200708
+
+I (56769454) esp_netif_handlers: sta ip: 192.168.0.100, mask: 255.255.255.0, gw: 192.168.0.1
+
+I (56769454) NETWORK: got ip:192.168.0.100
+
+E (56769456) ESP_CAPTURE: Fail to enable path for path:0x0 parent:0x0
+
+I (56769462) AV_RENDER: Close done
+
+I (56769466) webrtc: Pending connection until user enable
+
+Signaling connected, pending for use not enable
+
+I (56769476) WEBRTC_HTTP: Success to init http server
+
+I (56769479) Webrtc_Test: Use browser to enter https://192.168.0.100/webrtc/test for test
+
+Get samplerate 16000 chanel 1
+
+I (56769489) AV_RENDER: Get need resample 0 in:16000 out:0
+
+I (56769495) I2S_RENDER: open channel:1 sample_rate:16000 bits:16
+
+E (56769501) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (56769508) I2S_IF: Paired data: 0x4ff3f9c4, current mode: playback, paired in_enable: 0, paired out_enable: 0
+
+W (56769520) i2s_common: dma frame num is adjusted to 256 to align the dma buffer with 64, bufsize = 512
+
+I (56769529) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (56769535) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 0
+
+I (56769560) Adev_Codec: Open codec device OK
+
+I (56769562) AV_RENDER: ARender Auto pause audio first frame at 0
+
+I (56771479) AV_RENDER: Adec got msg:Close
+
+I (56771479) AV_RENDER: Thread Adec exited
+
+I (56771528) AV_RENDER: ARender got msg:Close
+
+I (56771529) AV_RENDER: Thread ARender exited
+
+I (56771529) AV_RENDER: Close done
+

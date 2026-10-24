@@ -1,0 +1,491 @@
+
+Done! You can now compile ESP-IDF projects.
+Go to the project directory and run:
+
+  idf.py build
+
+Executing action: reconfigure
+Running cmake in directory <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build
+Executing "cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local"...
+-- Component directory E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_blockdev does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32p4
+NOTICE: Skipping optional dependency: espressif/esp32-camera
+
+NOTICE: Skipping optional dependency: espressif/dp83848
+
+NOTICE: Skipping optional dependency: espressif/ip101
+
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+
+NOTICE: Skipping optional dependency: espressif/lan87xx
+
+NOTICE: Skipping optional dependency: espressif/rtl8201
+
+NOTICE: Skipping optional dependency: espressif/vsc8541
+
+NOTICE: Skipping optional dependency: espressif/yt8531
+
+NOTICE: Skipping optional dependency: espressif/usb
+
+NOTICE: Optional dependency "espressif/esp_peer" of "tempotian/esp_webrtc (0.9.1) (<USER_PROFILE>\wt99-webrtc-native\components\esp_webrtc)" is not present in the lock file, solving dependencies.
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\esp_peer for dependency "esp_peer", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\av_render for dependency "tempotian/av_render", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\codec_board for dependency "tempotian/codec_board", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\esp_webrtc for dependency "tempotian/esp_webrtc", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils for dependency "tempotian/media_lib_utils", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\webrtc_utils for dependency "webrtc_utils", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+.....NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils for dependency "tempotian/media_lib_utils" (introduced by component "tempotian/av_render"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+........................NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\esp_peer for dependency "esp_peer" (introduced by component "tempotian/esp_webrtc"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils for dependency "tempotian/media_lib_utils" (introduced by component "tempotian/esp_webrtc"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\av_render for dependency "tempotian/av_render" (introduced by component "tempotian/esp_webrtc"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+............................................................NOTICE: Processing 44 dependencies:
+
+NOTICE: [1/44] esp_peer (1.5.3) (<USER_PROFILE>\wt99-webrtc-native\components\esp_peer)
+
+NOTICE: [2/44] espressif/cjson (1.7.19~2)
+
+NOTICE: [3/44] espressif/cmake_utilities (0.5.3)
+
+NOTICE: [4/44] espressif/dl_fft (0.6.0)
+
+NOTICE: [5/44] espressif/eppp_link (1.1.6)
+
+NOTICE: [6/44] espressif/esp-dl (3.3.10)
+
+NOTICE: [7/44] espressif/esp-dsp (1.8.0)
+
+NOTICE: [8/44] espressif/esp-sr (2.5.2)
+
+NOTICE: [9/44] espressif/esp_asrc (1.0.1)
+
+NOTICE: [10/44] espressif/esp_audio_codec (2.5.0)
+
+NOTICE: [11/44] espressif/esp_audio_effects (1.3.0~1)
+
+NOTICE: [12/44] espressif/esp_cam_sensor (2.4.0)
+
+NOTICE: [13/44] espressif/esp_capture (1.0.2)
+
+NOTICE: [14/44] espressif/esp_codec_dev (1.5.11)
+
+NOTICE: [15/44] espressif/esp_h264 (1.3.8)
+
+NOTICE: [16/44] espressif/esp_hosted (2.12.12)
+
+NOTICE: [17/44] espressif/esp_image_effects (1.1.0)
+
+NOTICE: [18/44] espressif/esp_ipa (2.3.0)
+
+NOTICE: [19/44] espressif/esp_lcd_ek79007 (2.0.2~1)
+
+NOTICE: [20/44] espressif/esp_lcd_ili9881c (1.1.0)
+
+NOTICE: [21/44] espressif/esp_libsrtp (1.0.0)
+
+NOTICE: [22/44] espressif/esp_muxer (1.2.3)
+
+NOTICE: [23/44] espressif/esp_new_jpeg (1.0.2)
+
+NOTICE: [24/44] espressif/esp_sccb_intf (0.0.9)
+
+NOTICE: [25/44] espressif/esp_serial_slave_link (1.1.2)
+
+NOTICE: [26/44] espressif/esp_video (2.4.1)
+
+NOTICE: [27/44] espressif/esp_video_codec (0.5.5)
+
+NOTICE: [28/44] espressif/esp_websocket_client (1.4.0)
+
+NOTICE: [29/44] espressif/esp_wifi_remote (1.6.3)
+
+NOTICE: [30/44] espressif/ethernet_init (1.4.1)
+
+NOTICE: [31/44] espressif/gmf_audio (1.0.1~1)
+
+NOTICE: [32/44] espressif/gmf_core (1.0.1)
+
+NOTICE: [33/44] espressif/gmf_fft (1.0.0)
+
+NOTICE: [34/44] espressif/gmf_video (1.0.2)
+
+NOTICE: [35/44] espressif/media_lib_sal (0.9.3)
+
+NOTICE: [36/44] espressif/nghttp (1.65.0~1)
+
+NOTICE: [37/44] espressif/usb_host_uvc (2.5.2)
+
+NOTICE: [38/44] espressif/wifi_remote_over_eppp (0.3.3)
+
+NOTICE: [39/44] tempotian/av_render (1.0.0) (<USER_PROFILE>\wt99-webrtc-native\components\av_render)
+
+NOTICE: [40/44] tempotian/codec_board (2.0.2) (<USER_PROFILE>\wt99-webrtc-native\components\codec_board)
+
+NOTICE: [41/44] tempotian/esp_webrtc (0.9.1) (<USER_PROFILE>\wt99-webrtc-native\components\esp_webrtc)
+
+NOTICE: [42/44] tempotian/media_lib_utils (0.9.0) (<USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils)
+
+NOTICE: [43/44] webrtc_utils (0.9.0) (<USER_PROFILE>\wt99-webrtc-native\components\webrtc_utils)
+
+NOTICE: [44/44] idf (5.5.5)
+
+-- CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is 
+-- IDF_VERSION_MAJOR is 5
+-- IDF_VERSION_MINOR is 5
+-- IDF_VERSION_PATCH is 5
+-- TARGET_LIB_PATH is set to: esp32p4
+-- CONFIG_ESP32P4_REV_MIN_FULL not defined, using default version
+-- Using new driver components (IDF >= 5.0)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+NOTICE: Skipping optional dependency: espressif/esp32-camera
+
+NOTICE: Skipping optional dependency: espressif/dp83848
+
+NOTICE: Skipping optional dependency: espressif/ip101
+
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+
+NOTICE: Skipping optional dependency: espressif/lan87xx
+
+NOTICE: Skipping optional dependency: espressif/rtl8201
+
+NOTICE: Skipping optional dependency: espressif/vsc8541
+
+NOTICE: Skipping optional dependency: espressif/yt8531
+
+NOTICE: Skipping optional dependency: espressif/usb
+
+-- Project sdkconfig file C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig
+Loading defaults file C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults...
+
+warning: unknown kconfig symbol 'MBEDTLS_X509_CREATE_C' assigned to 'y' in C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults
+
+Loading defaults file C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults.esp32p4...
+
+warning: unknown kconfig symbol 'MBEDTLS_X509_CREATE_C' assigned to 'y' in C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults.esp32p4
+
+NOTICE: Skipping optional dependency: espressif/esp32-camera
+
+NOTICE: Skipping optional dependency: espressif/ch390
+
+NOTICE: Skipping optional dependency: espressif/dm9051
+
+NOTICE: Skipping optional dependency: espressif/dp83848
+
+NOTICE: Skipping optional dependency: espressif/enc28j60
+
+NOTICE: Skipping optional dependency: espressif/ip101
+
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+
+NOTICE: Skipping optional dependency: espressif/ksz8851snl
+
+NOTICE: Skipping optional dependency: espressif/lan865x
+
+NOTICE: Skipping optional dependency: espressif/lan867x
+
+NOTICE: Skipping optional dependency: espressif/lan87xx
+
+NOTICE: Skipping optional dependency: espressif/rtl8201
+
+NOTICE: Skipping optional dependency: espressif/vsc8541
+
+NOTICE: Skipping optional dependency: espressif/w5500
+
+NOTICE: Skipping optional dependency: espressif/w6100
+
+NOTICE: Skipping optional dependency: espressif/yt8531
+
+NOTICE: Skipping optional dependency: espressif/usb
+
+NOTICE: Optional dependency "espressif/esp_peer" of "tempotian/esp_webrtc (0.9.1) (<USER_PROFILE>\wt99-webrtc-native\components\esp_webrtc)" is not present in the lock file, solving dependencies.
+
+NOTICE: Skipping optional dependency: espressif/pedestrian_detect
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\esp_peer for dependency "esp_peer", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\av_render for dependency "tempotian/av_render", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\codec_board for dependency "tempotian/codec_board", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\esp_webrtc for dependency "tempotian/esp_webrtc", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils for dependency "tempotian/media_lib_utils", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\webrtc_utils for dependency "webrtc_utils", specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+.....NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils for dependency "tempotian/media_lib_utils" (introduced by component "tempotian/av_render"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+........................NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\esp_peer for dependency "esp_peer" (introduced by component "tempotian/esp_webrtc"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils for dependency "tempotian/media_lib_utils" (introduced by component "tempotian/esp_webrtc"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+NOTICE: Using component placed at <USER_PROFILE>\wt99-webrtc-native\components\av_render for dependency "tempotian/av_render" (introduced by component "tempotian/esp_webrtc"), specified in <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\main\idf_component.yml
+
+............................................................NOTICE: Processing 44 dependencies:
+
+NOTICE: [1/44] esp_peer (1.5.3) (<USER_PROFILE>\wt99-webrtc-native\components\esp_peer)
+
+NOTICE: [2/44] espressif/cjson (1.7.19~2)
+
+NOTICE: [3/44] espressif/cmake_utilities (0.5.3)
+
+NOTICE: [4/44] espressif/dl_fft (0.6.0)
+
+NOTICE: [5/44] espressif/eppp_link (1.1.6)
+
+NOTICE: [6/44] espressif/esp-dl (3.3.10)
+
+NOTICE: [7/44] espressif/esp-dsp (1.8.0)
+
+NOTICE: [8/44] espressif/esp-sr (2.5.2)
+
+NOTICE: [9/44] espressif/esp_asrc (1.0.1)
+
+NOTICE: [10/44] espressif/esp_audio_codec (2.5.0)
+
+NOTICE: [11/44] espressif/esp_audio_effects (1.3.0~1)
+
+NOTICE: [12/44] espressif/esp_cam_sensor (2.4.0)
+
+NOTICE: [13/44] espressif/esp_capture (1.0.2)
+
+NOTICE: [14/44] espressif/esp_codec_dev (1.5.11)
+
+NOTICE: [15/44] espressif/esp_h264 (1.3.8)
+
+NOTICE: [16/44] espressif/esp_hosted (2.12.12)
+
+NOTICE: [17/44] espressif/esp_image_effects (1.1.0)
+
+NOTICE: [18/44] espressif/esp_ipa (2.3.0)
+
+NOTICE: [19/44] espressif/esp_lcd_ek79007 (2.0.2~1)
+
+NOTICE: [20/44] espressif/esp_lcd_ili9881c (1.1.0)
+
+NOTICE: [21/44] espressif/esp_libsrtp (1.0.0)
+
+NOTICE: [22/44] espressif/esp_muxer (1.2.3)
+
+NOTICE: [23/44] espressif/esp_new_jpeg (1.0.2)
+
+NOTICE: [24/44] espressif/esp_sccb_intf (0.0.9)
+
+NOTICE: [25/44] espressif/esp_serial_slave_link (1.1.2)
+
+NOTICE: [26/44] espressif/esp_video (2.4.1)
+
+NOTICE: [27/44] espressif/esp_video_codec (0.5.5)
+
+NOTICE: [28/44] espressif/esp_websocket_client (1.4.0)
+
+NOTICE: [29/44] espressif/esp_wifi_remote (1.6.3)
+
+NOTICE: [30/44] espressif/ethernet_init (1.4.1)
+
+NOTICE: [31/44] espressif/gmf_audio (1.0.1~1)
+
+NOTICE: [32/44] espressif/gmf_core (1.0.1)
+
+NOTICE: [33/44] espressif/gmf_fft (1.0.0)
+
+NOTICE: [34/44] espressif/gmf_video (1.0.2)
+
+NOTICE: [35/44] espressif/media_lib_sal (0.9.3)
+
+NOTICE: [36/44] espressif/nghttp (1.65.0~1)
+
+NOTICE: [37/44] espressif/usb_host_uvc (2.5.2)
+
+NOTICE: [38/44] espressif/wifi_remote_over_eppp (0.3.3)
+
+NOTICE: [39/44] tempotian/av_render (1.0.0) (<USER_PROFILE>\wt99-webrtc-native\components\av_render)
+
+NOTICE: [40/44] tempotian/codec_board (2.0.2) (<USER_PROFILE>\wt99-webrtc-native\components\codec_board)
+
+NOTICE: [41/44] tempotian/esp_webrtc (0.9.1) (<USER_PROFILE>\wt99-webrtc-native\components\esp_webrtc)
+
+NOTICE: [42/44] tempotian/media_lib_utils (0.9.0) (<USER_PROFILE>\wt99-webrtc-native\components\media_lib_utils)
+
+NOTICE: [43/44] webrtc_utils (0.9.0) (<USER_PROFILE>\wt99-webrtc-native\components\webrtc_utils)
+
+NOTICE: [44/44] idf (5.5.5)
+
+-- CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is 
+-- IDF_VERSION_MAJOR is 5
+-- IDF_VERSION_MINOR is 5
+-- IDF_VERSION_PATCH is 5
+-- TARGET_LIB_PATH is set to: esp32p4
+-- CONFIG_ESP32P4_REV_MIN_FULL not defined, using default version
+-- Using new driver components (IDF >= 5.0)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+NOTICE: Skipping optional dependency: espressif/pedestrian_detect
+
+NOTICE: Skipping optional dependency: espressif/esp32-camera
+
+NOTICE: Skipping optional dependency: espressif/ch390
+
+NOTICE: Skipping optional dependency: espressif/dm9051
+
+NOTICE: Skipping optional dependency: espressif/dp83848
+
+NOTICE: Skipping optional dependency: espressif/enc28j60
+
+NOTICE: Skipping optional dependency: espressif/ip101
+
+NOTICE: Skipping optional dependency: espressif/ksz80xx
+
+NOTICE: Skipping optional dependency: espressif/ksz8851snl
+
+NOTICE: Skipping optional dependency: espressif/lan865x
+
+NOTICE: Skipping optional dependency: espressif/lan867x
+
+NOTICE: Skipping optional dependency: espressif/lan87xx
+
+NOTICE: Skipping optional dependency: espressif/rtl8201
+
+NOTICE: Skipping optional dependency: espressif/vsc8541
+
+NOTICE: Skipping optional dependency: espressif/w5500
+
+NOTICE: Skipping optional dependency: espressif/w6100
+
+NOTICE: Skipping optional dependency: espressif/yt8531
+
+NOTICE: Skipping optional dependency: espressif/usb
+
+-- Project sdkconfig file C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig
+Loading defaults file C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults...
+
+warning: unknown kconfig symbol 'MBEDTLS_X509_CREATE_C' assigned to 'y' in C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults
+
+Loading defaults file C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults.esp32p4...
+
+warning: unknown kconfig symbol 'MBEDTLS_X509_CREATE_C' assigned to 'y' in C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/sdkconfig.defaults.esp32p4
+
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/riscv/ld/rom.api.ld
+-- USING O3
+-- App "doorbell_demo" version: 68cdbb1-dirty
+-- Adding linker script C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.api.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.rvfp.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.wdt.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.systimer.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.version.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.libc.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32p4/ld/esp32p4.rom.newlib.ld
+-- Adding linker script E:/Espressif/frameworks/esp-idf-v5.5.5/components/soc/esp32p4/ld/esp32p4.peripherals.ld
+-- ESP_LCD_EK79007: 2.0.2
+-- ESP_CAM_SENSOR: 2.4.0
+-- ESP_IPA: 2.3.0
+-- ESP_VIDEO: 2.4.1
+-- CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is y
+-- IDF_VERSION_MAJOR is 5
+-- IDF_VERSION_MINOR is 5
+-- IDF_VERSION_PATCH is 5
+-- TARGET_LIB_PATH is set to: esp32p4_less_v3
+-- ESP_CAPTURE: 1.0.2
+-- Using Hosted Wi-Fi
+-- Using new driver components (IDF >= 5.0)
+-- Component idf::espressif__media_lib_sal will be linked with -Wl,--whole-archive
+-- Component idf::espressif__esp_hosted will be linked with -Wl,--whole-archive
+-- Components: app_trace app_update av_render bootloader bootloader_support bt cmock codec_board common console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ieee802154 esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_peer esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_webrtc esp_wifi espcoredump espressif__cjson espressif__cmake_utilities espressif__dl_fft espressif__eppp_link espressif__esp-dl espressif__esp-dsp espressif__esp-sr espressif__esp_asrc espressif__esp_audio_codec espressif__esp_audio_effects espressif__esp_cam_sensor espressif__esp_capture espressif__esp_codec_dev espressif__esp_h264 espressif__esp_hosted espressif__esp_image_effects espressif__esp_ipa espressif__esp_lcd_ek79007 espressif__esp_lcd_ili9881c espressif__esp_libsrtp espressif__esp_muxer espressif__esp_new_jpeg espressif__esp_sccb_intf espressif__esp_serial_slave_link espressif__esp_video espressif__esp_video_codec espressif__esp_websocket_client espressif__esp_wifi_remote espressif__ethernet_init espressif__gmf_audio espressif__gmf_core espressif__gmf_fft espressif__gmf_video espressif__media_lib_sal espressif__nghttp espressif__usb_host_uvc espressif__wifi_remote_over_eppp esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls media_lib_utils mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling webrtc_utils wifi_provisioning wpa_supplicant
+-- Component paths: E:/Espressif/frameworks/esp-idf-v5.5.5/components/app_trace E:/Espressif/frameworks/esp-idf-v5.5.5/components/app_update C:/Users/dell/wt99-webrtc-native/components/av_render E:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader E:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support E:/Espressif/frameworks/esp-idf-v5.5.5/components/bt E:/Espressif/frameworks/esp-idf-v5.5.5/components/cmock C:/Users/dell/wt99-webrtc-native/components/codec_board C:/Users/dell/wt99-webrtc-native/solutions/common E:/Espressif/frameworks/esp-idf-v5.5.5/components/console E:/Espressif/frameworks/esp-idf-v5.5.5/components/cxx E:/Espressif/frameworks/esp-idf-v5.5.5/components/driver E:/Espressif/frameworks/esp-idf-v5.5.5/components/efuse E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp-tls E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_adc E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_app_format E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_bootloader_format E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_coex E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_common E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ana_cmpr E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_bitscrambler E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_cam E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_dac E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_gpio E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_gptimer E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_i2c E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_i2s E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_isp E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_jpeg E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ledc E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_mcpwm E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_parlio E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_pcnt E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ppa E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_rmt E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdio E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdm E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdmmc E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdspi E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_spi E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_touch_sens E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_tsens E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_twai E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_uart E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_usb_serial_jtag E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_eth E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_event E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_gdbstub E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hal_ieee802154 E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hid E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_http_client E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_http_server E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_https_ota E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_https_server E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_lcd E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_local_ctrl E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_mm E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_netif E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_netif_stack E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_partition C:/Users/dell/wt99-webrtc-native/components/esp_peer E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_phy E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_pm E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_psram E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_ringbuf E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_security E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_timer E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_vfs_console C:/Users/dell/wt99-webrtc-native/components/esp_webrtc E:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi E:/Espressif/frameworks/esp-idf-v5.5.5/components/espcoredump C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__cjson C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__cmake_utilities C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__dl_fft C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__eppp_link C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp-dl C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp-dsp C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp-sr C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_asrc C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_audio_codec C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_audio_effects C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_cam_sensor C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_capture C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_codec_dev C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_h264 C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_hosted C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_image_effects C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_ipa C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_lcd_ek79007 C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_lcd_ili9881c C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_libsrtp C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_muxer C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_new_jpeg C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_sccb_intf C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_serial_slave_link C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_video C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_video_codec C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_websocket_client C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__esp_wifi_remote C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__ethernet_init C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__gmf_audio C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__gmf_core C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__gmf_fft C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__gmf_video C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__media_lib_sal C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__nghttp C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__usb_host_uvc C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/managed_components/espressif__wifi_remote_over_eppp E:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py E:/Espressif/frameworks/esp-idf-v5.5.5/components/fatfs E:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos E:/Espressif/frameworks/esp-idf-v5.5.5/components/hal E:/Espressif/frameworks/esp-idf-v5.5.5/components/heap E:/Espressif/frameworks/esp-idf-v5.5.5/components/http_parser E:/Espressif/frameworks/esp-idf-v5.5.5/components/idf_test E:/Espressif/frameworks/esp-idf-v5.5.5/components/ieee802154 E:/Espressif/frameworks/esp-idf-v5.5.5/components/json E:/Espressif/frameworks/esp-idf-v5.5.5/components/log E:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/main E:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls C:/Users/dell/wt99-webrtc-native/components/media_lib_utils E:/Espressif/frameworks/esp-idf-v5.5.5/components/mqtt E:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib E:/Espressif/frameworks/esp-idf-v5.5.5/components/nvs_flash E:/Espressif/frameworks/esp-idf-v5.5.5/components/nvs_sec_provider E:/Espressif/frameworks/esp-idf-v5.5.5/components/openthread E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table E:/Espressif/frameworks/esp-idf-v5.5.5/components/protobuf-c E:/Espressif/frameworks/esp-idf-v5.5.5/components/protocomm E:/Espressif/frameworks/esp-idf-v5.5.5/components/pthread E:/Espressif/frameworks/esp-idf-v5.5.5/components/riscv E:/Espressif/frameworks/esp-idf-v5.5.5/components/rt E:/Espressif/frameworks/esp-idf-v5.5.5/components/sdmmc E:/Espressif/frameworks/esp-idf-v5.5.5/components/soc E:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash E:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs E:/Espressif/frameworks/esp-idf-v5.5.5/components/tcp_transport E:/Espressif/frameworks/esp-idf-v5.5.5/components/ulp E:/Espressif/frameworks/esp-idf-v5.5.5/components/unity E:/Espressif/frameworks/esp-idf-v5.5.5/components/usb E:/Espressif/frameworks/esp-idf-v5.5.5/components/vfs E:/Espressif/frameworks/esp-idf-v5.5.5/components/wear_levelling C:/Users/dell/wt99-webrtc-native/components/webrtc_utils E:/Espressif/frameworks/esp-idf-v5.5.5/components/wifi_provisioning E:/Espressif/frameworks/esp-idf-v5.5.5/components/wpa_supplicant
+-- Configuring done (67.0s)
+-- Generating done (5.2s)
+-- Build files have been written to: C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build
+Executing action: all (aliases: build)
+Running ninja in directory <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build
+Executing "ninja all"...
+[1/15] Generating ../../board_cfg.txt.S
+
+[2/15] Performing build step for 'bootloader'
+
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\bootloader\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x9000 bootloader 0x2000 C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/bootloader/bootloader.bin"
+
+
+Bootloader binary size 0x5de0 bytes. 0x1220 bytes (16%) free.
+
+
+
+[3/15] Building ASM object esp-idf/codec_board/CMakeFiles/__idf_codec_board.dir/__/__/board_cfg.txt.S.obj
+
+[4/15] No install step for 'bootloader'
+
+[5/15] Completed 'bootloader'
+
+[6/15] Linking C static library esp-idf\codec_board\libcodec_board.a
+
+[7/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/webrtc.c.obj
+
+[8/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+
+[9/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/media_sys.c.obj
+
+[10/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/board.c.obj
+
+[11/15] Linking C static library esp-idf\main\libmain.a
+
+[12/15] Generating esp-idf/esp_system/ld/sections.ld
+
+[13/15] Linking CXX executable doorbell_demo.elf
+
+[14/15] Generating binary image from built executable
+
+esptool.py v4.12.0
+
+
+Creating esp32p4 image...
+
+
+Merged 3 ELF sections
+
+
+Successfully created esp32p4 image.
+
+
+Generated C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/doorbell_demo.bin
+
+[15/15] C:\WINDOWS\system32\cmd.exe /C "cd /D <USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build\esp-idf\esptool_py && E:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe E:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x9000 partition --type app C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/partition_table/partition-table.bin C:/Users/dell/wt99-webrtc-native/solutions/doorbell_local/build/doorbell_demo.bin"
+
+doorbell_demo.bin binary size 0x345160 bytes. Smallest app partition is 0x600000 bytes. 0x2baea0 bytes (46%) free.
+
+
+
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32p4 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 16MB --flash_freq 80m 0x2000 build\bootloader\bootloader.bin 0x9000 build\partition_table\partition-table.bin 0x10000 build\doorbell_demo.bin
+or from the "<USER_PROFILE>\wt99-webrtc-native\solutions\doorbell_local\build" directory
+ python -m esptool --chip esp32p4 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"

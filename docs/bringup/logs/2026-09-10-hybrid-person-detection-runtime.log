@@ -1,0 +1,53 @@
+WT99P4C5-S1 hybrid person detection deployment evidence
+Date: 2026-09-10
+Branch: feat/wt99p4c5-doorbell
+Port: COM5 (Silicon Labs CP210x)
+
+BUILD
+ESP-IDF: 5.5.5
+ESP-DL: 3.3.11
+pedestrian_detect: 0.3.2
+human_face_detect: 0.5.0
+doorbell_demo.bin: 0x693540 bytes (6,894,912 bytes)
+factory app partition: 0x800000 bytes
+free app space: 0x16cac0 bytes (18%)
+
+FLASH
+Baud: 115200
+Chip: ESP32-P4 revision v1.3
+Bootloader at 0x2000: hash verified
+Application at 0x10000: 6,894,912 bytes written; hash verified
+Partition table at 0x9000: hash verified
+Result: hard reset via RTS succeeded
+
+BOOT (selected serial evidence)
+I boot: chip revision: v1.3
+I boot.esp32p4: SPI Speed      : 80MHz
+I boot.esp32p4: SPI Mode       : QIO
+I boot.esp32p4: SPI Flash Size : 16MB
+I esp_psram: Found 32MB PSRAM device
+I esp_psram: Speed: 200MHz
+I esp_psram: SPI SRAM memory test OK
+I DOOR_LOCK: Initialized GPIO32 at 50 Hz; boot state LOCKED (500 us)
+I LD2450: UART1 ready at 256000 baud (RX GPIO4, TX GPIO5)
+I ov5647: Detected Camera sensor PID=0x5647
+I transport: Identified slave [esp32c5]
+I NETWORK: got ip:192.168.0.103
+I WEBRTC_HTTP: Success to init http server
+I VID_PIPE_NEGO: Success to negotiate 1 format:rgb565 320x180 2fps
+I PEDESTRIAN_DETECT: Vision models: pedestrian=ready face=ready
+
+LIVE ENDPOINT
+GET https://192.168.0.103/webrtc/test -> HTTP 200, 64,861 bytes
+Deployed HTML contains visionOverlay, Chinese stale-state text, radar live state,
+vision_state routing and object-fit coordinate mapping.
+
+SSE sample:
+data: {"type":"connected"}
+data: {"type":"vision_state","timestamp_ms":65347,"state":"clear","source_width":320,"source_height":180,"person_count":0,"targets":[],"pedestrian_model":"ready","face_model":"ready"}
+data: {"type":"radar_event","event":"leave","timestamp":66982,"track_id":1,"x_mm":-11,"y_mm":309,"speed":0,"zone":"door_approach","confidence":null,"source":"ld2450"}
+data: {"type":"heartbeat"}
+
+KNOWN NON-BLOCKING STARTUP OUTPUT
+The unused LCD renderer still reports invalid/open failure because display UI is
+an explicit future extension and no LCD buffer is initialized in this release.
